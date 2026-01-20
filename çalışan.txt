@@ -1,0 +1,289 @@
+forums:
+    - name: "breachforums-Stealer-Logs"
+    url: "https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > table.tborder.clear > tbody > tr:nth-child(7)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "breachforums-database"
+    url: "https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > table.tborder.clear > tbody > tr:nth-child(14)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "breachforums-combolist"
+    url: "https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > table.tborder.clear > tbody > tr:nth-child(7)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "breachforums-accounts"
+    url: "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > table > tbody > tr:nth-child(7)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "darkforums"
+    url: "https://darkforums.io/"
+    css_selector: "#general > div > div:nth-child(1)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "xforums"
+    url: "https://xforums.st/forums/database-log-pass-number-pass.34/"
+    css_selector: "#top > div.p-body-inner > div.p-body-main.is-active > div.p-body-content.is-active > div > div > div.block-container.block-container--nodes > div.block-body > div > div > div.structItem:nth-child(1)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "EMBARGO"
+    url: "http://embargobe3n5okxyzqphpmk3moinoap2snz5k6765mvtkk7hhi544jid.onion/"
+    css_selector: "div.col-12:nth-child(1)"
+    is_onion: true
+    type: "ransomware-leak"
+
+  - name: "hydra-database"
+    url: "https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999"
+    css_selector: "span.subject_new a"
+    is_onion: false
+    type: "forum-post"
+  
+  - name: "crackingx-database"
+    url: "https://crackingx.com/forums/5/?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#top > div.p-body > div > div.uix_contentWrapper > div > div > div > div > div.block-container.uix_discussionList > div.block-body > div > div.structItemContainer-group.js-threadList > div.structItem.structItem--thread.is-prefix1.js-inlineModContainer:nth-child(1) > div.structItem-cell.structItem-cell--main"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "crackingx-accounts"
+    url: "https://crackingx.com/forums/17/?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#top > div.p-body > div > div.uix_contentWrapper > div > div > div > div > div.block-container.uix_discussionList > div.block-body > div > div > div.structItem.structItem--thread.js-inlineModContainer:nth-child(1) > div.structItem-cell.structItem-cell--main"
+    is_onion: false
+    type: "forum-post"
+  
+  - name: "niflhemim-account"
+    url: "https://niflheim.world/forums/accounts.8/"
+    css_selector: "#top > div.p-body > div > div.p-body-main.xtr-sidebar-default > div > div > div.block > div.block-container > div.block-body > div > div > div > div.structItem.structItem--thread.js-inlineModContainer:nth-child(1)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "niflhemim-combolist"
+    url: "https://niflheim.world/forums/combolist.2/"
+    css_selector: "#top > div.p-body > div > div.p-body-main.xtr-sidebar-default > div > div > div.block > div.block-container > div.block-body > div > div.structItemContainer-group.js-threadList > div > div.structItem.structItem--thread.is-prefix5.js-inlineModContainer:nth-child(1)"
+    is_onion: false
+    type: "forum-post"
+  
+  - name: "patched-accounts"
+    url: "https://patched.to/Forum-accounts?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > div > table.tborder.clear.patched > tbody > tr:nth-child(4)"
+    is_onion: false
+    type: "forum-post"
+  
+  - name: "xreactor"
+    url: "https://xreactor.org/#tab-1"
+    css_selector: "#tab-1 > div > div > ul > li:nth-child(1)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "darkforums-Databases"
+    url: "https://darkforums.io/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "tr.inline_row span.subject_new a"
+    is_onion: false
+    type: "forum-post"
+  
+  - name: "darkforums-Stealer-Logs"
+    url: "https://darkforums.io/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "tr.inline_row:first-child span.subject_new a"
+    is_onion: false
+    type: "forum-post"
+  
+  - name: "darkforums-Combolists"
+    url: "https://darkforums.io/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "tr.inline_row span.subject_new a"
+    is_onion: false
+    type: "forum-post"
+  
+  - name: "leakzone-databases"
+    url: "https://leakzone.net/forumdisplay.php?fid=20&sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "tr.inline_row:first-child span.subject_new a"
+    is_onion: false
+    type: "forum-post"
+  
+  
+  
+
+    - name: "xforums"
+    url: "https://xforums.st/forums/database-log-pass-number-pass.34/"
+    css_selector: "#top > div.p-body-inner > div.p-body-main.is-active > div.p-body-content.is-active > div > div > div.block-container.block-container--nodes > div.block-body > div > div > div.structItem.structItem--thread.is-prefix51.js-inlineModContainer:nth-child(1)"
+    is_onion: false
+    type: "forum-post"
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  - name: "shieldforum"
+    url: "https://shieldforum.net/"
+    css_selector: "#top > div.p-body > div > div > div > div.p-body-main.p-body-main--withSidebar > div.p-body-sidebar > div:nth-child(2) > div > ul >:nth-child(1)"
+    is_onion: false
+  - name: "xforums" MİNİK SORUN VAR VERİ ÇEKİLİYOR AMA SS YOK
+    url: "https://xforums.st/whats-new/"
+    css_selector: "#top > div.p-body-inner > div.p-body-main.is-active > div.p-body-content.is-active > div > div:nth-child(2) > div > div.block-body > div > div.structItem.structItem--thread:nth-child(1)"
+    is_onion: false
+  - name: "htdark-combolist"
+    url: "https://htdark.com/forums/proxy-lists-combolists.189/"
+    css_selector: "#top > div.p-body > div > div.p-body-main.is-active > div > div > div:nth-child(3) > div.block-container > div.block-body > div > div.structItemContainer-group.js-threadList > div.structItem.structItem--thread:nth-child(1)"
+    is_onion: false
+  - name: "Everest Group "
+    url: "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news"
+    css_selector: "div.category-item:nth-child(1)"
+    is_onion: true
+  - name: "EMBARGO"
+    url: "http://embargobe3n5okxyzqphpmk3moinoap2snz5k6765mvtkk7hhi544jid.onion/"
+    css_selector: "div.col-12:nth-child(1)"
+    is_onion: true
+  - name: "darkforums" DDOS TARAMASINA TAKILYIOR
+    url: "https://darkforums.st/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#forum-display > table > tbody > tr:nth-child(6)"
+    is_onion: false
+    forums:
+  - name: "xreactor"
+    url: "https://xreactor.org/#tab-2"
+    css_selector: "#tab-2 > div > div > ul > li:nth-child(1)"
+    is_onion: false
+  - name: "EMBARGO"
+    url: "http://embargobe3n5okxyzqphpmk3moinoap2snz5k6765mvtkk7hhi544jid.onion/"
+    css_selector: "div.col-12:nth-child(1)"
+    is_onion: true
+    type: "ransomware-leak"
+   - name: "xforums"
+    url: "https://xforums.st/forums/database-log-pass-number-pass.34/"
+    css_selector: "#top > div.p-body-inner > div.p-body-main.is-active > div.p-body-content.is-active > div > div > div.block-container.block-container--nodes > div.block-body > div > div > div.structItem:nth-child(1)"
+    is_onion: false
+    type: "forum-post"
+  - name: "blackhatworld"
+    url: "https://hydraforums.io/Forums-vip-database?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > div > div > div:nth-child(6) > div.whole > div:nth-child(5)"
+    is_onion: false
+    type: "forum-post"
+    - name: "blackhatworld"
+    url: "https://www.blackhatworld.com/"
+    css_selector: "#top > div.p-body > div > div.p-body-main.p-body-main--withSidebar > div.p-body-content > div.p-body-pageContent > div.block > div > div > div > div > div.block-body > div > div.structItem:nth-child(1)"
+    is_onion: false
+    type: "forum-post"
+
+
+
+
+
+
+
+
+
+
+
+
+
+  - name: "breachforums-Stealer-Logs"
+    url: "https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > table.tborder.clear > tbody > tr:nth-child(7)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "breachforums-database"
+    url: "https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > table.tborder.clear > tbody > tr:nth-child(14)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "breachforums-combolist"
+    url: "https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > table.tborder.clear > tbody > tr:nth-child(7)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "breachforums-accounts"
+    url: "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > table > tbody > tr:nth-child(7)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "darkforums"
+    url: "https://darkforums.io/"
+    css_selector: "#general > div > div:nth-child(1)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "xforums"
+    url: "https://xforums.st/forums/database-log-pass-number-pass.34/"
+    css_selector: "#top > div.p-body-inner > div.p-body-main.is-active > div.p-body-content.is-active > div > div > div.block-container.block-container--nodes > div.block-body > div > div > div.structItem:nth-child(1)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "hydra-database"
+    url: "https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999"
+    css_selector: "span.subject_new a"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "crackingx-database"
+    url: "https://crackingx.com/forums/5/?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#top > div.p-body > div > div.uix_contentWrapper > div > div > div > div > div.block-container.uix_discussionList > div.block-body > div > div.structItemContainer-group.js-threadList > div.structItem.structItem--thread.is-prefix1.js-inlineModContainer:nth-child(1) > div.structItem-cell.structItem-cell--main"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "crackingx-accounts"
+    url: "https://crackingx.com/forums/17/?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#top > div.p-body > div > div.uix_contentWrapper > div > div > div > div > div.block-container.uix_discussionList > div.block-body > div > div > div.structItem.structItem--thread.js-inlineModContainer:nth-child(1) > div.structItem-cell.structItem-cell--main"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "niflhemim-account"
+    url: "https://niflheim.world/forums/accounts.8/"
+    css_selector: "#top > div.p-body > div > div.p-body-main.xtr-sidebar-default > div > div > div.block > div.block-container > div.block-body > div > div > div > div.structItem.structItem--thread.js-inlineModContainer:nth-child(1)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "niflhemim-combolist"
+    url: "https://niflheim.world/forums/combolist.2/"
+    css_selector: "#top > div.p-body > div > div.p-body-main.xtr-sidebar-default > div > div > div.block > div.block-container > div.block-body > div > div.structItemContainer-group.js-threadList > div > div.structItem.structItem--thread.is-prefix5.js-inlineModContainer:nth-child(1)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "xreactor"
+    url: "https://xreactor.org/#tab-1"
+    css_selector: "#tab-1 > div > div > ul > li:nth-child(1)"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "darkforums-Databases"
+    url: "https://darkforums.io/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "tr.inline_row span.subject_new a"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "darkforums-Stealer-Logs"
+    url: "https://darkforums.io/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "tr.inline_row:first-child span.subject_new a"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "darkforums-Combolists"
+    url: "https://darkforums.io/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "tr.inline_row span.subject_new a"
+    is_onion: false
+    type: "forum-post"
+
+  - name: "leakzone-databases"
+    url: "https://leakzone.net/forumdisplay.php?fid=20&sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "tr.inline_row:first-child span.subject_new a"
+    is_onion: false
+    type: "forum-post"

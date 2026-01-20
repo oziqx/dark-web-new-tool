@@ -1,0 +1,17 @@
+div.structItem:nth-child(1)
+  
+  - name: "EMBARGO"
+    url: "http://embargobe3n5okxyzqphpmk3moinoap2snz5k6765mvtkk7hhi544jid.onion/"
+    css_selector: "div.col-12:nth-child(1)"
+    is_onion: true
+    type: "ransomware-leak"
+   - name: "xforums"
+    url: "https://xforums.st/forums/database-log-pass-number-pass.34/"
+    css_selector: "#top > div.p-body-inner > div.p-body-main.is-active > div.p-body-content.is-active > div > div > div.block-container.block-container--nodes > div.block-body > div > div > div.structItem:nth-child(1)"
+    is_onion: false
+    type: "forum-post"
+  - name: "niflheim-combolist"
+    url: "https://niflheim.world/forums/combolist.2/"
+    css_selector: "#top > div.p-body > div > div.p-body-main.xtr-sidebar-default > div > div > div.block > div.block-container > div.block-body > div > div.structItemContainer-group.js-threadList > div > div.structItem:nth-child(1)"
+    is_onion: false
+    type: "forum-post"

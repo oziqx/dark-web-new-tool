@@ -4,8 +4,6 @@
 .env.*.local
 
 # Logs
-logs/
-*.log
+
 
 # Output
-output/
