@@ -1,0 +1,129 @@
+- name: "Apos Security"
+    url: "http://yrz6bayqwhleymbeviter7ejccxm64sv2ppgqgderzgdhutozcbbhpqd.onion/"
+    css_selector: "div.mt-3:nth-child(2)"
+    is_onion: true
+  - name: "DarkForums"
+    url: "https://darkforums.st/Forum-Stealer-Logs?sortby=started"
+    css_selector: "#content > div > div.d-flex > div:nth-child(1) > table > tbody > tr:nth-child(5)"
+    is_onion: false
+  - name: "DarkForums"
+    url: "https://darkforums.st/Forum-Databases?sortby=started"
+    css_selector: "#content > div > div.d-flex > div:nth-child(1) > table > tbody > tr:nth-child(5)"
+    is_onion: false
+  - name: "DarkForums"
+    url: "https://darkforums.st/Forum-Combolists?sortby=started"
+    css_selector: "#content > div > div.d-flex > div:nth-child(1) > table > tbody > tr:nth-child(5)"
+    is_onion: false
+  - name: "DarkForums"
+    url: "https://darkforums.st/Forum-Other-Leaks?sortby=started"
+    css_selector: "#content > div > div.d-flex > div:nth-child(1) > table > tbody > tr:nth-child(5)"
+    is_onion: false
+  - name: "LeakZone"
+    url: "https://leakzone.net/Forum-Dumps-databases?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > div.wrapper > div:nth-child(7) > div.d-flex > div:nth-child(1) > table > tbody > tr:nth-child(1)"
+    is_onion: false
+  - name: "LeakZone"
+    url: "https://leakzone.net/Forum-Other-Leaks-Methods?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > div.wrapper > div:nth-child(7) > div.d-flex > div:nth-child(1) > table > tbody > tr:nth-child(1)"
+    is_onion: false
+  - name: "Darknet Army"
+    url: "http://dna777fdlbcv24cx5ctdvydvfa277vgb6wd6w4ztem6cho3kqogi7bqd.onion/"
+    css_selector: "#js-lfsItemThread-41783"
+    is_onion: true
+  - name: "Darknet Army"
+    url: "http://dna777fdlbcv24cx5ctdvydvfa277vgb6wd6w4ztem6cho3kqogi7bqd.onion/forums/⭐-combolists-⭐.25/"
+    css_selector: "div.structItem:nth-child(1)"
+    is_onion: true
+  - name: "xreactor"
+    url: "https://xreactor.org/forums/database.157/"
+    css_selector: "#top > div.p-body > div > div.p-body-main > div.p-body-content.is-active > div > div:nth-child(2) > div.block-container > div.block-body > div > div > div.structItem.structItem--thread.is-prefix13.js-inlineModContainer.js-threadListItem-24003 > div.structItem-cell.structItem-cell--main"
+    is_onion: false
+  - name: "xreactor"
+    url: "https://xreactor.org/forums/combo-proxy-and-password-list.162/"
+    css_selector: "#top > div.p-body > div > div.p-body-main > div.p-body-content.is-active > div > div:nth-child(3) > div.block-container > div.block-body > div > div > div.structItem.structItem--thread.is-prefix2.js-inlineModContainer.js-threadListItem-24028 > div.structItem-cell.structItem-cell--main"
+    is_onion: false
+  - name: "warriors.to"
+    url: "https://warriors.to/forums/free-combolist.48/"
+    css_selector: "#inner-container > div > div.p-body-main > div > div > div > div.block-container > div.block-body > div > div > div.structItem.structItem--thread.js-inlineModContainer.js-threadListItem-7601"
+    is_onion: false
+  - name: "BlackSuit"
+    url: "http://weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd.onion/"
+    css_selector: "div.card:nth-child(1)"
+    is_onion: true
+  - name: "Abyss"
+    url: "http://3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd.onion/"
+    css_selector: "div.col:nth-child(2)"
+    is_onion: true
+  - name: "Alpha Locker"
+    url: "http://mydatae2d63il5oaxxangwnid5loq2qmtsol2ozr6vtb7yfm5ypzo6id.onion/blog"
+    css_selector: "div.b_block:nth-child(1)"
+    is_onion: true
+  - name: "Arcus"
+    url: "http://arcuufpr5xxbbkin4mlidt7itmr6znlppk63jbtkeguuhszmc5g7qdyd.onion/"
+    css_selector: "div.card-wrapper:nth-child(1)"
+    is_onion: true
+  - name: "Apos Security"
+    url: "http://yrz6bayqwhleymbeviter7ejccxm64sv2ppgqgderzgdhutozcbbhpqd.onion/"
+    css_selector: "div.mt-3:nth-child(2)"
+    is_onion: true
+  - name: "CHAOS"
+    url: "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/list"
+    css_selector: "div.w-full:nth-child(4) > div:nth-child(1)"
+    is_onion: true
+  - name: "ChipBit"
+    url: "http://ciphbitqyg26jor7eeo6xieyq7reouctefrompp6ogvhqjba7uo4xdid.onion/"
+    css_selector: "div.post:nth-child(1)"
+    is_onion: true
+  - name: "DAIXIN TEAM"
+    url: "http://7ukmkdtyxdkdivtjad57klqnd3kdsmq6tp45rrsxqnu76zzv3jvitlqd.onion/"
+    css_selector: "div.border:nth-child(4)"
+    is_onion: true
+  - name: "Dunghill Leak"
+    url: "http://nsalewdnfclsowcal6kn5csm4ryqmfpijznxwictukhrgvz2vbmjjjyd.onion/"
+    css_selector: ".custom-container2 > div:nth-child(1)"
+    is_onion: true
+  - name: "EMBARGO"
+    url: "http://embargobe3n5okxyzqphpmk3moinoap2snz5k6765mvtkk7hhi544jid.onion/"
+    css_selector: "div.col-12:nth-child(1)"
+    is_onion: true
+  - name: "Frag Blog"
+    url: "http://34o4m3f26ucyeddzpf53bksy76wd737nf2fytslovwd3viac3by5chad.onion/leaks"
+    css_selector: "div.after > w-full:nth-child(2)"
+    is_onion: true
+  - name: "spyhackerz.org"
+    url: "https://spyhackerz.org/forum/forums/all-combolist.116/"
+    css_selector: "#top > div.p-body > div > div.p-body-main.is-active > div.p-body-content > div > div > div.block-container > div.block-body > div > div > div.structItem.structItem--thread.is-prefix20.is-unread.js-inlineModContainer.js-threadListItem-151695"
+    is_onion: false
+
+  - name: "Patched-Other-Leaks"
+    url: "https://patched.sh/Forum-other-leaks?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > div > table > tbody > tr:nth-child(4)"
+    is_onion: true
+  - name: "Patched-Accounts"
+    url: "https://patched.sh/Forum-accounts?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > div > table.tborder.clear.patched > tbody > tr:nth-child(4)"
+    is_onion: true
+      - name: "Black Shrantac"
+    url: "http://b2ykcy2gcug4gnccm6hnrb5xapnresmyjjqgvhafaypppwgo4feixwyd.onion/"
+    css_selector: "article.book-card:nth-child(1)"
+    is_onion: true
+  - name: "Everest Group "
+    url: "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news"
+    css_selector: "div.category-item:nth-child(1)"
+    is_onion: true
+  - name: "ARCUS "
+    url: "http://arcuufpr5xxbbkin4mlidt7itmr6znlppk63jbtkeguuhszmc5g7qdyd.onion/"
+    css_selector: "div.card-wrapper:nth-child(1)"
+    is_onion: true
+   - name: "shieldforum"
+    url: "https://shieldforum.net/"
+    css_selector: "#top > div.p-body > div > div > div > div.block.lfs > div > div.tabGroup-content > div > ul > li:nth-child(1)"
+    is_onion: false
+  - name: "htdark-combolist"
+    url: "https://htdark.com/forums/proxy-lists-combolists.189/"
+    css_selector: "#top > div.p-body > div > div.p-body-main.is-active > div > div > div:nth-child(3) > div.block-container > div.block-body > div > div.structItemContainer-group.js-threadList > div.structItem.structItem--thread:nth-child(1)"
+    is_onion: false
+  - name: "htdark-databases"
+    url: "https://htdark.com/forums/databeses.67/"
+    css_selector: "#top > div.p-body > div > div.p-body-main.is-active > div > div > div:nth-child(2) > div.block-container > div.block-body > div > div > div.structItem.structItem--thread:nth-child(1)"
+    is_onion: false
