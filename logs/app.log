@@ -14724,3 +14724,1191 @@
 {"level":"info","phase":"Kapanış","alloc_mb":0,"total_alloc_mb":9,"sys_mb":12,"num_gc":9,"forum_data_count":100,"url_count":128,"time":1768911566,"message":"📊 Memory Stats"}
 {"level":"info","time":1768911566,"message":"👋 Program güvenli şekilde kapatıldı"}
 {"level":"info","time":1768911566,"message":"🏁 Program tamamen sonlandırıldı"}
+{"level":"info","time":1768991288,"message":"🚀 Program başlatıldı"}
+{"level":"info","time":1768991288,"message":"📋 İçerik karşılaştırma sistemi başlatıldı (SHA-256 Hash)"}
+{"level":"info","yüklenen_url":128,"time":1768991288,"message":"📚 Son içerikler yüklendi"}
+{"level":"info","forum_sayısı":18,"time":1768991288,"message":"⚙️ Konfigürasyon yüklendi"}
+{"level":"info","time":1768991288,"message":"🧅 Tor client hazır"}
+{"level":"info","time":1768991289,"message":"✅ Elasticsearch bağlantısı başarılı"}
+{"level":"info","url":"http://93.127.202.112:9200/","index":"dark-web-monitor","time":1768991289,"message":"📊 Elasticsearch client hazır"}
+{"level":"info","time":1768991289,"message":"🛡️ FlareSolverr aktif - Cloudflare bypass hazır"}
+{"level":"info","time":1768991289,"message":"🌐 2 Chrome browser başlatıldı (Stealth Mode)"}
+{"level":"info","time":1768991289,"message":"⚡ Optimizasyon: Paralel yükleme + Cloudflare detection aktif"}
+{"level":"info","time":1768991289,"message":"🌐 2 Chrome browser hazır"}
+{"level":"info","time":1768991289,"message":"💾 RAM optimize: ~400MB (2 browser)"}
+{"level":"info","yüklenen_kayıt":100,"url_count":128,"time":1768991289,"message":"📚 Eski veriler başarıyla yüklendi"}
+{"level":"info","phase":"Başlangıç","alloc_mb":1,"total_alloc_mb":1,"sys_mb":11,"num_gc":0,"forum_data_count":100,"url_count":128,"time":1768991289,"message":"📊 Memory Stats"}
+{"level":"info","time":1768991289,"message":"🔍 İlk tarama döngüsü başlatılıyor..."}
+{"level":"info","batch":1,"toplam_batch":2,"site_sayısı":10,"time":1768991289,"message":"📦 Batch tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1768991289,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":1,"time":1768991289,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"darkforums","time":1768991289,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-accounts","time":1768991289,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"darkforums","deneme":1,"time":1768991289,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-accounts","deneme":1,"time":1768991289,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://darkforums.io/","max_süre":30000,"time":1768991289,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991289,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991289,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2002.8122,"kalan":27997.1878,"deneme":1,"time":1768991291,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2024.8503,"kalan":27975.1497,"deneme":1,"time":1768991291,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2303.8737,"kalan":27696.1263,"deneme":1,"time":1768991292,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":6,"süre":3529.9665,"time":1768991293,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":3529.9665,"time":1768991293,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","element_sayısı":1,"deneme":6,"süre":3809.86,"time":1768991293,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":3809.86,"time":1768991293,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-accounts","uzunluk":110,"süre":10124.205,"time":1768991299,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-accounts","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768991299,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","uzunluk":78,"süre":10144.3471,"time":1768991299,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768991299,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"4a8f788bb4e5e7635b23f459...","source":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768991299,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"4a8f788bb4e5e763...","time":1768991299,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-accounts","link":"","hash":"4a8f788bb4e5e763...","type":"forum-post","kayıt_no":101,"bellekteki_kayıt":100,"time":1768991299,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"xforums","time":1768991299,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"xforums","deneme":1,"time":1768991299,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","index":"dark-web-monitor","doc_id":"86fd0c4b7be8e7dcb5e647b3...","source":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768991299,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"86fd0c4b7be8e7dc...","time":1768991299,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","link":"","hash":"86fd0c4b7be8e7dc...","type":"forum-post","kayıt_no":102,"bellekteki_kayıt":100,"time":1768991299,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"hydra-database","time":1768991299,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"hydra-database","deneme":1,"time":1768991299,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","max_süre":30000,"time":1768991299,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://xforums.st/forums/database-log-pass-number-pass.34/","max_süre":30000,"time":1768991299,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2001.5143,"kalan":27998.4857,"deneme":1,"time":1768991301,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":12050.4754,"kalan":17949.5246,"deneme":34,"time":1768991301,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2708.407,"kalan":27291.593,"deneme":1,"time":1768991302,"message":"⏳ Element aranıyor..."}
+{"level":"debug","time":1768991305,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"hydra-database","time":1768991305,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","time":1768991305,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"info","element_sayısı":1,"deneme":22,"süre":9236.85,"time":1768991309,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":9236.85,"time":1768991309,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"xforums","uzunluk":120,"süre":9696.0814,"time":1768991309,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"xforums","url":"https://xforums.st/forums/database-log-pass-number-pass.34/","link":"/members/x-forum-bot.4252/","time":1768991309,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"247d3df59562463e2b5175e9...","source":"https://xforums.st/forums/database-log-pass-number-pass.34/","type":"forum-post","time":1768991309,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://xforums.st/forums/database-log-pass-number-pass.34/","type":"forum-post","hash":"247d3df59562463e...","time":1768991309,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"xforums","link":"/members/x-forum-bot.4252/","hash":"247d3df59562463e...","type":"forum-post","kayıt_no":103,"bellekteki_kayıt":100,"time":1768991309,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"crackingx-database","time":1768991309,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"crackingx-database","deneme":1,"time":1768991309,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://crackingx.com/forums/5/?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991309,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"hydra-database","deneme":1,"süre":10154.3147,"time":1768991309,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768991309,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"debug","geçen":22264.7259,"kalan":7735.2741,"deneme":68,"time":1768991312,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":4372.8177,"kalan":25627.1823,"deneme":1,"time":1768991314,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":2,"süre":4751.6696,"time":1768991314,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":4751.6696,"time":1768991314,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"crackingx-database","uzunluk":82,"süre":5187.0681,"time":1768991314,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"crackingx-database","url":"https://crackingx.com/forums/5/?sortby=started&order=desc&datecut=9999&prefix=0","link":"/forums/5/?prefix_id=1","time":1768991314,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","forum":"hydra-database","deneme":2,"time":1768991314,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","index":"dark-web-monitor","doc_id":"90ea3465ff95d2f0682fbce2...","source":"https://crackingx.com/forums/5/?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768991314,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://crackingx.com/forums/5/?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"90ea3465ff95d2f0...","time":1768991314,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"crackingx-database","link":"/forums/5/?prefix_id=1","hash":"90ea3465ff95d2f0...","type":"forum-post","kayıt_no":104,"bellekteki_kayıt":100,"time":1768991314,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"crackingx-accounts","time":1768991314,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"crackingx-accounts","deneme":1,"time":1768991314,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","max_süre":30000,"time":1768991315,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://crackingx.com/forums/17/?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991315,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2561.6927,"kalan":27438.3073,"deneme":1,"time":1768991317,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2828.2992,"kalan":27171.7008,"deneme":1,"time":1768991317,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":3,"süre":3471.0082,"time":1768991318,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":3471.5474,"time":1768991318,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"crackingx-accounts","uzunluk":48,"süre":4027.9739,"time":1768991318,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"crackingx-accounts","url":"https://crackingx.com/forums/17/?sortby=started&order=desc&datecut=9999&prefix=0","link":"/threads/63031/","time":1768991318,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"d988c418a5237a102eb534f1...","source":"https://crackingx.com/forums/17/?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768991318,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://crackingx.com/forums/17/?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"d988c418a5237a10...","time":1768991318,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"crackingx-accounts","link":"/threads/63031/","hash":"d988c418a5237a10...","type":"forum-post","kayıt_no":105,"bellekteki_kayıt":100,"time":1768991318,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"niflhemim-account","time":1768991318,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"niflhemim-account","deneme":1,"time":1768991318,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://niflheim.world/forums/accounts.8/","max_süre":30000,"time":1768991319,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"warn","selector":"#general > div > div:nth-child(1)","toplam_deneme":93,"toplam_süre":30081.4011,"time":1768991319,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #general > div > div:nth-child(1) - element 30s sürede bulunamadı","forum":"darkforums","deneme":1,"süre":30737.3154,"time":1768991319,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768991319,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"debug","time":1768991320,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"hydra-database","time":1768991320,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","time":1768991320,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"debug","geçen":2421.1931,"kalan":27578.8069,"deneme":1,"time":1768991321,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":4,"süre":3327.5063,"time":1768991322,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":3327.5063,"time":1768991322,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"niflhemim-account","uzunluk":128,"süre":3797.6996,"time":1768991322,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"niflhemim-account","url":"https://niflheim.world/forums/accounts.8/","link":"/members/monkeybase.47713/","time":1768991322,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"a1a107bf3b8d8e13b2f5e6c2...","source":"https://niflheim.world/forums/accounts.8/","type":"forum-post","time":1768991322,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://niflheim.world/forums/accounts.8/","type":"forum-post","hash":"a1a107bf3b8d8e13...","time":1768991322,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"niflhemim-account","link":"/members/monkeybase.47713/","hash":"a1a107bf3b8d8e13...","type":"forum-post","kayıt_no":106,"bellekteki_kayıt":100,"time":1768991322,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"breachforums-database","time":1768991322,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","deneme":1,"time":1768991322,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991323,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"hydra-database","deneme":2,"süre":10132.9091,"time":1768991324,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":10000,"time":1768991324,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","forum":"darkforums","deneme":2,"time":1768991324,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://darkforums.io/","max_süre":30000,"time":1768991325,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2592.9426,"kalan":27407.0574,"deneme":1,"time":1768991325,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":4,"süre":3496.4082,"time":1768991326,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":3496.9349,"time":1768991326,"message":"🏁 Yükleme tamamlandı"}
+{"level":"debug","geçen":2000.7397,"kalan":27999.2603,"deneme":1,"time":1768991327,"message":"⏳ Element aranıyor..."}
+{"level":"debug","time":1768991330,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"darkforums","time":1768991330,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://darkforums.io/","time":1768991330,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"info","forum":"breachforums-database","uzunluk":106,"süre":10150.6479,"time":1768991333,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-database","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768991333,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"1669481fb8316868938e297b...","source":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768991333,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"1669481fb8316868...","time":1768991333,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-database","link":"","hash":"1669481fb8316868...","type":"forum-post","kayıt_no":107,"bellekteki_kayıt":100,"time":1768991333,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"breachforums-combolist","time":1768991333,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","deneme":1,"time":1768991333,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991333,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","forum":"hydra-database","deneme":3,"time":1768991334,"message":"🔄 Tarama başlatılıyor"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"darkforums","deneme":2,"süre":10196.2757,"time":1768991335,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":10000,"time":1768991335,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","max_süre":30000,"time":1768991335,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2588.0694,"kalan":27411.9306,"deneme":1,"time":1768991337,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":6788.7781,"kalan":23211.2219,"deneme":1,"time":1768991340,"message":"⏳ Element aranıyor..."}
+{"level":"debug","time":1768991340,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"hydra-database","time":1768991340,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","time":1768991340,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"info","element_sayısı":1,"deneme":8,"süre":8909.5974,"time":1768991342,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":8909.5974,"time":1768991342,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-combolist","uzunluk":93,"süre":10191.1496,"time":1768991343,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-combolist","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768991343,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"d039e777d1bfad4038c784da...","source":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768991343,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"d039e777d1bfad40...","time":1768991343,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-combolist","link":"","hash":"d039e777d1bfad40...","type":"forum-post","kayıt_no":108,"bellekteki_kayıt":100,"time":1768991343,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"hydra-database","deneme":3,"süre":10104.4395,"time":1768991344,"message":"⚠️ Deneme başarısız"}
+{"level":"error","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"hydra-database","time":1768991344,"message":"❌ Tarama başarısız"}
+{"level":"error","error":"tüm denemeler başarısız: FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"hydra-database","time":1768991344,"message":"❌ Tarama başarısız"}
+{"level":"info","forum":"darkforums","deneme":3,"time":1768991345,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://darkforums.io/","max_süre":30000,"time":1768991345,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2000.5953,"kalan":27999.4047,"deneme":1,"time":1768991347,"message":"⏳ Element aranıyor..."}
+{"level":"debug","time":1768991350,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"darkforums","time":1768991350,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://darkforums.io/","time":1768991350,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"info","url":"https://darkforums.io/","html_uzunluk":200430,"süre":2957.0718,"time":1768991353,"message":"✅ FlareSolverr başarılı"}
+{"level":"info","selector":".tborder tr","time":1768991353,"message":"✅ Alternatif selector ile element bulundu"}
+{"level":"warn","content_preview":"Home","time":1768991353,"message":"İçerik geçersiz (pagination veya nav olabilir)"}
+{"level":"debug","selector":".tborder tr","content_len":28,"link":"Thread-Admin-DarkForums-Archive-Telegram-Channel?action=lastpost","author":"","time":1768991353,"message":"HTML parse sonucu"}
+{"level":"info","forum":"darkforums","uzunluk":28,"time":1768991353,"message":"✅ FlareSolverr ile veri çekildi"}
+{"level":"info","forum":"darkforums","uzunluk":28,"süre":8184.6128,"time":1768991353,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"darkforums","url":"https://darkforums.io/","link":"Thread-Admin-DarkForums-Archive-Telegram-Channel?action=lastpost","önizleme":"DarkForums Archive Telegr...","time":1768991353,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","bekleme":80000,"time":1768991353,"message":"⏸️ Sonraki batch için bekleniyor"}
+{"level":"info","batch":2,"toplam_batch":2,"site_sayısı":8,"time":1768991433,"message":"📦 Batch tarama başlatılıyor"}
+{"level":"info","forum":"darkforums-Databases","time":1768991433,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"xreactor","time":1768991433,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"niflhemim-combolist","time":1768991433,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"darkforums-Databases","deneme":1,"time":1768991433,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"xreactor","deneme":1,"time":1768991433,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"niflhemim-combolist","deneme":1,"time":1768991433,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://darkforums.io/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991433,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://xreactor.org/#tab-1","max_süre":30000,"time":1768991433,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://niflheim.world/forums/combolist.2/","max_süre":30000,"time":1768991433,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2001.9962,"kalan":27998.0038,"deneme":1,"time":1768991435,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":20,"deneme":2,"süre":2351.5425,"time":1768991436,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":2351.5425,"time":1768991436,"message":"🏁 Yükleme tamamlandı"}
+{"level":"debug","geçen":2507.1966,"kalan":27492.8034,"deneme":1,"time":1768991436,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":3130.7581,"kalan":26869.2419,"deneme":1,"time":1768991436,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":4,"süre":3410.0539,"time":1768991437,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":3410.0539,"time":1768991437,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"niflhemim-combolist","uzunluk":149,"süre":4028.6254,"time":1768991437,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"niflhemim-combolist","url":"https://niflheim.world/forums/combolist.2/","link":"/members/robimayne50.51786/","time":1768991437,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"2a6a461ff75d9ad7124e2222...","source":"https://niflheim.world/forums/combolist.2/","type":"forum-post","time":1768991437,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://niflheim.world/forums/combolist.2/","type":"forum-post","hash":"2a6a461ff75d9ad7...","time":1768991437,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"niflhemim-combolist","link":"/members/robimayne50.51786/","hash":"2a6a461ff75d9ad7...","type":"forum-post","kayıt_no":109,"bellekteki_kayıt":100,"time":1768991437,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"patched-combolist","time":1768991437,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"patched-combolist","deneme":1,"time":1768991437,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://patched.to/Forum-combolist?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991437,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","element_sayısı":1,"deneme":1,"süre":2101.947,"time":1768991439,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":2101.947,"time":1768991439,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"darkforums-Databases","uzunluk":19,"süre":10129.4061,"time":1768991443,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"darkforums-Databases","url":"https://darkforums.io/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768991443,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"9361b0024f9e7104f7e5ae92...","source":"https://darkforums.io/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768991443,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://darkforums.io/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"9361b0024f9e7104...","time":1768991443,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"darkforums-Databases","link":"","hash":"9361b0024f9e7104...","type":"forum-post","kayıt_no":110,"bellekteki_kayıt":100,"time":1768991443,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"darkforums-Combolists","time":1768991443,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"darkforums-Combolists","deneme":1,"time":1768991443,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://darkforums.io/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991443,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2001.4852,"kalan":27998.5148,"deneme":1,"time":1768991445,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":13378.3484,"kalan":16621.6516,"deneme":35,"time":1768991447,"message":"⏳ Element aranıyor..."}
+{"level":"info","forum":"patched-combolist","uzunluk":51,"süre":10143.3555,"time":1768991447,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"patched-combolist","url":"https://patched.to/Forum-combolist?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768991447,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"981d2625a606fc4412f22039...","source":"https://patched.to/Forum-combolist?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768991447,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://patched.to/Forum-combolist?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"981d2625a606fc44...","time":1768991447,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"patched-combolist","link":"","hash":"981d2625a606fc44...","type":"forum-post","kayıt_no":111,"bellekteki_kayıt":100,"time":1768991447,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"darkforums-Stealer-Logs","time":1768991447,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"darkforums-Stealer-Logs","deneme":1,"time":1768991447,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://darkforums.io/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991448,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","time":1768991448,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"darkforums-Combolists","time":1768991448,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://darkforums.io/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","time":1768991448,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"debug","geçen":2084.9066,"kalan":27915.0934,"deneme":1,"time":1768991450,"message":"⏳ Element aranıyor..."}
+{"level":"info","url":"https://darkforums.io/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","html_uzunluk":82363,"süre":2387.2473,"time":1768991451,"message":"✅ FlareSolverr başarılı"}
+{"level":"warn","content_preview":"19.01.26 Hotmail Unique Combo_13_20000","time":1768991451,"message":"İçerik geçersiz (pagination veya nav olabilir)"}
+{"level":"debug","selector":"tr.inline_row span.subject_new a","content_len":38,"link":"","author":"","time":1768991451,"message":"HTML parse sonucu"}
+{"level":"info","forum":"darkforums-Combolists","uzunluk":38,"time":1768991451,"message":"✅ FlareSolverr ile veri çekildi"}
+{"level":"info","forum":"darkforums-Combolists","uzunluk":38,"süre":7771.8115,"time":1768991451,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"darkforums-Combolists","url":"https://darkforums.io/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768991451,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"0c25fac7bbaea7cc18aceec6...","source":"https://darkforums.io/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768991451,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://darkforums.io/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"0c25fac7bbaea7cc...","time":1768991451,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"darkforums-Combolists","link":"","hash":"0c25fac7bbaea7cc...","type":"forum-post","kayıt_no":112,"bellekteki_kayıt":100,"time":1768991451,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"leakzone-databases","time":1768991451,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"leakzone-databases","deneme":1,"time":1768991451,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://leakzone.net/forumdisplay.php?fid=20&sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991451,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","time":1768991452,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"darkforums-Stealer-Logs","time":1768991452,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://darkforums.io/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","time":1768991452,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"debug","geçen":2001.2737,"kalan":27998.7263,"deneme":1,"time":1768991453,"message":"⏳ Element aranıyor..."}
+{"level":"info","url":"https://darkforums.io/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","html_uzunluk":84782,"süre":2247.9748,"time":1768991455,"message":"✅ FlareSolverr başarılı"}
+{"level":"info","selector":"tr.inline_row","time":1768991455,"message":"✅ Alternatif selector ile element bulundu"}
+{"level":"warn","content_preview":"AlienTXT Base 562GB Download Torrent","time":1768991455,"message":"İçerik geçersiz (pagination veya nav olabilir)"}
+{"level":"debug","selector":"tr.inline_row","content_len":51,"link":"Thread-%F0%9F%93%97-FATETRAFFIC-1885-MIX-21-01-2025-STEALER-LOGS?action=newpost","author":"fatetraffic","time":1768991455,"message":"HTML parse sonucu"}
+{"level":"info","forum":"darkforums-Stealer-Logs","uzunluk":51,"time":1768991455,"message":"✅ FlareSolverr ile veri çekildi"}
+{"level":"info","forum":"darkforums-Stealer-Logs","uzunluk":51,"süre":7534.1463,"time":1768991455,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"darkforums-Stealer-Logs","url":"https://darkforums.io/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","link":"Thread-%F0%9F%93%97-FATETRAFFIC-1885-MIX-21-01-2025-STEALER-LOGS?action=newpost","time":1768991455,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"cdb13daf08690177e782c27c...","source":"https://darkforums.io/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768991455,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://darkforums.io/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"cdb13daf08690177...","time":1768991455,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"darkforums-Stealer-Logs","link":"Thread-%F0%9F%93%97-FATETRAFFIC-1885-MIX-21-01-2025-STEALER-LOGS?action=newpost","hash":"cdb13daf08690177...","type":"forum-post","kayıt_no":113,"bellekteki_kayıt":100,"time":1768991455,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"patched-accounts","time":1768991455,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"patched-accounts","deneme":1,"time":1768991455,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://patched.to/Forum-accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991455,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","time":1768991456,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"leakzone-databases","time":1768991456,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://leakzone.net/forumdisplay.php?fid=20&sortby=started&order=desc&datecut=9999&prefix=0","time":1768991456,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"debug","geçen":23599.4894,"kalan":6400.5106,"deneme":69,"time":1768991457,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":1,"süre":2001.8895,"time":1768991457,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":2001.8895,"time":1768991457,"message":"🏁 Yükleme tamamlandı"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"leakzone-databases","deneme":1,"süre":10161.0657,"time":1768991461,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768991461,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"debug","error":"page load error net::ERR_HTTP_RESPONSE_CODE_FAILURE","time":1768991464,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#tab-1 > div > div > ul > li:nth-child(1)","toplam_deneme":90,"toplam_süre":30211.3982,"time":1768991464,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #tab-1 > div > div > ul > li:nth-child(1) - element 30s sürede bulunamadı","forum":"xreactor","deneme":1,"süre":30706.9538,"time":1768991464,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768991464,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","forum":"patched-accounts","uzunluk":66,"süre":10124.5539,"time":1768991465,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"patched-accounts","url":"https://patched.to/Forum-accounts?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768991465,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"65203a2981f67c704dc1ca9e...","source":"https://patched.to/Forum-accounts?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768991465,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://patched.to/Forum-accounts?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"65203a2981f67c70...","time":1768991465,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"patched-accounts","link":"","hash":"65203a2981f67c70...","type":"forum-post","kayıt_no":114,"bellekteki_kayıt":100,"time":1768991465,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"leakzone-databases","deneme":2,"time":1768991466,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://leakzone.net/forumdisplay.php?fid=20&sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991467,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2001.237,"kalan":27998.763,"deneme":1,"time":1768991469,"message":"⏳ Element aranıyor..."}
+{"level":"info","forum":"xreactor","deneme":2,"time":1768991469,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://xreactor.org/#tab-1","max_süre":30000,"time":1768991469,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","element_sayısı":1,"deneme":6,"süre":3563.252,"time":1768991470,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":3563.252,"time":1768991470,"message":"🏁 Yükleme tamamlandı"}
+{"level":"debug","geçen":5462.5305,"kalan":24537.4695,"deneme":1,"time":1768991474,"message":"⏳ Element aranıyor..."}
+{"level":"info","forum":"leakzone-databases","uzunluk":36,"süre":10115.5435,"time":1768991476,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"leakzone-databases","url":"https://leakzone.net/forumdisplay.php?fid=20&sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768991476,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"2ee07f8febc5f207a09ea0f7...","source":"https://leakzone.net/forumdisplay.php?fid=20&sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768991476,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://leakzone.net/forumdisplay.php?fid=20&sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"2ee07f8febc5f207...","time":1768991476,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"leakzone-databases","link":"","hash":"2ee07f8febc5f207...","type":"forum-post","kayıt_no":115,"bellekteki_kayıt":100,"time":1768991476,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"debug","geçen":15698.5194,"kalan":14301.4806,"deneme":35,"time":1768991485,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":25918.8594,"kalan":4081.1406,"deneme":69,"time":1768991495,"message":"⏳ Element aranıyor..."}
+{"level":"debug","error":"page load error net::ERR_HTTP_RESPONSE_CODE_FAILURE","time":1768991499,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#tab-1 > div > div > ul > li:nth-child(1)","toplam_deneme":82,"toplam_süre":30131.4823,"time":1768991499,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #tab-1 > div > div > ul > li:nth-child(1) - element 30s sürede bulunamadı","forum":"xreactor","deneme":2,"süre":30476.7172,"time":1768991499,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":10000,"time":1768991499,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","forum":"xreactor","deneme":3,"time":1768991509,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://xreactor.org/#tab-1","max_süre":30000,"time":1768991509,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2811.612,"kalan":27188.388,"deneme":1,"time":1768991512,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":13099.914,"kalan":16900.086,"deneme":35,"time":1768991523,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":23319.1422,"kalan":6680.8578,"deneme":69,"time":1768991533,"message":"⏳ Element aranıyor..."}
+{"level":"debug","error":"page load error net::ERR_HTTP_RESPONSE_CODE_FAILURE","time":1768991540,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#tab-1 > div > div > ul > li:nth-child(1)","toplam_deneme":91,"toplam_süre":30237.1607,"time":1768991540,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #tab-1 > div > div > ul > li:nth-child(1) - element 30s sürede bulunamadı","forum":"xreactor","deneme":3,"süre":30705.4572,"time":1768991540,"message":"⚠️ Deneme başarısız"}
+{"level":"error","error":"element bulunamadı: #tab-1 > div > div > ul > li:nth-child(1) - element 30s sürede bulunamadı","forum":"xreactor","time":1768991540,"message":"❌ Tarama başarısız"}
+{"level":"error","error":"tüm denemeler başarısız: element bulunamadı: #tab-1 > div > div > ul > li:nth-child(1) - element 30s sürede bulunamadı","forum":"xreactor","time":1768991540,"message":"❌ Tarama başarısız"}
+{"level":"info","toplam_kayıt":100,"dosya":"C:\\Users\\oibis\\OneDrive\\Masaüstü\\dark-deep-new-tool\\output\\data.json","time":1768991540,"message":"💾 Veriler başarıyla kaydedildi"}
+{"level":"info","url_count":128,"time":1768991540,"message":"💾 Son içerikler kaydedildi"}
+{"level":"info","önceki_kayıt":100,"şimdiki_kayıt":100,"time":1768991540,"message":"🧹 Cleanup tamamlandı"}
+{"level":"info","time":1768991540,"message":"♻️ Garbage collection çalıştırıldı"}
+{"level":"info","time":1768991540,"message":"✅ İlk tarama döngüsü tamamlandı"}
+{"level":"info","time":1768991540,"message":"⏰ Yeni tarama döngüsü başlatılıyor..."}
+{"level":"info","batch":1,"toplam_batch":2,"site_sayısı":10,"time":1768991540,"message":"📦 Batch tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-accounts","time":1768991540,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-accounts","deneme":1,"time":1768991540,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1768991540,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","time":1768991540,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":1,"time":1768991540,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","deneme":1,"time":1768991540,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991540,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991540,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991540,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2004.03,"kalan":27995.97,"deneme":1,"time":1768991542,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2301.0595,"kalan":27698.9405,"deneme":1,"time":1768991543,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2474.8956,"kalan":27525.1044,"deneme":1,"time":1768991543,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":4,"süre":2948.7268,"time":1768991543,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":2948.7268,"time":1768991543,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","element_sayısı":1,"deneme":4,"süre":3451.3121,"time":1768991544,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":3451.3121,"time":1768991544,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","element_sayısı":1,"deneme":5,"süre":3549.7434,"time":1768991544,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":3550.2981,"time":1768991544,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-combolist","uzunluk":93,"süre":10242.7672,"time":1768991550,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","uzunluk":78,"süre":10244.5,"time":1768991550,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-combolist","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","link":"","önizleme":"H@TM21L BY @N_WTN by PISTOOL, Yesterday,...","time":1768991550,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","forum":"breachforums-database","time":1768991550,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","deneme":1,"time":1768991550,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","link":"","önizleme":"740GB ULP & Logs by cry0x, 2 hours ago 3...","time":1768991550,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","forum":"hydra-database","time":1768991550,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"hydra-database","deneme":1,"time":1768991550,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-accounts","uzunluk":110,"süre":10264.4296,"time":1768991550,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-accounts","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768991550,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"7c6fc50eda88a9ec70c868c4...","source":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768991550,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"7c6fc50eda88a9ec...","time":1768991550,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-accounts","link":"","hash":"7c6fc50eda88a9ec...","type":"forum-post","kayıt_no":116,"bellekteki_kayıt":100,"time":1768991550,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"darkforums","time":1768991550,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"darkforums","deneme":1,"time":1768991550,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991551,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","max_süre":30000,"time":1768991551,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://darkforums.io/","max_süre":30000,"time":1768991551,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2007.7702,"kalan":27992.2298,"deneme":1,"time":1768991553,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2001.8403,"kalan":27998.1597,"deneme":1,"time":1768991553,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2616.6808,"kalan":27383.3192,"deneme":1,"time":1768991553,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":4,"süre":2922.5532,"time":1768991553,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":2922.5532,"time":1768991553,"message":"🏁 Yükleme tamamlandı"}
+{"level":"debug","time":1768991556,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"darkforums","time":1768991556,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://darkforums.io/","time":1768991556,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"debug","time":1768991556,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"hydra-database","time":1768991556,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","time":1768991556,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"info","url":"https://darkforums.io/","html_uzunluk":199959,"süre":3320.2501,"time":1768991559,"message":"✅ FlareSolverr başarılı"}
+{"level":"info","selector":".tborder tr","time":1768991559,"message":"✅ Alternatif selector ile element bulundu"}
+{"level":"warn","content_preview":"Home","time":1768991559,"message":"İçerik geçersiz (pagination veya nav olabilir)"}
+{"level":"debug","selector":".tborder tr","content_len":28,"link":"Thread-Admin-DarkForums-Archive-Telegram-Channel?action=lastpost","author":"","time":1768991559,"message":"HTML parse sonucu"}
+{"level":"info","forum":"darkforums","uzunluk":28,"time":1768991559,"message":"✅ FlareSolverr ile veri çekildi"}
+{"level":"info","forum":"darkforums","uzunluk":28,"süre":8830.7811,"time":1768991559,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"darkforums","url":"https://darkforums.io/","link":"Thread-Admin-DarkForums-Archive-Telegram-Channel?action=lastpost","önizleme":"DarkForums Archive Telegr...","time":1768991559,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","forum":"xforums","time":1768991559,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"xforums","deneme":1,"time":1768991559,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://xforums.st/forums/database-log-pass-number-pass.34/","max_süre":30000,"time":1768991559,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"hydra-database","deneme":1,"süre":10132.9441,"time":1768991560,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768991560,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","forum":"breachforums-database","uzunluk":106,"süre":10139.4304,"time":1768991560,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-database","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768991560,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"5fc035979c13c0728356c838...","source":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768991560,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"5fc035979c13c072...","time":1768991560,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-database","link":"","hash":"5fc035979c13c072...","type":"forum-post","kayıt_no":117,"bellekteki_kayıt":100,"time":1768991560,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"crackingx-accounts","time":1768991560,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"crackingx-accounts","deneme":1,"time":1768991560,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://crackingx.com/forums/17/?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991561,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2001.0775,"kalan":27998.9225,"deneme":1,"time":1768991561,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2771.3618,"kalan":27228.6382,"deneme":1,"time":1768991563,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":3,"süre":3373.4763,"time":1768991564,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":3374.0155,"time":1768991564,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"crackingx-accounts","uzunluk":48,"süre":3745.5331,"time":1768991564,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"crackingx-accounts","url":"https://crackingx.com/forums/17/?sortby=started&order=desc&datecut=9999&prefix=0","link":"/threads/63031/","önizleme":"MALWAREBYTES PREMİUM foxsunday Today at...","time":1768991564,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","forum":"crackingx-database","time":1768991564,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"crackingx-database","deneme":1,"time":1768991564,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://crackingx.com/forums/5/?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768991564,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","forum":"hydra-database","deneme":2,"time":1768991565,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","max_süre":30000,"time":1768991565,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2604.1762,"kalan":27395.8238,"deneme":1,"time":1768991568,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":20,"süre":8736.882,"time":1768991568,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":8736.882,"time":1768991568,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"xforums","uzunluk":120,"süre":9210.4302,"time":1768991568,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"xforums","url":"https://xforums.st/forums/database-log-pass-number-pass.34/","link":"/members/x-forum-bot.4252/","önizleme":"Log:Pass [ bezvbv.net-17-272 ] By XForum...","time":1768991568,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","forum":"niflhemim-account","time":1768991568,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"niflhemim-account","deneme":1,"time":1768991568,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://niflheim.world/forums/accounts.8/","max_süre":30000,"time":1768991568,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":4808.8164,"kalan":25191.1836,"deneme":1,"time":1768991569,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":2,"süre":5236.3876,"time":1768991570,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":5236.3876,"time":1768991570,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"crackingx-database","uzunluk":83,"süre":5628.8462,"time":1768991570,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"crackingx-database","url":"https://crackingx.com/forums/5/?sortby=started&order=desc&datecut=9999&prefix=0","link":"/forums/5/?prefix_id=1","önizleme":"Email:Pass 439.507 Lines ✅ Combolist F...","time":1768991570,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"debug","time":1768991571,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"hydra-database","time":1768991571,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","time":1768991571,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"debug","geçen":2491.6943,"kalan":27508.3057,"deneme":1,"time":1768991571,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":4,"süre":3394.8383,"time":1768991572,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":3394.8383,"time":1768991572,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"niflhemim-account","uzunluk":128,"süre":3807.0009,"time":1768991572,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"niflhemim-account","url":"https://niflheim.world/forums/accounts.8/","link":"/members/monkeybase.47713/","önizleme":"STREAMING ✅⭐️WORDPRESS✅⭐️URL...","time":1768991572,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"hydra-database","deneme":2,"süre":10118.689,"time":1768991575,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":10000,"time":1768991575,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","forum":"hydra-database","deneme":3,"time":1768991585,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","max_süre":30000,"time":1768991586,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2557.6068,"kalan":27442.3932,"deneme":1,"time":1768991588,"message":"⏳ Element aranıyor..."}
+{"level":"debug","time":1768991591,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"hydra-database","time":1768991591,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","time":1768991591,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"hydra-database","deneme":3,"süre":10161.1278,"time":1768991595,"message":"⚠️ Deneme başarısız"}
+{"level":"error","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"hydra-database","time":1768991595,"message":"❌ Tarama başarısız"}
+{"level":"error","error":"tüm denemeler başarısız: FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"hydra-database","time":1768991595,"message":"❌ Tarama başarısız"}
+{"level":"info","bekleme":80000,"time":1768991595,"message":"⏸️ Sonraki batch için bekleniyor"}
+{"level":"info","time":1768993346,"message":"🚀 Program başlatıldı"}
+{"level":"info","time":1768993346,"message":"📋 İçerik karşılaştırma sistemi başlatıldı (SHA-256 Hash)"}
+{"level":"info","yüklenen_url":128,"time":1768993346,"message":"📚 Son içerikler yüklendi"}
+{"level":"info","forum_sayısı":18,"time":1768993346,"message":"⚙️ Konfigürasyon yüklendi"}
+{"level":"info","time":1768993346,"message":"🧅 Tor client hazır"}
+{"level":"info","time":1768993346,"message":"✅ Elasticsearch bağlantısı başarılı"}
+{"level":"info","url":"http://93.127.202.112:9200/","index":"dark-web-monitor","time":1768993346,"message":"📊 Elasticsearch client hazır"}
+{"level":"info","time":1768993346,"message":"🛡️ FlareSolverr aktif - Cloudflare bypass hazır"}
+{"level":"info","time":1768993346,"message":"🌐 2 Chrome browser başlatıldı (Stealth Mode)"}
+{"level":"info","time":1768993346,"message":"⚡ Optimizasyon: Paralel yükleme + Cloudflare detection aktif"}
+{"level":"info","time":1768993346,"message":"🌐 2 Chrome browser hazır"}
+{"level":"info","time":1768993346,"message":"💾 RAM optimize: ~400MB (2 browser)"}
+{"level":"info","yüklenen_kayıt":100,"url_count":128,"time":1768993346,"message":"📚 Eski veriler başarıyla yüklendi"}
+{"level":"info","phase":"Başlangıç","alloc_mb":1,"total_alloc_mb":1,"sys_mb":10,"num_gc":0,"forum_data_count":100,"url_count":128,"time":1768993346,"message":"📊 Memory Stats"}
+{"level":"info","time":1768993346,"message":"🔍 İlk tarama döngüsü başlatılıyor..."}
+{"level":"info","batch":1,"toplam_batch":2,"site_sayısı":10,"time":1768993346,"message":"📦 Batch tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","time":1768993346,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","deneme":1,"time":1768993346,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1768993346,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":1,"time":1768993346,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"xforums","time":1768993346,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"xforums","deneme":1,"time":1768993346,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768993347,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://xforums.st/forums/database-log-pass-number-pass.34/","max_süre":30000,"time":1768993347,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768993347,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":9412.6339,"kalan":20587.3661,"deneme":1,"time":1768993356,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":9507.1312,"kalan":20492.8688,"deneme":1,"time":1768993356,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":9507.1312,"kalan":20492.8688,"deneme":1,"time":1768993356,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":19626.1675,"kalan":10373.8325,"deneme":35,"time":1768993366,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":19718.7152,"kalan":10281.2848,"deneme":35,"time":1768993366,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":19721.8822,"kalan":10278.1178,"deneme":35,"time":1768993366,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":29837.2633,"kalan":162.7367,"deneme":69,"time":1768993376,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":29929.8651,"kalan":70.1349,"deneme":69,"time":1768993377,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":29933.9845,"kalan":66.0155,"deneme":69,"time":1768993377,"message":"⏳ Element aranıyor..."}
+{"level":"debug","error":"context deadline exceeded","time":1768993377,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#content > table.tborder.clear > tbody > tr:nth-child(14)","toplam_deneme":69,"toplam_süre":30137.4269,"time":1768993377,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #content > table.tborder.clear > tbody > tr:nth-child(14) - element 30s sürede bulunamadı","forum":"breachforums-database","deneme":1,"süre":30668.4425,"time":1768993377,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768993377,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"debug","error":"context deadline exceeded","time":1768993377,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#content > table.tborder.clear > tbody > tr:nth-child(7)","toplam_deneme":69,"toplam_süre":30230.1786,"time":1768993377,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #content > table.tborder.clear > tbody > tr:nth-child(7) - element 30s sürede bulunamadı","forum":"breachforums-Stealer-Logs","deneme":1,"süre":30723.5803,"time":1768993377,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768993377,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"debug","error":"context deadline exceeded","time":1768993377,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#top > div.p-body-inner > div.p-body-main.is-active > div.p-body-content.is-active > div > div > div.block-container.block-container--nodes > div.block-body > div > div > div.structItem:nth-child(1)","toplam_deneme":69,"toplam_süre":30234.3521,"time":1768993377,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #top > div.p-body-inner > div.p-body-main.is-active > div.p-body-content.is-active > div > div > div.block-container.block-container--nodes > div.block-body > div > div > div.structItem:nth-child(1) - element 30s sürede bulunamadı","forum":"xforums","deneme":1,"süre":30727.7538,"time":1768993377,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768993377,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","forum":"breachforums-database","deneme":2,"time":1768993382,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":2,"time":1768993382,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"xforums","deneme":2,"time":1768993382,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768993382,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768993382,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://xforums.st/forums/database-log-pass-number-pass.34/","max_süre":30000,"time":1768993382,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":6326.5926,"kalan":23673.4074,"deneme":1,"time":1768993389,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":7261.3066,"kalan":22738.6934,"deneme":1,"time":1768993390,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":5,"süre":8466.3467,"time":1768993391,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":8466.3467,"time":1768993391,"message":"🏁 Yükleme tamamlandı"}
+{"level":"debug","geçen":9467.5512,"kalan":20532.4488,"deneme":1,"time":1768993392,"message":"⏳ Element aranıyor..."}
+{"level":"info","forum":"breachforums-Stealer-Logs","uzunluk":78,"süre":10149.5073,"time":1768993392,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768993392,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"afdefc43d444b865e591a4ef...","source":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768993392,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"afdefc43d444b865...","time":1768993392,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","link":"","hash":"afdefc43d444b865...","type":"forum-post","kayıt_no":101,"bellekteki_kayıt":100,"time":1768993392,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"breachforums-combolist","time":1768993392,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","deneme":1,"time":1768993392,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768993392,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":16545.2676,"kalan":13454.7324,"deneme":35,"time":1768993399,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":19681.2453,"kalan":10318.7547,"deneme":35,"time":1768993402,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":9707.758,"kalan":20292.242,"deneme":1,"time":1768993402,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":26758.4667,"kalan":3241.5333,"deneme":69,"time":1768993409,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":29893.1487,"kalan":106.8513,"deneme":69,"time":1768993412,"message":"⏳ Element aranıyor..."}
+{"level":"debug","error":"context deadline exceeded","time":1768993412,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#content > table.tborder.clear > tbody > tr:nth-child(14)","toplam_deneme":79,"toplam_süre":30062.5861,"time":1768993412,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #content > table.tborder.clear > tbody > tr:nth-child(14) - element 30s sürede bulunamadı","forum":"breachforums-database","deneme":2,"süre":30545.1708,"time":1768993412,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":10000,"time":1768993412,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"debug","geçen":19921.5773,"kalan":10078.4227,"deneme":35,"time":1768993412,"message":"⏳ Element aranıyor..."}
+{"level":"debug","error":"context deadline exceeded","time":1768993413,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#top > div.p-body-inner > div.p-body-main.is-active > div.p-body-content.is-active > div > div > div.block-container.block-container--nodes > div.block-body > div > div > div.structItem:nth-child(1)","toplam_deneme":69,"toplam_süre":30193.4645,"time":1768993413,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #top > div.p-body-inner > div.p-body-main.is-active > div.p-body-content.is-active > div > div > div.block-container.block-container--nodes > div.block-body > div > div > div.structItem:nth-child(1) - element 30s sürede bulunamadı","forum":"xforums","deneme":2,"süre":30726.8108,"time":1768993413,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":10000,"time":1768993413,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","forum":"breachforums-database","deneme":3,"time":1768993422,"message":"🔄 Tarama başlatılıyor"}
+{"level":"debug","error":"context deadline exceeded","time":1768993423,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#content > table.tborder.clear > tbody > tr:nth-child(7)","toplam_deneme":68,"toplam_süre":30135.0532,"time":1768993423,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #content > table.tborder.clear > tbody > tr:nth-child(7) - element 30s sürede bulunamadı","forum":"breachforums-combolist","deneme":1,"süre":30427.4374,"time":1768993423,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768993423,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","forum":"xforums","deneme":3,"time":1768993423,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768993423,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://xforums.st/forums/database-log-pass-number-pass.34/","max_süre":30000,"time":1768993423,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","forum":"breachforums-combolist","deneme":2,"time":1768993428,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768993428,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2001.8263,"kalan":27998.1737,"deneme":1,"time":1768993430,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":7894.5544,"kalan":22105.4456,"deneme":1,"time":1768993431,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":9650.4964,"kalan":20349.5036,"deneme":1,"time":1768993433,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":14,"süre":5920.022,"time":1768993434,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":5920.022,"time":1768993434,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-combolist","uzunluk":93,"süre":10104.2811,"time":1768993438,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-combolist","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768993438,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"75c61dc6003425f6a027251a...","source":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768993438,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"75c61dc6003425f6...","time":1768993438,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-combolist","link":"","hash":"75c61dc6003425f6...","type":"forum-post","kayıt_no":102,"bellekteki_kayıt":100,"time":1768993438,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"breachforums-accounts","time":1768993438,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-accounts","deneme":1,"time":1768993438,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768993438,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":18116.3552,"kalan":11883.6448,"deneme":35,"time":1768993441,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":19864.7522,"kalan":10135.2478,"deneme":35,"time":1768993443,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":9715.7335,"kalan":20284.2665,"deneme":1,"time":1768993448,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":28327.2885,"kalan":1672.7115,"deneme":69,"time":1768993451,"message":"⏳ Element aranıyor..."}
+{"level":"debug","error":"context deadline exceeded","time":1768993453,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#content > table.tborder.clear > tbody > tr:nth-child(14)","toplam_deneme":74,"toplam_süre":30129.3128,"time":1768993453,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #content > table.tborder.clear > tbody > tr:nth-child(14) - element 30s sürede bulunamadı","forum":"breachforums-database","deneme":3,"süre":30470.743,"time":1768993453,"message":"⚠️ Deneme başarısız"}
+{"level":"error","error":"element bulunamadı: #content > table.tborder.clear > tbody > tr:nth-child(14) - element 30s sürede bulunamadı","forum":"breachforums-database","time":1768993453,"message":"❌ Tarama başarısız"}
+{"level":"error","error":"tüm denemeler başarısız: element bulunamadı: #content > table.tborder.clear > tbody > tr:nth-child(14) - element 30s sürede bulunamadı","forum":"breachforums-database","time":1768993453,"message":"❌ Tarama başarısız"}
+{"level":"info","forum":"darkforums","time":1768993453,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"darkforums","deneme":1,"time":1768993453,"message":"🔄 Tarama başlatılıyor"}
+{"level":"debug","error":"context deadline exceeded","time":1768993453,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#top > div.p-body-inner > div.p-body-main.is-active > div.p-body-content.is-active > div > div > div.block-container.block-container--nodes > div.block-body > div > div > div.structItem:nth-child(1)","toplam_deneme":68,"toplam_süre":30077.8249,"time":1768993453,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #top > div.p-body-inner > div.p-body-main.is-active > div.p-body-content.is-active > div > div > div.block-container.block-container--nodes > div.block-body > div > div > div.structItem:nth-child(1) - element 30s sürede bulunamadı","forum":"xforums","deneme":3,"süre":30428.0875,"time":1768993453,"message":"⚠️ Deneme başarısız"}
+{"level":"error","error":"element bulunamadı: #top > div.p-body-inner > div.p-body-main.is-active > div.p-body-content.is-active > div > div > div.block-container.block-container--nodes > div.block-body > div > div > div.structItem:nth-child(1) - element 30s sürede bulunamadı","forum":"xforums","time":1768993453,"message":"❌ Tarama başarısız"}
+{"level":"error","error":"tüm denemeler başarısız: element bulunamadı: #top > div.p-body-inner > div.p-body-main.is-active > div.p-body-content.is-active > div > div > div.block-container.block-container--nodes > div.block-body > div > div > div.structItem:nth-child(1) - element 30s sürede bulunamadı","forum":"xforums","time":1768993453,"message":"❌ Tarama başarısız"}
+{"level":"info","forum":"crackingx-database","time":1768993453,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"crackingx-database","deneme":1,"time":1768993453,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://darkforums.io/","max_süre":30000,"time":1768993453,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://crackingx.com/forums/5/?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768993454,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":4073.1392,"kalan":25926.8608,"deneme":1,"time":1768993458,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":19927.1929,"kalan":10072.8071,"deneme":35,"time":1768993458,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":2,"süre":4503.3852,"time":1768993458,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":4503.8952,"time":1768993458,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"crackingx-database","uzunluk":70,"süre":5294.9733,"time":1768993458,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"crackingx-database","url":"https://crackingx.com/forums/5/?sortby=started&order=desc&datecut=9999&prefix=0","link":"/forums/5/?prefix_id=1","time":1768993458,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor","doc_id":"f7b5580966231fc6c2264f87...","source":"https://crackingx.com/forums/5/?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768993458,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://crackingx.com/forums/5/?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"f7b5580966231fc6...","time":1768993458,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"crackingx-database","link":"/forums/5/?prefix_id=1","hash":"f7b5580966231fc6...","type":"forum-post","kayıt_no":103,"bellekteki_kayıt":100,"time":1768993458,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"hydra-database","time":1768993458,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"hydra-database","deneme":1,"time":1768993458,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","max_süre":30000,"time":1768993459,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2566.0122,"kalan":27433.9878,"deneme":1,"time":1768993461,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":9360.2584,"kalan":20639.7416,"deneme":1,"time":1768993463,"message":"⏳ Element aranıyor..."}
+{"level":"debug","time":1768993464,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"hydra-database","time":1768993464,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","forum":"hydra-database","time":1768993464,"message":"🛡️ FlareSolverr ile Cloudflare bypass deneniyor..."}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","time":1768993464,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"debug","error":"context deadline exceeded","time":1768993468,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#content > table > tbody > tr:nth-child(7)","toplam_deneme":68,"toplam_süre":30151.6702,"time":1768993468,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #content > table > tbody > tr:nth-child(7) - element 30s sürede bulunamadı","forum":"breachforums-accounts","deneme":1,"süre":30436.7031,"time":1768993468,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768993468,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"warn","error":"FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"hydra-database","time":1768993468,"message":"⚠️ FlareSolverr başarısız (timeout veya hata)"}
+{"level":"info","forum":"hydra-database","time":1768993468,"message":"🔄 FlareSolverr başarısız, Chrome ile tekrar deneniyor..."}
+{"level":"debug","geçen":19569.7741,"kalan":10430.2259,"deneme":35,"time":1768993473,"message":"⏳ Element aranıyor..."}
+{"level":"info","forum":"breachforums-accounts","deneme":2,"time":1768993473,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://hydraforums.io/Forums-database-logs-combolist?sortby=started&order=desc&datecut=9999","max_süre":30000,"time":1768993473,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768993474,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2000.371,"kalan":27999.629,"deneme":1,"time":1768993475,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":29782.0499,"kalan":217.9501,"deneme":69,"time":1768993483,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":9700.1985,"kalan":20299.8015,"deneme":1,"time":1768993483,"message":"⏳ Element aranıyor..."}
+{"level":"debug","error":"context deadline exceeded","time":1768993484,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#general > div > div:nth-child(1)","toplam_deneme":69,"toplam_süre":30082.5222,"time":1768993484,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #general > div > div:nth-child(1) - element 30s sürede bulunamadı","forum":"darkforums","deneme":1,"süre":30723.1572,"time":1768993484,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768993484,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","time":1768994635,"message":"🚀 Program başlatıldı"}
+{"level":"info","time":1768994835,"message":"🚀 Program başlatıldı"}
+{"level":"info","time":1768994835,"message":"📋 İçerik karşılaştırma sistemi başlatıldı (SHA-256 Hash)"}
+{"level":"info","yüklenen_url":128,"time":1768994835,"message":"📚 Son içerikler yüklendi"}
+{"level":"info","forum_sayısı":4,"time":1768994835,"message":"⚙️ Konfigürasyon yüklendi"}
+{"level":"info","time":1768994835,"message":"🧅 Tor client hazır"}
+{"level":"info","time":1768994835,"message":"✅ Elasticsearch bağlantısı başarılı"}
+{"level":"info","url":"http://93.127.202.112:9200/","index":"dark-web-monitor-denemee","time":1768994835,"message":"📊 Elasticsearch client hazır"}
+{"level":"info","time":1768994836,"message":"🛡️ FlareSolverr aktif - Cloudflare bypass hazır"}
+{"level":"info","time":1768994836,"message":"🌐 2 Chrome browser başlatıldı (Stealth Mode)"}
+{"level":"info","time":1768994836,"message":"⚡ Optimizasyon: Paralel yükleme + Cloudflare detection aktif"}
+{"level":"info","time":1768994836,"message":"🌐 2 Chrome browser hazır"}
+{"level":"info","time":1768994836,"message":"💾 RAM optimize: ~400MB (2 browser)"}
+{"level":"info","yüklenen_kayıt":100,"url_count":128,"time":1768994836,"message":"📚 Eski veriler başarıyla yüklendi"}
+{"level":"info","phase":"Başlangıç","alloc_mb":2,"total_alloc_mb":2,"sys_mb":10,"num_gc":0,"forum_data_count":100,"url_count":128,"time":1768994836,"message":"📊 Memory Stats"}
+{"level":"info","time":1768994836,"message":"🔍 İlk tarama döngüsü başlatılıyor..."}
+{"level":"info","batch":1,"toplam_batch":1,"site_sayısı":4,"time":1768994836,"message":"📦 Batch tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","time":1768994836,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","deneme":1,"time":1768994836,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","time":1768994836,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1768994836,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":1,"time":1768994836,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","deneme":1,"time":1768994836,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768994836,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768994836,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768994836,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2003.963,"kalan":27996.037,"deneme":1,"time":1768994838,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2003.6317,"kalan":27996.3683,"deneme":1,"time":1768994838,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2197.4607,"kalan":27802.5393,"deneme":1,"time":1768994838,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":17,"süre":6848.1526,"time":1768994843,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":6848.6652,"time":1768994843,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","element_sayısı":1,"deneme":18,"süre":7147.7296,"time":1768994843,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":7147.7296,"time":1768994843,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","element_sayısı":1,"deneme":17,"süre":7113.5718,"time":1768994843,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":7113.5718,"time":1768994843,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-database","uzunluk":109,"süre":10146.9041,"time":1768994846,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-database","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768994846,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","uzunluk":78,"süre":10153.8907,"time":1768994846,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768994846,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","forum":"breachforums-combolist","uzunluk":93,"süre":10159.9515,"time":1768994846,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-combolist","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768994846,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"57f4ca97c93300a8e59d591f...","source":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768994847,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"57f4ca97c93300a8...","time":1768994847,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-database","link":"","hash":"57f4ca97c93300a8...","type":"forum-post","kayıt_no":101,"bellekteki_kayıt":100,"time":1768994847,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"breachforums-accounts","time":1768994847,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-accounts","deneme":1,"time":1768994847,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"cbe39739333a8b1d9433ce39...","source":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768994847,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"cbe39739333a8b1d...","time":1768994847,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","link":"","hash":"cbe39739333a8b1d...","type":"forum-post","kayıt_no":102,"bellekteki_kayıt":100,"time":1768994847,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"7ac77b7342b1661040983809...","source":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768994847,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"7ac77b7342b16610...","time":1768994847,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-combolist","link":"","hash":"7ac77b7342b16610...","type":"forum-post","kayıt_no":103,"bellekteki_kayıt":100,"time":1768994847,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768994847,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2002.3979,"kalan":27997.6021,"deneme":1,"time":1768994849,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":5,"süre":3232.2928,"time":1768994851,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":3232.915,"time":1768994851,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-accounts","uzunluk":110,"süre":10137.84,"time":1768994857,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-accounts","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768994857,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"dcc5e159616d187edce82317...","source":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768994857,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"dcc5e159616d187e...","time":1768994857,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-accounts","link":"","hash":"dcc5e159616d187e...","type":"forum-post","kayıt_no":104,"bellekteki_kayıt":100,"time":1768994857,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","toplam_kayıt":100,"dosya":"C:\\Users\\oibis\\OneDrive\\Masaüstü\\dark-deep-new-tool\\output\\data.json","time":1768994857,"message":"💾 Veriler başarıyla kaydedildi"}
+{"level":"info","url_count":128,"time":1768994857,"message":"💾 Son içerikler kaydedildi"}
+{"level":"info","önceki_kayıt":100,"şimdiki_kayıt":100,"time":1768994857,"message":"🧹 Cleanup tamamlandı"}
+{"level":"info","time":1768994857,"message":"♻️ Garbage collection çalıştırıldı"}
+{"level":"info","time":1768994857,"message":"✅ İlk tarama döngüsü tamamlandı"}
+{"level":"info","time":1768994866,"message":"🛑 Kapatma sinyali alındı (CTRL+C)"}
+{"level":"info","time":1768994866,"message":"💾 Veriler kaydediliyor..."}
+{"level":"info","toplam_kayıt":100,"dosya":"C:\\Users\\oibis\\OneDrive\\Masaüstü\\dark-deep-new-tool\\output\\data.json","time":1768994866,"message":"💾 Veriler başarıyla kaydedildi"}
+{"level":"info","url_count":128,"time":1768994866,"message":"💾 Son içerikler kaydedildi"}
+{"level":"info","önceki_kayıt":100,"şimdiki_kayıt":100,"time":1768994866,"message":"🧹 Cleanup tamamlandı"}
+{"level":"info","time":1768994866,"message":"♻️ Garbage collection çalıştırıldı"}
+{"level":"info","time":1768994866,"message":"🧹 Browser'lar kapatılıyor..."}
+{"level":"info","time":1768994866,"message":"🧹 Browser'lar kapatılıyor..."}
+{"level":"info","time":1768994866,"message":"✅ Normal browser kapatıldı"}
+{"level":"info","time":1768994866,"message":"✅ Onion browser kapatıldı"}
+{"level":"info","phase":"Kapanış","alloc_mb":1,"total_alloc_mb":23,"sys_mb":17,"num_gc":21,"forum_data_count":100,"url_count":128,"time":1768994866,"message":"📊 Memory Stats"}
+{"level":"info","time":1768994866,"message":"👋 Program güvenli şekilde kapatıldı"}
+{"level":"info","time":1768994866,"message":"🏁 Program tamamen sonlandırıldı"}
+{"level":"info","time":1768994870,"message":"🚀 Program başlatıldı"}
+{"level":"info","time":1768994870,"message":"📋 İçerik karşılaştırma sistemi başlatıldı (SHA-256 Hash)"}
+{"level":"info","yüklenen_url":128,"time":1768994870,"message":"📚 Son içerikler yüklendi"}
+{"level":"info","forum_sayısı":4,"time":1768994870,"message":"⚙️ Konfigürasyon yüklendi"}
+{"level":"info","time":1768994870,"message":"🧅 Tor client hazır"}
+{"level":"info","time":1768994870,"message":"✅ Elasticsearch bağlantısı başarılı"}
+{"level":"info","url":"http://93.127.202.112:9200/","index":"dark-web-monitor-denemee","time":1768994870,"message":"📊 Elasticsearch client hazır"}
+{"level":"info","time":1768994870,"message":"🛡️ FlareSolverr aktif - Cloudflare bypass hazır"}
+{"level":"info","time":1768994870,"message":"🌐 2 Chrome browser başlatıldı (Stealth Mode)"}
+{"level":"info","time":1768994870,"message":"⚡ Optimizasyon: Paralel yükleme + Cloudflare detection aktif"}
+{"level":"info","time":1768994870,"message":"🌐 2 Chrome browser hazır"}
+{"level":"info","time":1768994870,"message":"💾 RAM optimize: ~400MB (2 browser)"}
+{"level":"info","yüklenen_kayıt":100,"url_count":128,"time":1768994870,"message":"📚 Eski veriler başarıyla yüklendi"}
+{"level":"info","phase":"Başlangıç","alloc_mb":2,"total_alloc_mb":2,"sys_mb":10,"num_gc":0,"forum_data_count":100,"url_count":128,"time":1768994870,"message":"📊 Memory Stats"}
+{"level":"info","time":1768994870,"message":"🔍 İlk tarama döngüsü başlatılıyor..."}
+{"level":"info","batch":1,"toplam_batch":1,"site_sayısı":4,"time":1768994870,"message":"📦 Batch tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","time":1768994870,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","deneme":1,"time":1768994870,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","time":1768994870,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1768994870,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","deneme":1,"time":1768994870,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":1,"time":1768994870,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768994871,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768994871,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768994871,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2002.9146,"kalan":27997.0854,"deneme":1,"time":1768994873,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2063.801,"kalan":27936.199,"deneme":1,"time":1768994873,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":5497.9114,"kalan":24502.0886,"deneme":1,"time":1768994876,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":14,"süre":5920.1182,"time":1768994876,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":5920.1182,"time":1768994876,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","element_sayısı":1,"deneme":14,"süre":6008.8558,"time":1768994877,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":6009.3642,"time":1768994877,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","element_sayısı":1,"deneme":8,"süre":7602.2857,"time":1768994878,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":7602.8911,"time":1768994878,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-database","uzunluk":109,"süre":10150.2011,"time":1768994880,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-combolist","uzunluk":93,"süre":10150.7165,"time":1768994880,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","uzunluk":78,"süre":10151.2345,"time":1768994880,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-combolist","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","link":"","önizleme":"H@TM21L BY @N_WTN by PISTOOL, Yesterday,...","time":1768994880,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","forum":"breachforums-accounts","time":1768994880,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","link":"","önizleme":"740GB ULP & Logs by cry0x, 3 hours ago 4...","time":1768994880,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","forum":"breachforums-database","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768994880,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","forum":"breachforums-accounts","deneme":1,"time":1768994880,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"b72421abf34a46a8c6735ca1...","source":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768994880,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"b72421abf34a46a8...","time":1768994880,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-database","link":"","hash":"b72421abf34a46a8...","type":"forum-post","kayıt_no":101,"bellekteki_kayıt":100,"time":1768994880,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768994881,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2001.5247,"kalan":27998.4753,"deneme":1,"time":1768994883,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":3,"süre":2625.6734,"time":1768994883,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":2625.6734,"time":1768994883,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-accounts","uzunluk":110,"süre":10124.7823,"time":1768994890,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-accounts","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","link":"","önizleme":"Seedbox.io Mini Slot Account by OpenBull...","time":1768994890,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","toplam_kayıt":100,"dosya":"C:\\Users\\oibis\\OneDrive\\Masaüstü\\dark-deep-new-tool\\output\\data.json","time":1768994890,"message":"💾 Veriler başarıyla kaydedildi"}
+{"level":"info","url_count":128,"time":1768994890,"message":"💾 Son içerikler kaydedildi"}
+{"level":"info","önceki_kayıt":100,"şimdiki_kayıt":100,"time":1768994890,"message":"🧹 Cleanup tamamlandı"}
+{"level":"info","time":1768994890,"message":"♻️ Garbage collection çalıştırıldı"}
+{"level":"info","time":1768994890,"message":"✅ İlk tarama döngüsü tamamlandı"}
+{"level":"info","time":1768994904,"message":"🛑 Kapatma sinyali alındı (CTRL+C)"}
+{"level":"info","time":1768994904,"message":"💾 Veriler kaydediliyor..."}
+{"level":"info","toplam_kayıt":100,"dosya":"C:\\Users\\oibis\\OneDrive\\Masaüstü\\dark-deep-new-tool\\output\\data.json","time":1768994904,"message":"💾 Veriler başarıyla kaydedildi"}
+{"level":"info","url_count":128,"time":1768994904,"message":"💾 Son içerikler kaydedildi"}
+{"level":"info","önceki_kayıt":100,"şimdiki_kayıt":100,"time":1768994904,"message":"🧹 Cleanup tamamlandı"}
+{"level":"info","time":1768994904,"message":"♻️ Garbage collection çalıştırıldı"}
+{"level":"info","time":1768994904,"message":"🧹 Browser'lar kapatılıyor..."}
+{"level":"info","time":1768994904,"message":"🧹 Browser'lar kapatılıyor..."}
+{"level":"info","time":1768994904,"message":"✅ Normal browser kapatıldı"}
+{"level":"info","time":1768994904,"message":"✅ Onion browser kapatıldı"}
+{"level":"info","phase":"Kapanış","alloc_mb":1,"total_alloc_mb":24,"sys_mb":17,"num_gc":23,"forum_data_count":100,"url_count":128,"time":1768994904,"message":"📊 Memory Stats"}
+{"level":"info","time":1768994904,"message":"👋 Program güvenli şekilde kapatıldı"}
+{"level":"info","time":1768994904,"message":"🏁 Program tamamen sonlandırıldı"}
+{"level":"info","time":1768995377,"message":"🚀 Program başlatıldı"}
+{"level":"info","time":1768995377,"message":"📋 İçerik karşılaştırma sistemi başlatıldı (SHA-256 Hash)"}
+{"level":"info","yüklenen_url":128,"time":1768995377,"message":"📚 Son içerikler yüklendi"}
+{"level":"info","forum_sayısı":4,"time":1768995377,"message":"⚙️ Konfigürasyon yüklendi"}
+{"level":"info","time":1768995377,"message":"🧅 Tor client hazır"}
+{"level":"info","time":1768995377,"message":"✅ Elasticsearch bağlantısı başarılı"}
+{"level":"info","url":"http://93.127.202.112:9200/","index":"dark-web-monitor-denemee","time":1768995377,"message":"📊 Elasticsearch client hazır"}
+{"level":"info","time":1768995377,"message":"🛡️ FlareSolverr aktif - Cloudflare bypass hazır"}
+{"level":"info","time":1768995377,"message":"🌐 2 Chrome browser başlatıldı (Stealth Mode)"}
+{"level":"info","time":1768995377,"message":"⚡ Optimizasyon: Paralel yükleme + Cloudflare detection aktif"}
+{"level":"info","time":1768995377,"message":"🌐 2 Chrome browser hazır"}
+{"level":"info","time":1768995377,"message":"💾 RAM optimize: ~400MB (2 browser)"}
+{"level":"info","yüklenen_kayıt":100,"url_count":128,"time":1768995377,"message":"📚 Eski veriler başarıyla yüklendi"}
+{"level":"info","phase":"Başlangıç","alloc_mb":2,"total_alloc_mb":2,"sys_mb":6,"num_gc":0,"forum_data_count":100,"url_count":128,"time":1768995377,"message":"📊 Memory Stats"}
+{"level":"info","time":1768995377,"message":"🔍 İlk tarama döngüsü başlatılıyor..."}
+{"level":"info","batch":1,"toplam_batch":1,"site_sayısı":4,"time":1768995377,"message":"📦 Batch tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","time":1768995377,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","deneme":1,"time":1768995377,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","time":1768995377,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","deneme":1,"time":1768995377,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1768995377,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":1,"time":1768995377,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768995378,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768995378,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768995378,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2001.5082,"kalan":27998.4918,"deneme":1,"time":1768995380,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":4506.9064,"kalan":25493.0936,"deneme":1,"time":1768995382,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":4622.4908,"kalan":25377.5092,"deneme":1,"time":1768995382,"message":"⏳ Element aranıyor..."}
+{"level":"debug","time":1768995383,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1768995383,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","time":1768995383,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"info","element_sayısı":1,"deneme":3,"süre":5109.6057,"time":1768995383,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":5109.6057,"time":1768995383,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","element_sayısı":1,"deneme":3,"süre":5224.7766,"time":1768995383,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":5224.7766,"time":1768995383,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-combolist","uzunluk":97,"süre":10137.5624,"time":1768995387,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-combolist","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768995387,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","forum":"breachforums-database","uzunluk":113,"süre":10153.2037,"time":1768995388,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-database","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768995388,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"breachforums-Stealer-Logs","deneme":1,"süre":10154.8733,"time":1768995388,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768995388,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"43c922c7367d77e9dcaf12f9...","source":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768995388,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"43c922c7367d77e9...","time":1768995388,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-combolist","link":"","hash":"43c922c7367d77e9...","type":"forum-post","kayıt_no":101,"bellekteki_kayıt":100,"time":1768995388,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"breachforums-accounts","time":1768995388,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-accounts","deneme":1,"time":1768995388,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"d561cf47643bd6a646b39099...","source":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768995388,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"d561cf47643bd6a6...","time":1768995388,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-database","link":"","hash":"d561cf47643bd6a6...","type":"forum-post","kayıt_no":102,"bellekteki_kayıt":100,"time":1768995388,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768995388,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2176.508,"kalan":27823.492,"deneme":1,"time":1768995390,"message":"⏳ Element aranıyor..."}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":2,"time":1768995393,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768995393,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","time":1768995393,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"breachforums-accounts","time":1768995393,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","time":1768995393,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"debug","geçen":2001.7359,"kalan":27998.2641,"deneme":1,"time":1768995395,"message":"⏳ Element aranıyor..."}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","html_uzunluk":66293,"süre":2496.7644,"time":1768995395,"message":"✅ FlareSolverr başarılı"}
+{"level":"warn","content_preview":"Mark this forum read Cracked Accounts","time":1768995395,"message":"İçerik geçersiz (pagination veya nav olabilir)"}
+{"level":"debug","selector":"#content table tbody tr","content_len":37,"link":"Forum-Cracked-Accounts&datecut=9999&prefix=0&sortby=subject&order=asc","author":"","time":1768995395,"message":"HTML parse sonucu"}
+{"level":"info","forum":"breachforums-accounts","uzunluk":37,"time":1768995395,"message":"✅ FlareSolverr ile veri çekildi"}
+{"level":"info","forum":"breachforums-accounts","uzunluk":37,"süre":7886.0192,"time":1768995396,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-accounts","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","link":"Forum-Cracked-Accounts&datecut=9999&prefix=0&sortby=subject&order=asc","time":1768995396,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"d8fac4b9f89ab1a13067789a...","source":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768995396,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"d8fac4b9f89ab1a1...","time":1768995396,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-accounts","link":"Forum-Cracked-Accounts&datecut=9999&prefix=0&sortby=subject&order=asc","hash":"d8fac4b9f89ab1a1...","type":"forum-post","kayıt_no":103,"bellekteki_kayıt":100,"time":1768995396,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"debug","time":1768995398,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1768995398,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","time":1768995398,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","html_uzunluk":73135,"süre":2944.2815,"time":1768995401,"message":"✅ FlareSolverr başarılı"}
+{"level":"warn","content_preview":"Mark this forum read Stealer Logs","time":1768995401,"message":"İçerik geçersiz (pagination veya nav olabilir)"}
+{"level":"debug","selector":"#content table.tborder.clear tbody tr","content_len":33,"link":"Forum-Stealer-Logs&datecut=9999&prefix=0&sortby=subject&order=asc","author":"","time":1768995401,"message":"HTML parse sonucu"}
+{"level":"info","forum":"breachforums-Stealer-Logs","uzunluk":33,"time":1768995401,"message":"✅ FlareSolverr ile veri çekildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","uzunluk":33,"süre":8394.524,"time":1768995401,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","link":"Forum-Stealer-Logs&datecut=9999&prefix=0&sortby=subject&order=asc","time":1768995401,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"85b218b9f4448206cbb1ba07...","source":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768995401,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"85b218b9f4448206...","time":1768995401,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","link":"Forum-Stealer-Logs&datecut=9999&prefix=0&sortby=subject&order=asc","hash":"85b218b9f4448206...","type":"forum-post","kayıt_no":104,"bellekteki_kayıt":100,"time":1768995401,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","toplam_kayıt":100,"dosya":"C:\\Users\\oibis\\OneDrive\\Masaüstü\\dark-deep-new-tool\\output\\data.json","time":1768995401,"message":"💾 Veriler başarıyla kaydedildi"}
+{"level":"info","url_count":128,"time":1768995401,"message":"💾 Son içerikler kaydedildi"}
+{"level":"info","önceki_kayıt":100,"şimdiki_kayıt":100,"time":1768995401,"message":"🧹 Cleanup tamamlandı"}
+{"level":"info","time":1768995401,"message":"♻️ Garbage collection çalıştırıldı"}
+{"level":"info","time":1768995401,"message":"✅ İlk tarama döngüsü tamamlandı"}
+{"level":"info","time":1768995403,"message":"🛑 Kapatma sinyali alındı (CTRL+C)"}
+{"level":"info","time":1768995403,"message":"💾 Veriler kaydediliyor..."}
+{"level":"info","toplam_kayıt":100,"dosya":"C:\\Users\\oibis\\OneDrive\\Masaüstü\\dark-deep-new-tool\\output\\data.json","time":1768995403,"message":"💾 Veriler başarıyla kaydedildi"}
+{"level":"info","url_count":128,"time":1768995403,"message":"💾 Son içerikler kaydedildi"}
+{"level":"info","önceki_kayıt":100,"şimdiki_kayıt":100,"time":1768995403,"message":"🧹 Cleanup tamamlandı"}
+{"level":"info","time":1768995403,"message":"♻️ Garbage collection çalıştırıldı"}
+{"level":"info","time":1768995403,"message":"🧹 Browser'lar kapatılıyor..."}
+{"level":"info","time":1768995403,"message":"🧹 Browser'lar kapatılıyor..."}
+{"level":"info","time":1768995403,"message":"✅ Normal browser kapatıldı"}
+{"level":"info","time":1768995403,"message":"✅ Onion browser kapatıldı"}
+{"level":"info","phase":"Kapanış","alloc_mb":1,"total_alloc_mb":34,"sys_mb":17,"num_gc":28,"forum_data_count":100,"url_count":128,"time":1768995403,"message":"📊 Memory Stats"}
+{"level":"info","time":1768995403,"message":"👋 Program güvenli şekilde kapatıldı"}
+{"level":"info","time":1768995403,"message":"🏁 Program tamamen sonlandırıldı"}
+{"level":"info","time":1768995657,"message":"🚀 Program başlatıldı"}
+{"level":"info","time":1768995657,"message":"📋 İçerik karşılaştırma sistemi başlatıldı (SHA-256 Hash)"}
+{"level":"info","yüklenen_url":128,"time":1768995657,"message":"📚 Son içerikler yüklendi"}
+{"level":"info","forum_sayısı":4,"time":1768995657,"message":"⚙️ Konfigürasyon yüklendi"}
+{"level":"info","time":1768995657,"message":"🧅 Tor client hazır"}
+{"level":"info","time":1768995657,"message":"✅ Elasticsearch bağlantısı başarılı"}
+{"level":"info","url":"http://93.127.202.112:9200/","index":"dark-web-monitor-denemee","time":1768995657,"message":"📊 Elasticsearch client hazır"}
+{"level":"info","time":1768995657,"message":"🛡️ FlareSolverr aktif - Cloudflare bypass hazır"}
+{"level":"info","time":1768995657,"message":"🌐 2 Chrome browser başlatıldı (Stealth Mode)"}
+{"level":"info","time":1768995657,"message":"⚡ Optimizasyon: Paralel yükleme + Cloudflare detection aktif"}
+{"level":"info","time":1768995657,"message":"🌐 2 Chrome browser hazır"}
+{"level":"info","time":1768995657,"message":"💾 RAM optimize: ~400MB (2 browser)"}
+{"level":"info","yüklenen_kayıt":100,"url_count":128,"time":1768995657,"message":"📚 Eski veriler başarıyla yüklendi"}
+{"level":"info","phase":"Başlangıç","alloc_mb":2,"total_alloc_mb":2,"sys_mb":6,"num_gc":0,"forum_data_count":100,"url_count":128,"time":1768995657,"message":"📊 Memory Stats"}
+{"level":"info","time":1768995657,"message":"🔍 İlk tarama döngüsü başlatılıyor..."}
+{"level":"info","batch":1,"toplam_batch":1,"site_sayısı":4,"time":1768995657,"message":"📦 Batch tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","time":1768995657,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","deneme":1,"time":1768995657,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1768995657,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":1,"time":1768995657,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","time":1768995657,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","deneme":1,"time":1768995657,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768995658,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768995658,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768995658,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2003.1569,"kalan":27996.8431,"deneme":1,"time":1768995660,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2023.5083,"kalan":27976.4917,"deneme":1,"time":1768995660,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2149.1473,"kalan":27850.8527,"deneme":1,"time":1768995660,"message":"⏳ Element aranıyor..."}
+{"level":"debug","time":1768995662,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1768995662,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","time":1768995662,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"debug","time":1768995662,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"breachforums-combolist","time":1768995662,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","time":1768995662,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"debug","time":1768995662,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"breachforums-database","time":1768995662,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","time":1768995662,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"breachforums-Stealer-Logs","deneme":1,"süre":10132.3303,"time":1768995667,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768995667,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"breachforums-database","deneme":1,"süre":10148.882,"time":1768995667,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768995667,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"breachforums-combolist","deneme":1,"süre":10149.8099,"time":1768995667,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1768995667,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":2,"time":1768995672,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","deneme":2,"time":1768995672,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","deneme":2,"time":1768995672,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768995673,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768995673,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768995673,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2003.5479,"kalan":27996.4521,"deneme":1,"time":1768995675,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2002.6796,"kalan":27997.3204,"deneme":1,"time":1768995675,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2011.8268,"kalan":27988.1732,"deneme":1,"time":1768995675,"message":"⏳ Element aranıyor..."}
+{"level":"debug","time":1768995678,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1768995678,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","time":1768995678,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"debug","time":1768995678,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"breachforums-database","time":1768995678,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","time":1768995678,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"debug","time":1768995678,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"breachforums-combolist","time":1768995678,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","time":1768995678,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","html_uzunluk":73127,"süre":3361.074,"time":1768995681,"message":"✅ FlareSolverr başarılı"}
+{"level":"warn","content_preview":"Mark this forum read Stealer Logs","time":1768995681,"message":"İçerik geçersiz (pagination veya nav olabilir)"}
+{"level":"debug","selector":"#content table.tborder.clear tbody tr","content_len":33,"link":"Forum-Stealer-Logs&datecut=9999&prefix=0&sortby=subject&order=asc","author":"","time":1768995681,"message":"HTML parse sonucu"}
+{"level":"info","forum":"breachforums-Stealer-Logs","uzunluk":33,"time":1768995681,"message":"✅ FlareSolverr ile veri çekildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","uzunluk":33,"süre":9115.8054,"time":1768995681,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","link":"Forum-Stealer-Logs&datecut=9999&prefix=0&sortby=subject&order=asc","önizleme":"Mark this forum read Stealer Logs","time":1768995681,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","forum":"breachforums-accounts","time":1768995681,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-accounts","deneme":1,"time":1768995681,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768995682,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"breachforums-combolist","deneme":2,"süre":10166.8122,"time":1768995682,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":10000,"time":1768995682,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"breachforums-database","deneme":2,"süre":10173.3472,"time":1768995682,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":10000,"time":1768995682,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"debug","geçen":2002.1158,"kalan":27997.8842,"deneme":1,"time":1768995684,"message":"⏳ Element aranıyor..."}
+{"level":"debug","time":1768995687,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"breachforums-accounts","time":1768995687,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","time":1768995687,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","html_uzunluk":66293,"süre":3011.2976,"time":1768995690,"message":"✅ FlareSolverr başarılı"}
+{"level":"warn","content_preview":"Mark this forum read Cracked Accounts","time":1768995690,"message":"İçerik geçersiz (pagination veya nav olabilir)"}
+{"level":"debug","selector":"#content table tbody tr","content_len":37,"link":"Forum-Cracked-Accounts&datecut=9999&prefix=0&sortby=subject&order=asc","author":"","time":1768995690,"message":"HTML parse sonucu"}
+{"level":"info","forum":"breachforums-accounts","uzunluk":37,"time":1768995690,"message":"✅ FlareSolverr ile veri çekildi"}
+{"level":"info","forum":"breachforums-accounts","uzunluk":37,"süre":8412.0769,"time":1768995690,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-accounts","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","link":"Forum-Cracked-Accounts&datecut=9999&prefix=0&sortby=subject&order=asc","önizleme":"Mark this forum read Cracked Accounts","time":1768995690,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","forum":"breachforums-combolist","deneme":3,"time":1768995692,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","deneme":3,"time":1768995692,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768995693,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768995693,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2000.6865,"kalan":27999.3135,"deneme":1,"time":1768995695,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2001.8434,"kalan":27998.1566,"deneme":1,"time":1768995695,"message":"⏳ Element aranıyor..."}
+{"level":"debug","time":1768995698,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"breachforums-database","time":1768995698,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","time":1768995698,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"debug","time":1768995698,"message":"🛡️ Cloudflare challenge tespit edildi"}
+{"level":"info","forum":"breachforums-combolist","time":1768995698,"message":"🛡️ Cloudflare tespit edildi, FlareSolverr deneniyor..."}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","time":1768995698,"message":"🛡️ FlareSolverr ile sayfa alınıyor"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"breachforums-combolist","deneme":3,"süre":10165.121,"time":1768995703,"message":"⚠️ Deneme başarısız"}
+{"level":"warn","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"breachforums-database","deneme":3,"süre":10160.4569,"time":1768995703,"message":"⚠️ Deneme başarısız"}
+{"level":"error","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"breachforums-combolist","time":1768995703,"message":"❌ Tarama başarısız"}
+{"level":"error","error":"FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"breachforums-database","time":1768995703,"message":"❌ Tarama başarısız"}
+{"level":"error","error":"tüm denemeler başarısız: FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"breachforums-combolist","time":1768995703,"message":"❌ Tarama başarısız"}
+{"level":"error","error":"tüm denemeler başarısız: FlareSolverr hatası: FlareSolverr isteği başarısız: Post \"http://localhost:8191/v1\": context deadline exceeded","forum":"breachforums-database","time":1768995703,"message":"❌ Tarama başarısız"}
+{"level":"info","toplam_kayıt":100,"dosya":"C:\\Users\\oibis\\OneDrive\\Masaüstü\\dark-deep-new-tool\\output\\data.json","time":1768995703,"message":"💾 Veriler başarıyla kaydedildi"}
+{"level":"info","url_count":128,"time":1768995703,"message":"💾 Son içerikler kaydedildi"}
+{"level":"info","önceki_kayıt":100,"şimdiki_kayıt":100,"time":1768995703,"message":"🧹 Cleanup tamamlandı"}
+{"level":"info","time":1768995703,"message":"♻️ Garbage collection çalıştırıldı"}
+{"level":"info","time":1768995703,"message":"✅ İlk tarama döngüsü tamamlandı"}
+{"level":"info","time":1768995708,"message":"🛑 Kapatma sinyali alındı (CTRL+C)"}
+{"level":"info","time":1768995708,"message":"💾 Veriler kaydediliyor..."}
+{"level":"info","toplam_kayıt":100,"dosya":"C:\\Users\\oibis\\OneDrive\\Masaüstü\\dark-deep-new-tool\\output\\data.json","time":1768995708,"message":"💾 Veriler başarıyla kaydedildi"}
+{"level":"info","url_count":128,"time":1768995708,"message":"💾 Son içerikler kaydedildi"}
+{"level":"info","önceki_kayıt":100,"şimdiki_kayıt":100,"time":1768995708,"message":"🧹 Cleanup tamamlandı"}
+{"level":"info","time":1768995708,"message":"♻️ Garbage collection çalıştırıldı"}
+{"level":"info","time":1768995708,"message":"🧹 Browser'lar kapatılıyor..."}
+{"level":"info","time":1768995708,"message":"🧹 Browser'lar kapatılıyor..."}
+{"level":"info","time":1768995708,"message":"✅ Normal browser kapatıldı"}
+{"level":"info","time":1768995708,"message":"✅ Onion browser kapatıldı"}
+{"level":"info","phase":"Kapanış","alloc_mb":1,"total_alloc_mb":60,"sys_mb":18,"num_gc":49,"forum_data_count":100,"url_count":128,"time":1768995708,"message":"📊 Memory Stats"}
+{"level":"info","time":1768995708,"message":"👋 Program güvenli şekilde kapatıldı"}
+{"level":"info","time":1768995708,"message":"🏁 Program tamamen sonlandırıldı"}
+{"level":"info","time":1768996344,"message":"🚀 Program başlatıldı"}
+{"level":"info","time":1768996344,"message":"📋 İçerik karşılaştırma sistemi başlatıldı (SHA-256 Hash)"}
+{"level":"info","yüklenen_url":128,"time":1768996344,"message":"📚 Son içerikler yüklendi"}
+{"level":"info","forum_sayısı":4,"time":1768996344,"message":"⚙️ Konfigürasyon yüklendi"}
+{"level":"info","time":1768996344,"message":"🧅 Tor client hazır"}
+{"level":"info","time":1768996344,"message":"✅ Elasticsearch bağlantısı başarılı"}
+{"level":"info","url":"http://93.127.202.112:9200/","index":"dark-web-monitor-denemee","time":1768996344,"message":"📊 Elasticsearch client hazır"}
+{"level":"info","time":1768996344,"message":"🛡️ FlareSolverr aktif - Cloudflare bypass hazır"}
+{"level":"info","time":1768996344,"message":"🌐 2 Chrome browser başlatıldı (Stealth Mode)"}
+{"level":"info","time":1768996344,"message":"⚡ Optimizasyon: Paralel yükleme + Cloudflare detection aktif"}
+{"level":"info","time":1768996344,"message":"🌐 2 Chrome browser hazır"}
+{"level":"info","time":1768996344,"message":"💾 RAM optimize: ~400MB (2 browser)"}
+{"level":"info","yüklenen_kayıt":100,"url_count":128,"time":1768996344,"message":"📚 Eski veriler başarıyla yüklendi"}
+{"level":"info","phase":"Başlangıç","alloc_mb":2,"total_alloc_mb":2,"sys_mb":10,"num_gc":0,"forum_data_count":100,"url_count":128,"time":1768996344,"message":"📊 Memory Stats"}
+{"level":"info","time":1768996344,"message":"🔍 İlk tarama döngüsü başlatılıyor..."}
+{"level":"info","batch":1,"toplam_batch":1,"site_sayısı":4,"time":1768996344,"message":"📦 Batch tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1768996344,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","time":1768996344,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","time":1768996344,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":1,"time":1768996344,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","deneme":1,"time":1768996344,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","deneme":1,"time":1768996344,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768996344,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768996344,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768996344,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2721.2056,"kalan":27278.7944,"deneme":1,"time":1768996347,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":3255.2251,"kalan":26744.7749,"deneme":1,"time":1768996348,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":3413.6165,"kalan":26586.3835,"deneme":1,"time":1768996348,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":5,"süre":3925.0447,"time":1768996348,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":3925.5641,"time":1768996348,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","element_sayısı":1,"deneme":5,"süre":4617.5746,"time":1768996349,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":4617.5746,"time":1768996349,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","element_sayısı":1,"deneme":7,"süre":5087.4711,"time":1768996349,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":5087.9982,"time":1768996349,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-combolist","uzunluk":93,"süre":10169.1467,"time":1768996354,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-database","uzunluk":101,"süre":10169.6866,"time":1768996354,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-combolist","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768996354,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","forum":"breachforums-database","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768996354,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","uzunluk":77,"süre":10171.3576,"time":1768996354,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768996354,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"7ac77b7342b1661040983809...","source":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768996354,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"7ac77b7342b16610...","time":1768996354,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-combolist","link":"","hash":"7ac77b7342b16610...","type":"forum-post","kayıt_no":101,"bellekteki_kayıt":100,"time":1768996354,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"breachforums-accounts","time":1768996354,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-accounts","deneme":1,"time":1768996354,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"3f42c00223915246eb584033...","source":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768996354,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"3f42c00223915246...","time":1768996354,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","link":"","hash":"3f42c00223915246...","type":"forum-post","kayıt_no":102,"bellekteki_kayıt":100,"time":1768996354,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"1a81a819b4030b694c317bfa...","source":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768996354,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"1a81a819b4030b69...","time":1768996354,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-database","link":"","hash":"1a81a819b4030b69...","type":"forum-post","kayıt_no":103,"bellekteki_kayıt":100,"time":1768996354,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1768996355,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2001.7753,"kalan":27998.2247,"deneme":1,"time":1768996357,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":3,"süre":2692.5453,"time":1768996357,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":2692.5453,"time":1768996357,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-accounts","uzunluk":110,"süre":10131.1091,"time":1768996364,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-accounts","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1768996364,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"dcc5e159616d187edce82317...","source":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1768996365,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"dcc5e159616d187e...","time":1768996365,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-accounts","link":"","hash":"dcc5e159616d187e...","type":"forum-post","kayıt_no":104,"bellekteki_kayıt":100,"time":1768996365,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","toplam_kayıt":100,"dosya":"C:\\Users\\oibis\\OneDrive\\Masaüstü\\dark-deep-new-tool\\output\\data.json","time":1768996365,"message":"💾 Veriler başarıyla kaydedildi"}
+{"level":"info","url_count":128,"time":1768996365,"message":"💾 Son içerikler kaydedildi"}
+{"level":"info","önceki_kayıt":100,"şimdiki_kayıt":100,"time":1768996365,"message":"🧹 Cleanup tamamlandı"}
+{"level":"info","time":1768996365,"message":"♻️ Garbage collection çalıştırıldı"}
+{"level":"info","time":1768996365,"message":"✅ İlk tarama döngüsü tamamlandı"}
+{"level":"info","time":1768996366,"message":"🛑 Kapatma sinyali alındı (CTRL+C)"}
+{"level":"info","time":1768996366,"message":"💾 Veriler kaydediliyor..."}
+{"level":"info","toplam_kayıt":100,"dosya":"C:\\Users\\oibis\\OneDrive\\Masaüstü\\dark-deep-new-tool\\output\\data.json","time":1768996366,"message":"💾 Veriler başarıyla kaydedildi"}
+{"level":"info","url_count":128,"time":1768996366,"message":"💾 Son içerikler kaydedildi"}
+{"level":"info","önceki_kayıt":100,"şimdiki_kayıt":100,"time":1768996366,"message":"🧹 Cleanup tamamlandı"}
+{"level":"info","time":1768996366,"message":"♻️ Garbage collection çalıştırıldı"}
+{"level":"info","time":1768996366,"message":"🧹 Browser'lar kapatılıyor..."}
+{"level":"info","time":1768996366,"message":"🧹 Browser'lar kapatılıyor..."}
+{"level":"info","time":1768996366,"message":"✅ Normal browser kapatıldı"}
+{"level":"info","time":1768996366,"message":"✅ Onion browser kapatıldı"}
+{"level":"info","phase":"Kapanış","alloc_mb":1,"total_alloc_mb":25,"sys_mb":17,"num_gc":21,"forum_data_count":100,"url_count":128,"time":1768996366,"message":"📊 Memory Stats"}
+{"level":"info","time":1768996366,"message":"👋 Program güvenli şekilde kapatıldı"}
+{"level":"info","time":1768996366,"message":"🏁 Program tamamen sonlandırıldı"}
+{"level":"info","time":1769076217,"message":"🚀 Program başlatıldı"}
+{"level":"info","time":1769076217,"message":"📋 İçerik karşılaştırma sistemi başlatıldı (SHA-256 Hash)"}
+{"level":"info","yüklenen_url":128,"time":1769076217,"message":"📚 Son içerikler yüklendi"}
+{"level":"info","forum_sayısı":4,"time":1769076217,"message":"⚙️ Konfigürasyon yüklendi"}
+{"level":"info","time":1769076217,"message":"🧅 Tor client hazır"}
+{"level":"info","time":1769076217,"message":"✅ Elasticsearch bağlantısı başarılı"}
+{"level":"info","url":"http://93.127.202.112:9200/","index":"dark-web-monitor-denemee","time":1769076217,"message":"📊 Elasticsearch client hazır"}
+{"level":"info","time":1769076217,"message":"🛡️ FlareSolverr aktif - Cloudflare bypass hazır"}
+{"level":"info","time":1769076217,"message":"🌐 2 Chrome browser başlatıldı (Stealth Mode)"}
+{"level":"info","time":1769076217,"message":"⚡ Optimizasyon: Paralel yükleme + Cloudflare detection aktif"}
+{"level":"info","time":1769076217,"message":"🌐 2 Chrome browser hazır"}
+{"level":"info","time":1769076217,"message":"💾 RAM optimize: ~400MB (2 browser)"}
+{"level":"info","yüklenen_kayıt":100,"url_count":128,"time":1769076217,"message":"📚 Eski veriler başarıyla yüklendi"}
+{"level":"info","phase":"Başlangıç","alloc_mb":2,"total_alloc_mb":2,"sys_mb":10,"num_gc":0,"forum_data_count":100,"url_count":128,"time":1769076217,"message":"📊 Memory Stats"}
+{"level":"info","time":1769076217,"message":"🔍 İlk tarama döngüsü başlatılıyor..."}
+{"level":"info","batch":1,"toplam_batch":1,"site_sayısı":4,"time":1769076217,"message":"📦 Batch tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","time":1769076217,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","deneme":1,"time":1769076217,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","time":1769076217,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","deneme":1,"time":1769076217,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1769076217,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":1,"time":1769076217,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076218,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076218,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076218,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2001.4776,"kalan":27998.5224,"deneme":1,"time":1769076220,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2002.5413,"kalan":27997.4587,"deneme":1,"time":1769076220,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":2088.348,"kalan":27911.652,"deneme":1,"time":1769076220,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":4,"süre":2904.7053,"time":1769076221,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":2904.7053,"time":1769076221,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","element_sayısı":1,"deneme":4,"süre":2906.2187,"time":1769076221,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":2906.2187,"time":1769076221,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","element_sayısı":1,"deneme":4,"süre":3082.1127,"time":1769076221,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":3082.1127,"time":1769076221,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-Stealer-Logs","uzunluk":52,"süre":10116.0547,"time":1769076227,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-combolist","uzunluk":36,"süre":10116.0547,"time":1769076227,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1769076227,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","forum":"breachforums-combolist","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1769076227,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","forum":"breachforums-database","uzunluk":45,"süre":10128.2386,"time":1769076227,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-database","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1769076227,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"d4b2840821563bc0b416a5c0...","source":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1769076228,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"d4b2840821563bc0...","time":1769076228,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-combolist","link":"","hash":"d4b2840821563bc0...","type":"forum-post","kayıt_no":101,"bellekteki_kayıt":100,"time":1769076228,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","forum":"breachforums-accounts","time":1769076228,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-accounts","deneme":1,"time":1769076228,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"95bf6d9a3701dd85f7085d9b...","source":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1769076228,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"95bf6d9a3701dd85...","time":1769076228,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","link":"","hash":"95bf6d9a3701dd85...","type":"forum-post","kayıt_no":102,"bellekteki_kayıt":100,"time":1769076228,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"800fae66c6dd89275feee45d...","source":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1769076228,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"800fae66c6dd8927...","time":1769076228,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-database","link":"","hash":"800fae66c6dd8927...","type":"forum-post","kayıt_no":103,"bellekteki_kayıt":100,"time":1769076228,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076228,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":9618.2909,"kalan":20381.7091,"deneme":1,"time":1769076238,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":19828.6964,"kalan":10171.3036,"deneme":35,"time":1769076248,"message":"⏳ Element aranıyor..."}
+{"level":"debug","error":"context deadline exceeded","time":1769076258,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#content > table > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1)","toplam_deneme":68,"toplam_süre":30043.3466,"time":1769076258,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #content > table > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1) - element 30s sürede bulunamadı","forum":"breachforums-accounts","deneme":1,"süre":30373.0522,"time":1769076258,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1769076258,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","forum":"breachforums-accounts","deneme":2,"time":1769076263,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076263,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":9315.8663,"kalan":20684.1337,"deneme":1,"time":1769076273,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":19528.429,"kalan":10471.571,"deneme":35,"time":1769076283,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":29743.6745,"kalan":256.3255,"deneme":69,"time":1769076293,"message":"⏳ Element aranıyor..."}
+{"level":"debug","error":"context deadline exceeded","time":1769076293,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#content > table > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1)","toplam_deneme":69,"toplam_süre":30043.9978,"time":1769076293,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #content > table > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1) - element 30s sürede bulunamadı","forum":"breachforums-accounts","deneme":2,"süre":30358.5102,"time":1769076293,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":10000,"time":1769076293,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","forum":"breachforums-accounts","deneme":3,"time":1769076303,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076304,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":9512.3751,"kalan":20487.6249,"deneme":1,"time":1769076313,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":19726.6305,"kalan":10273.3695,"deneme":35,"time":1769076324,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":29939.1432,"kalan":60.8568,"deneme":69,"time":1769076334,"message":"⏳ Element aranıyor..."}
+{"level":"debug","error":"context deadline exceeded","time":1769076334,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#content > table > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1)","toplam_deneme":69,"toplam_süre":30239.7697,"time":1769076334,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #content > table > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1) - element 30s sürede bulunamadı","forum":"breachforums-accounts","deneme":3,"süre":30728.1681,"time":1769076334,"message":"⚠️ Deneme başarısız"}
+{"level":"error","error":"element bulunamadı: #content > table > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1) - element 30s sürede bulunamadı","forum":"breachforums-accounts","time":1769076334,"message":"❌ Tarama başarısız"}
+{"level":"error","error":"tüm denemeler başarısız: element bulunamadı: #content > table > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1) - element 30s sürede bulunamadı","forum":"breachforums-accounts","time":1769076334,"message":"❌ Tarama başarısız"}
+{"level":"info","toplam_kayıt":100,"dosya":"C:\\Users\\oibis\\OneDrive\\Masaüstü\\dark-deep-new-tool\\output\\data.json","time":1769076334,"message":"💾 Veriler başarıyla kaydedildi"}
+{"level":"info","url_count":128,"time":1769076334,"message":"💾 Son içerikler kaydedildi"}
+{"level":"info","önceki_kayıt":100,"şimdiki_kayıt":100,"time":1769076334,"message":"🧹 Cleanup tamamlandı"}
+{"level":"info","time":1769076334,"message":"♻️ Garbage collection çalıştırıldı"}
+{"level":"info","time":1769076334,"message":"✅ İlk tarama döngüsü tamamlandı"}
+{"level":"info","time":1769076334,"message":"⏰ Yeni tarama döngüsü başlatılıyor..."}
+{"level":"info","batch":1,"toplam_batch":1,"site_sayısı":4,"time":1769076334,"message":"📦 Batch tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1769076334,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","time":1769076334,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","time":1769076334,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":1,"time":1769076334,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","deneme":1,"time":1769076334,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","deneme":1,"time":1769076334,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076335,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076335,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076335,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2050.3493,"kalan":27949.6507,"deneme":1,"time":1769076337,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":8228.4007,"kalan":21771.5993,"deneme":1,"time":1769076343,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":8518.4777,"kalan":21481.5223,"deneme":1,"time":1769076343,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":24,"süre":9001.8933,"time":1769076344,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":9001.8933,"time":1769076344,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","element_sayısı":1,"deneme":4,"süre":9144.6928,"time":1769076344,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":9145.2042,"time":1769076344,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-combolist","uzunluk":36,"süre":10097.7498,"time":1769076344,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-combolist","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","link":"","önizleme":"1.6K USA-FR-PL-BE-DE MAIL ACCESS MIX","time":1769076344,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","forum":"breachforums-accounts","time":1769076344,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-accounts","deneme":1,"time":1769076344,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","uzunluk":52,"süre":10121.8751,"time":1769076344,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-Stealer-Logs","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","link":"","önizleme":"URL:LOGIN:PASS AlienTXT Base 562GB Down...","time":1769076344,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076344,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2003.676,"kalan":27996.324,"deneme":1,"time":1769076346,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":4,"süre":2912.6917,"time":1769076347,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":2912.6917,"time":1769076347,"message":"🏁 Yükleme tamamlandı"}
+{"level":"debug","geçen":18732.0439,"kalan":11267.9561,"deneme":35,"time":1769076353,"message":"⏳ Element aranıyor..."}
+{"level":"info","forum":"breachforums-accounts","uzunluk":28,"süre":10123.9025,"time":1769076354,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-accounts","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","link":"","time":1769076354,"message":"🆕 YENİ içerik tespit edildi"}
+{"level":"info","index":"dark-web-monitor-denemee","doc_id":"56cf76e0cc0da2f2dbf294a9...","source":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","time":1769076354,"message":"✅ Döküman Elasticsearch'e kaydedildi"}
+{"level":"info","source":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","type":"forum-post","hash":"56cf76e0cc0da2f2...","time":1769076354,"message":"📊 Elasticsearch'e başarıyla gönderildi"}
+{"level":"info","forum":"breachforums-accounts","link":"","hash":"56cf76e0cc0da2f2...","type":"forum-post","kayıt_no":104,"bellekteki_kayıt":100,"time":1769076354,"message":"✅ YENİ VERİ kaydedildi"}
+{"level":"debug","geçen":28945.4248,"kalan":1054.5752,"deneme":69,"time":1769076364,"message":"⏳ Element aranıyor..."}
+{"level":"debug","error":"context deadline exceeded","time":1769076365,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#content > table.tborder.clear > tbody > tr:nth-child(14) > td:nth-child(2) > div > div:nth-child(1)","toplam_deneme":72,"toplam_süre":30147.1095,"time":1769076365,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #content > table.tborder.clear > tbody > tr:nth-child(14) > td:nth-child(2) > div > div:nth-child(1) - element 30s sürede bulunamadı","forum":"breachforums-database","deneme":1,"süre":30679.5655,"time":1769076365,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1769076365,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","forum":"breachforums-database","deneme":2,"time":1769076370,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076370,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2000.733,"kalan":27999.267,"deneme":1,"time":1769076372,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":24,"süre":8962.2894,"time":1769076379,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":8962.2894,"time":1769076379,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-database","uzunluk":45,"süre":10127.9892,"time":1769076380,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-database","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","link":"","önizleme":"DATABASE Couple leaks from 24-25 yy [pa...","time":1769076380,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","toplam_kayıt":100,"dosya":"C:\\Users\\oibis\\OneDrive\\Masaüstü\\dark-deep-new-tool\\output\\data.json","time":1769076380,"message":"💾 Veriler başarıyla kaydedildi"}
+{"level":"info","url_count":128,"time":1769076380,"message":"💾 Son içerikler kaydedildi"}
+{"level":"info","time":1769076380,"message":"✅ Tarama döngüsü tamamlandı"}
+{"level":"info","time":1769076380,"message":"⏰ Yeni tarama döngüsü başlatılıyor..."}
+{"level":"info","batch":1,"toplam_batch":1,"site_sayısı":4,"time":1769076380,"message":"📦 Batch tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","time":1769076380,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":1,"time":1769076380,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","time":1769076380,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","time":1769076380,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-database","deneme":1,"time":1769076380,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-combolist","deneme":1,"time":1769076380,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076381,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076381,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076381,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2002.9792,"kalan":27997.0208,"deneme":1,"time":1769076383,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":6061.1771,"kalan":23938.8229,"deneme":1,"time":1769076387,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":6112.4985,"kalan":23887.5015,"deneme":1,"time":1769076387,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":20,"süre":7879.9528,"time":1769076388,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":7879.9528,"time":1769076388,"message":"🏁 Yükleme tamamlandı"}
+{"level":"info","forum":"breachforums-database","uzunluk":45,"süre":10196.531,"time":1769076390,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-database","url":"https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0","link":"","önizleme":"DATABASE Couple leaks from 24-25 yy [pa...","time":1769076390,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"info","forum":"breachforums-accounts","time":1769076390,"message":"📡 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-accounts","deneme":1,"time":1769076390,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076391,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2002.996,"kalan":27997.004,"deneme":1,"time":1769076393,"message":"⏳ Element aranıyor..."}
+{"level":"info","element_sayısı":1,"deneme":12,"süre":5348.017,"time":1769076396,"message":"✅ Element bulundu"}
+{"level":"info","toplam_süre":5348.5628,"time":1769076396,"message":"🏁 Yükleme tamamlandı"}
+{"level":"debug","geçen":16290.7121,"kalan":13709.2879,"deneme":35,"time":1769076397,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":16342.6525,"kalan":13657.3475,"deneme":35,"time":1769076397,"message":"⏳ Element aranıyor..."}
+{"level":"info","forum":"breachforums-accounts","uzunluk":28,"süre":10161.8676,"time":1769076400,"message":"✅ Veri başarıyla çekildi"}
+{"level":"info","forum":"breachforums-accounts","url":"https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0","link":"","önizleme":"Seedbox.io Mini Slot Account","time":1769076400,"message":"🔄 İçerik değişmemiş, atlanıyor"}
+{"level":"debug","geçen":26500.9556,"kalan":3499.0444,"deneme":69,"time":1769076407,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":26554.293,"kalan":3445.707,"deneme":69,"time":1769076407,"message":"⏳ Element aranıyor..."}
+{"level":"debug","error":"context deadline exceeded","time":1769076411,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#content > table.tborder.clear > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1)","toplam_deneme":80,"toplam_süre":30103.8048,"time":1769076411,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #content > table.tborder.clear > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1) - element 30s sürede bulunamadı","forum":"breachforums-combolist","deneme":1,"süre":30759.0263,"time":1769076411,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1769076411,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"debug","error":"context deadline exceeded","time":1769076411,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#content > table.tborder.clear > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1)","toplam_deneme":80,"toplam_süre":30157.7202,"time":1769076411,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #content > table.tborder.clear > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1) - element 30s sürede bulunamadı","forum":"breachforums-Stealer-Logs","deneme":1,"süre":30815.2115,"time":1769076411,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":5000,"time":1769076411,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"info","forum":"breachforums-combolist","deneme":2,"time":1769076416,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","forum":"breachforums-Stealer-Logs","deneme":2,"time":1769076416,"message":"🔄 Tarama başlatılıyor"}
+{"level":"info","url":"https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076416,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"info","url":"https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0","max_süre":30000,"time":1769076416,"message":"🚀 Paralel yükleme başlatıldı"}
+{"level":"debug","geçen":2002.4958,"kalan":27997.5042,"deneme":1,"time":1769076418,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":9618.3519,"kalan":20381.6481,"deneme":1,"time":1769076426,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":12237.0082,"kalan":17762.9918,"deneme":35,"time":1769076428,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":19829.6601,"kalan":10170.3399,"deneme":35,"time":1769076436,"message":"⏳ Element aranıyor..."}
+{"level":"debug","geçen":22449.7039,"kalan":7550.2961,"deneme":69,"time":1769076438,"message":"⏳ Element aranıyor..."}
+{"level":"debug","error":"context deadline exceeded","time":1769076446,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#content > table.tborder.clear > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1)","toplam_deneme":68,"toplam_süre":30040.986,"time":1769076446,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #content > table.tborder.clear > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1) - element 30s sürede bulunamadı","forum":"breachforums-Stealer-Logs","deneme":2,"süre":30423.3737,"time":1769076446,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":10000,"time":1769076446,"message":"⏳ Yeniden deneme öncesi bekleme"}
+{"level":"debug","error":"context deadline exceeded","time":1769076446,"message":"Navigate tamamlandı"}
+{"level":"warn","selector":"#content > table.tborder.clear > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1)","toplam_deneme":94,"toplam_süre":30259.5299,"time":1769076446,"message":"❌ Element bulunamadı (timeout)"}
+{"level":"warn","error":"element bulunamadı: #content > table.tborder.clear > tbody > tr:nth-child(7) > td:nth-child(2) > div > div:nth-child(1) - element 30s sürede bulunamadı","forum":"breachforums-combolist","deneme":2,"süre":30635.4583,"time":1769076446,"message":"⚠️ Deneme başarısız"}
+{"level":"info","bekleme":10000,"time":1769076446,"message":"⏳ Yeniden deneme öncesi bekleme"}

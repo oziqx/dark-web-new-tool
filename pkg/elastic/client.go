@@ -73,17 +73,11 @@ func (ec *ElasticClient) TestConnection() error {
 }
 
 // BuildDocumentID deterministik document ID oluşturur
-// Format: contentHash + "-" + shortHash(source|link)
-// Bu sayede aynı içerik farklı kaynaklardan gelirse farklı ID alır
-func BuildDocumentID(contentHash, source, link string) string {
-	// source|link composite key oluştur
-	compositeKey := source
-	if link != "" {
-		compositeKey = source + "|" + link
-	}
-
-	// Composite key'in hash'ini al (ilk 12 karakter)
-	hash := sha256.Sum256([]byte(compositeKey))
+// Format: contentHash + "-" + shortHash(source)
+// Content-only hash: Link extraction sorunlarını önler
+func BuildDocumentID(contentHash, source string) string {
+	// Source'un hash'ini al (ilk 12 karakter)
+	hash := sha256.Sum256([]byte(source))
 	shortHash := hex.EncodeToString(hash[:])[:12]
 
 	// Final ID: contentHash-shortHash
@@ -93,7 +87,7 @@ func BuildDocumentID(contentHash, source, link string) string {
 // IndexDocument tek bir dökümanı Elasticsearch'e gönderir
 func (ec *ElasticClient) IndexDocument(ctx context.Context, doc models.Forum) error {
 	// Document ID oluştur (deterministik)
-	docID := BuildDocumentID(doc.ContentHash, doc.Source, doc.Link)
+	docID := BuildDocumentID(doc.ContentHash, doc.Source)
 
 	// Document'i JSON'a çevir
 	data, err := json.Marshal(doc)

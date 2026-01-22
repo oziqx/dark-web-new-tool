@@ -19,7 +19,6 @@ type ForumEntry struct {
 	CSSSelector string `json:"css_selector" mapstructure:"css_selector"`
 	IsOnion     bool   `json:"is_onion" mapstructure:"is_onion"`
 	Type        string `json:"type" mapstructure:"type"`
-	
 }
 
 // Forum scrape edilen veri (Elasticsearch uyumlu)
@@ -39,7 +38,6 @@ type Forum struct {
 }
 
 // formatTimestampWithMs timestamp'i milisaniye ile formatlar
-// Format: "2025-10-12T17:30:45.552Z"
 func formatTimestampWithMs(t time.Time) string {
 	return fmt.Sprintf("%s.%03dZ",
 		t.Format("2006-01-02T15:04:05"),
@@ -63,149 +61,185 @@ func NewForum(source, content, author, link, contentType string) Forum {
 	}
 }
 
-// LastContentStore son çekilen içeriklerin hash'lerini saklar
+// LastContentStore son çekilen içeriklerin hash'lerini ve timestamp'lerini saklar
 type LastContentStore struct {
-	Hashes map[string]string `json:"hashes"`
+	Hashes    map[string]string `json:"hashes"`
+	Timestamps map[string]int64  `json:"timestamps,omitempty"` // TTL için
 }
 
-// ContentChecker içerik karşılaştırma (Link + Normalized Content + SHA-256 Hash)
+// ContentChecker içerik karşılaştırma (Source + Normalized Content + SHA-256 Hash)
 type ContentChecker struct {
-	lastHashes   map[string]string
+	lastHashes   map[string]string // source -> content hash
+	lastSeen     map[string]int64  // source -> unix timestamp (TTL için)
 	mu           sync.RWMutex
 	filePath     string
 	dynamicRegex *regexp.Regexp
+	maxEntries   int           // Memory limit
+	ttlDays      int           // TTL gün sayısı
 }
+
+const (
+	// Memory ve TTL limitleri
+	defaultMaxEntries = 10000 // Max 10,000 URL
+	defaultTTLDays    = 30    // 30 gün sonra temizle
+)
 
 // NewContentChecker yeni bir checker oluşturur
 func NewContentChecker(filePath string) *ContentChecker {
-	// Dinamik içerik pattern'leri (normalize edilecek)
 	dynamicPattern := `(?i)(` +
+		// ==================== FORUM TABLO METRİKLERİ (ÖNCE) ====================
+		// Zaman ifadesi + yan yana sayılar (replies + views)
+		`(?:yesterday|today|tomorrow|ago|am|pm)[,\s]+\d{1,6}\s+\d{1,6}[,\s]*|` +
+		`\d{1,6}\s+\d{1,6}\s+(?:yesterday|today|tomorrow|ago|am|pm)[,\s]*|` +
+		`\d{1,2}:\d{2}\s*(?:am|pm)?[,\s]+\d{1,6}\s+\d{1,6}[,\s]*|` +
+		`\d{1,6}\s+\d{1,6}\s+\d{1,2}:\d{2}\s*(?:am|pm)?[,\s]*|` +
+		
+		// Zaman + tek sayı
+		`(?:yesterday|today|tomorrow|ago|am|pm)[,\s]+\d{1,5}[,\s]+|` +
+		`\d{1,5}\s+(?:yesterday|today|tomorrow|ago|am|pm)[,\s]*|` +
+		
+		// "by" veya "Last Post:" ile biten metrikler
+		`\d{1,6}\s+\d{1,6}\s+(?:by|last\s+post:?)[,\s]*|` +
+		`\d{1,6}\s+(?:by|last\s+post:?)[,\s]*|` +
+
 		// ==================== COUNTDOWN / TIMER ====================
-		`\d+\s*D\s*\d+\s*H\s*\d+\s*M\s*\d+\s*S|` + // 9 D 1 H 44 M 4 S
-		`\d+\s*d\s*\d+\s*h\s*\d+\s*m\s*\d+\s*s|` + // 9d 1h 44m 4s
-		`\d+\s*days?\s*\d+\s*hours?\s*\d+\s*min(ute)?s?\s*\d+\s*sec(ond)?s?|` + // 9 days 1 hour 44 min
-		`\d+\s*days?\s*\d+\s*hours?\s*\d+\s*min(ute)?s?|` + // 9 days 1 hour 44 min
-		`\d+\s*days?\s*\d+\s*hours?|` + // 9 days 1 hour
-		`\d+\s*h\s*\d+\s*m\s*\d+\s*s|` + // 1h 44m 30s
-		`\d+\s*h\s*\d+\s*m|` + // 1h 44m
-		`\d+:\d+:\d+:\d+|` + // 9:01:44:04 (D:H:M:S)
-		`\d+:\d+:\d+|` + // 01:44:04 (H:M:S)
-		`time\s*left[:\s]*[^,\n]+|` + // Time left: 9 days
-		`expires?\s*in[:\s]*[^,\n]+|` + // Expires in 9 days
-		`deadline[:\s]*[^,\n]+|` + // Deadline: 9 days
-		`countdown[:\s]*[^,\n]+|` + // Countdown: ...
+		`\d+\s*D\s*\d+\s*H\s*\d+\s*M\s*\d+\s*S[,\s]*|` +
+		`\d+\s*d\s*\d+\s*h\s*\d+\s*m\s*\d+\s*s[,\s]*|` +
+		`\d+\s*days?\s*\d+\s*hours?\s*\d+\s*min(?:ute)?s?\s*\d+\s*sec(?:ond)?s?[,\s]*|` +
+		`\d+\s*days?\s*\d+\s*hours?\s*\d+\s*min(?:ute)?s?[,\s]*|` +
+		`\d+\s*days?\s*\d+\s*hours?[,\s]*|` +
+		`\d+\s*h\s*\d+\s*m\s*\d+\s*s[,\s]*|` +
+		`\d+\s*h\s*\d+\s*m[,\s]*|` +
+		`\d+:\d+:\d+:\d+[,\s]*|` +
+		`\d+:\d+:\d+[,\s]*|` +
+		`time\s*left[:\s]*[^,\n]+[,\s]*|` +
+		`expires?\s*in[:\s]*[^,\n]+[,\s]*|` +
+		`deadline[:\s]*[^,\n]+[,\s]*|` +
+		`countdown[:\s]*[^,\n]+[,\s]*|` +
 
 		// ==================== TARİH / SAAT ====================
-		`\d{1,2}:\d{2}:\d{2}\s*(am|pm)?|` + // 14:30:45 veya 2:30:45 PM
-		`\d{1,2}:\d{2}\s*(am|pm)?|` + // 14:30 veya 2:30 PM
-		`\d{2}\.\d{2}\.\d{4}\s+\d{2}:\d{2}:\d{2}|` + // 06.12.2025 20:14:26
-		`\d{2}\.\d{2}\.\d{4}\s+\d{2}:\d{2}|` + // 06.12.2025 20:14
-		`\d{2}\.\d{2}\.\d{4}|` + // 06.12.2025
-		`\d{2}/\d{2}/\d{4}\s+\d{2}:\d{2}:\d{2}|` + // 12/06/2025 20:14:26
-		`\d{2}/\d{2}/\d{4}\s+\d{2}:\d{2}|` + // 12/06/2025 20:14
-		`\d{1,2}/\d{1,2}/\d{2,4}|` + // 12/6/25 veya 12/06/2025
-		`\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}|` + // 2025-12-06T20:14:26 (ISO)
-		`\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}|` + // 2025-12-06 20:14:26
-		`\d{4}-\d{2}-\d{2}|` + // 2025-12-06
+		`\d{1,2}:\d{2}:\d{2}\s*(?:am|pm)?[,\s]*|` +
+		`\d{1,2}:\d{2}\s*(?:am|pm)?[,\s]*|` +
+		`\d{2}\.\d{2}\.\d{4}\s+\d{2}:\d{2}:\d{2}[,\s]*|` +
+		`\d{2}\.\d{2}\.\d{4}\s+\d{2}:\d{2}[,\s]*|` +
+		`\d{2}\.\d{2}\.\d{4}[,\s]*|` +
+		`\d{2}/\d{2}/\d{4}\s+\d{2}:\d{2}:\d{2}[,\s]*|` +
+		`\d{2}/\d{2}/\d{4}\s+\d{2}:\d{2}[,\s]*|` +
+		`\d{1,2}/\d{1,2}/\d{2,4}[,\s]*|` +
+		`\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}[,\s]*|` +
+		`\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}[,\s]*|` +
+		`\d{4}-\d{2}-\d{2}[,\s]*|` +
+		`(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s+\d{1,2}[,\s]*\d{4}[,\s]*|` +
+		`\d{1,2}\s+(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*[,\s]*\d{4}[,\s]*|` +
+		`(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s+\d{1,2}[,\s]*|` +
 
 		// ==================== GÖRECELİ ZAMAN ====================
-		`\d+\s+(second|minute|hour|day|week|month|year)s?\s+ago|` + // 5 minutes ago
-		`\d+\s*(sec|min|hr|wk|mo|yr)s?\s+ago|` + // 5 min ago
-		`a\s+(second|minute|hour|day|week|month|year)\s+ago|` + // a minute ago
-		`a\s+moment\s+ago|just\s+now|moments?\s+ago|` + // just now
-		`yesterday|today|tomorrow|` + // yesterday
-		`last\s+(week|month|year)|` + // last week
-		`\d+\s*(seconds?|minutes?|hours?|days?|weeks?|months?|years?)\s*ago|` +
-		`(an?|one|\d+)\s+hours?\s+ago|` + // an hour ago
-		`recently|just\s+posted|new|updated|` + // recently
+		`\d+\s+(?:second|minute|hour|day|week|month|year)s?\s+ago[,\s]*|` +
+		`\d+\s*(?:sec|min|hr|wk|mo|yr)s?\s+ago[,\s]*|` +
+		`a\s+(?:second|minute|hour|day|week|month|year)\s+ago[,\s]*|` +
+		`an?\s+(?:second|minute|hour|day|week|month|year)\s+ago[,\s]*|` +
+		`a\s+moment\s+ago[,\s]*|just\s+now[,\s]*|moments?\s+ago[,\s]*|` +
+		`a\s+few\s+(?:second|minute|hour)s?\s+ago[,\s]*|` +
+		`seconds?\s+ago[,\s]*|minutes?\s+ago[,\s]*|hours?\s+ago[,\s]*|` +
+		`(?:yesterday|today|tomorrow)[,\s]*at\s*\d{1,2}:\d{2}\s*(?:am|pm)?[,\s]*|` +
+		`(?:yesterday|today|tomorrow)[,\s]*\d{1,2}:\d{2}\s*(?:am|pm)?[,\s]*|` +
+		`(?:yesterday|today|tomorrow)[,\s]*|` +
+		`last\s+(?:week|month|year|night|monday|tuesday|wednesday|thursday|friday|saturday|sunday)[,\s]*|` +
+		`in\s+\d+\s+(?:second|minute|hour|day|week|month|year)s?[,\s]*|` +
+		`recently[,\s]*|just\s+posted[,\s]*|just\s+now[,\s]*|` +
+		`new[,\s]*|updated[,\s]*|edited[,\s]*|modified[,\s]*|` +
 
 		// ==================== FORUM METRİKLERİ ====================
-		`views?\s*[:\-]?\s*[\d,\.]+\s*[km]?|` + // Views: 1,234 veya Views: 1.2k
-		`[\d,\.]+\s*[km]?\s*views?|` + // 1,234 views
-		`replies?\s*[:\-]?\s*[\d,\.]+|` + // Replies: 50
-		`[\d,\.]+\s*replies?|` + // 50 replies
-		`likes?\s*[:\-]?\s*[\d,\.]+|` + // Likes: 100
-		`[\d,\.]+\s*likes?|` + // 100 likes
-		`comments?\s*[:\-]?\s*[\d,\.]+|` + // Comments: 25
-		`[\d,\.]+\s*comments?|` + // 25 comments
-		`reactions?\s*[:\-]?\s*[\d,\.]+|` + // Reactions: 10
-		`[\d,\.]+\s*reactions?|` + // 10 reactions
-		`posts?\s*[:\-]?\s*[\d,\.]+|` + // Posts: 500
-		`[\d,\.]+\s*posts?|` + // 500 posts
-		`members?\s*[:\-]?\s*[\d,\.]+|` + // Members: 1000
-		`[\d,\.]+\s*members?|` + // 1000 members
-		`threads?\s*[:\-]?\s*[\d,\.]+|` + // Threads: 200
-		`[\d,\.]+\s*threads?|` + // 200 threads
-		`messages?\s*[:\-]?\s*[\d,\.]+|` + // Messages: 50
-		`[\d,\.]+\s*messages?|` + // 50 messages
-		`users?\s*online[:\s]*[\d,\.]+|` + // Users online: 50
-		`[\d,\.]+\s*users?\s*online|` + // 50 users online
-		`online[:\s]*[\d,\.]+|` + // Online: 50
-		`visitors?[:\s]*[\d,\.]+|` + // Visitors: 100
-		`[\d,\.]+\s*visitors?|` + // 100 visitors
-		`downloads?\s*[:\-]?\s*[\d,\.]+|` + // Downloads: 500
-		`[\d,\.]+\s*downloads?|` + // 500 downloads
-		`shares?\s*[:\-]?\s*[\d,\.]+|` + // Shares: 25
-		`[\d,\.]+\s*shares?|` + // 25 shares
-		`ratings?\s*[:\-]?\s*[\d,\.]+|` + // Rating: 4.5
-		`[\d,\.]+\s*ratings?|` + // 4.5 rating
-		`votes?\s*[:\-]?\s*[\d,\.]+|` + // Votes: 100
-		`[\d,\.]+\s*votes?|` + // 100 votes
-		`reputation\s*[:\-]?\s*[\d,\.]+|` + // Reputation: 500
-		`rep\s*[:\-]?\s*[\d,\.]+|` + // Rep: 500
-		`karma\s*[:\-]?\s*[\d,\.]+|` + // Karma: 100
-		`points?\s*[:\-]?\s*[\d,\.]+|` + // Points: 250
-		`[\d,\.]+\s*points?|` + // 250 points
-		`credits?\s*[:\-]?\s*[\d,\.]+|` + // Credits: 100
-		`[\d,\.]+\s*credits?|` + // 100 credits
+		`views?[:\s]*[\d,\.]+\s*[km]?[,\s]*|` +
+		`[\d,\.]+\s*[km]?\s*views?[,\s]*|` +
+		`[\d,\.]+\s*[km]?\s*view[,\s]*|` +
+		`replies?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*replies?[,\s]*|` +
+		`comments?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*comments?[,\s]*|` +
+		`responses?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*responses?[,\s]*|` +
+		`likes?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*likes?[,\s]*|` +
+		`reactions?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*reactions?[,\s]*|` +
+		`upvotes?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*upvotes?[,\s]*|` +
+		`downvotes?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*downvotes?[,\s]*|` +
+		`posts?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*posts?[,\s]*|` +
+		`threads?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*threads?[,\s]*|` +
+		`topics?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*topics?[,\s]*|` +
+		`members?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*members?[,\s]*|` +
+		`users?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*users?[,\s]*|` +
+		`users?\s+online[:\s]*[\d,\.]+[,\s]*|` +
+		`[\d,\.]+\s*users?\s*online[,\s]*|` +
+		`online[:\s]*[\d,\.]+[,\s]*|` +
+		`guests?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*guests?[,\s]*|` +
+		`messages?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*messages?[,\s]*|` +
+		`downloads?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*downloads?[,\s]*|` +
+		`shares?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*shares?[,\s]*|` +
+		`ratings?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*ratings?[,\s]*|` +
+		`stars?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*stars?[,\s]*|` +
+		`score[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*score[,\s]*|` +
+		`points?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*points?[,\s]*|` +
+		`karma[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*karma[,\s]*|` +
+		`reputation[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*reputation[,\s]*|` +
+		`rep[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*rep[,\s]*|` +
+		`credits?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*credits?[,\s]*|` +
 
-		// ==================== RANSOMWARE / LEAK SPESİFİK ====================
-		`disclosures?\s*\d+/\d+|` + // Disclosures 0/2
-		`\d+/\d+\s*disclosures?|` + // 0/2 disclosures
-		`victims?\s*[:\-]?\s*[\d,\.]+|` + // Victims: 50
-		`[\d,\.]+\s*victims?|` + // 50 victims
-		`files?\s*encrypted[:\s]*[\d,\.]+|` + // Files encrypted: 1000
-		`encrypted\s*files?[:\s]*[\d,\.]+|` + // Encrypted files: 1000
-		`data\s*size[:\s]*[\d,\.]+\s*(gb|tb|mb|kb|bytes?)?|` + // Data size: 500 GB
-		`[\d,\.]+\s*(gb|tb|mb|kb)\s*data|` + // 500 GB data
-		`~?\s*[\d,\.]+\s*(gb|tb|mb|kb)\s*(data|total)?|` + // ~500 GB total
-		`total\s*size[:\s]*[\d,\.]+\s*(gb|tb|mb|kb)?|` + // Total size: 500 GB
-		`price[:\s]*\$?[\d,\.]+|` + // Price: $50000
-		`ransom[:\s]*\$?[\d,\.]+|` + // Ransom: $50000
-		`payment[:\s]*\$?[\d,\.]+|` + // Payment: $50000
-		`amount[:\s]*\$?[\d,\.]+|` + // Amount: $50000
-		`\$[\d,\.]+\s*(usd|btc)?|` + // $50,000 USD
-		`[\d,\.]+\s*(usd|btc|xmr|eth)|` + // 50000 USD
-		`published[:\s]*\d+|` + // Published: 5
-		`leaked[:\s]*\d+|` + // Leaked: 5
+		// ==================== RANSOMWARE / LEAK ====================
+		`disclosures?\s*\d+/\d+[,\s]*|\d+/\d+\s*disclosures?[,\s]*|` +
+		`victims?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*victims?[,\s]*|` +
+		`companies?\s*affected[:\s]*[\d,\.]+[,\s]*|` +
+		`files?\s*encrypted[:\s]*[\d,\.]+[,\s]*|` +
+		`encrypted\s*files?[:\s]*[\d,\.]+[,\s]*|` +
+		`files?\s*leaked[:\s]*[\d,\.]+[,\s]*|` +
+		`data\s*size[:\s]*~?\s*[\d,\.]+\s*(?:gb|tb|mb|kb|bytes?)?[,\s]*|` +
+		`~?\s*[\d,\.]+\s*(?:gb|tb|mb|kb)\s*(?:data|total|size)?[,\s]*|` +
+		`total\s*size[:\s]*~?\s*[\d,\.]+\s*(?:gb|tb|mb|kb)?[,\s]*|` +
+		`size[:\s]*~?\s*[\d,\.]+\s*(?:gb|tb|mb|kb)?[,\s]*|` +
+		`price[:\s]*\$?\s*[\d,\.]+[,\s]*|` +
+		`ransom[:\s]*\$?\s*[\d,\.]+[,\s]*|` +
+		`payment[:\s]*\$?\s*[\d,\.]+[,\s]*|` +
+		`amount[:\s]*\$?\s*[\d,\.]+[,\s]*|` +
+		`\$\s*[\d,\.]+\s*(?:usd|btc|xmr|eth)?[,\s]*|` +
+		`[\d,\.]+\s*(?:usd|btc|xmr|eth|bitcoin|monero|ethereum)[,\s]*|` +
+		`published[:\s]*\d+[,\s]*|leaked[:\s]*\d+[,\s]*|` +
 
-		// ==================== SAYFA / INDEX ====================
-		`page\s*\d+\s*(of\s*\d+)?|` + // Page 1 of 10
-		`\d+\s*of\s*\d+|` + // 1 of 10
-		`showing\s*\d+\s*-\s*\d+|` + // Showing 1 - 10
-		`#\d+|` + // #123
+		// ==================== SAYFA / NAVİGASYON ====================
+		`page\s*\d+\s*(?:of\s*\d+)?[,\s]*|` +
+		`\d+\s*of\s*\d+[,\s]*|` +
+		`showing\s*\d+\s*-\s*\d+[,\s]*|` +
+		`#\d+[,\s]*|` +
+		`prev(?:ious)?[,\s]*|next[,\s]*|first[,\s]*|last[,\s]*|` +
 
 		// ==================== KULLANICI DURUMU ====================
-		`last\s*seen[:\s]*[^,\n]+|` + // Last seen: 5 min ago
-		`last\s*active[:\s]*[^,\n]+|` + // Last active: today
-		`last\s*visit[:\s]*[^,\n]+|` + // Last visit: yesterday
-		`last\s*login[:\s]*[^,\n]+|` + // Last login: 2 days ago
-		`(currently\s*)?(online|offline|away|busy|idle)|` + // Online/Offline
-		`status[:\s]*(online|offline|away|busy|idle)|` + // Status: Online
-		`active\s*now|` + // Active now
+		`last\s*seen[:\s]*[^,\n]+[,\s]*|` +
+		`last\s*active[:\s]*[^,\n]+[,\s]*|` +
+		`last\s*visit[:\s]*[^,\n]+[,\s]*|` +
+		`last\s*login[:\s]*[^,\n]+[,\s]*|` +
+		`last\s*post[:\s]*[^,\n]+[,\s]*|` +
+		`(?:currently\s*)?(?:online|offline|away|busy|idle|invisible)[,\s]*|` +
+		`status[:\s]*(?:online|offline|away|busy|idle)[,\s]*|` +
+		`active\s*now[,\s]*|` +
+		`joined[:\s]*[^,\n]+[,\s]*|` +
 
-		// ==================== DOSYA / VERİ BOYUTU ====================
-		`[\d,\.]+\s*(bytes?|kb|mb|gb|tb|pb)|` + // 500 MB
-		`size[:\s]*[\d,\.]+\s*(bytes?|kb|mb|gb|tb)?|` + // Size: 500 MB
-		`length[:\s]*[\d,\.]+|` + // Length: 500
-		`duration[:\s]*[\d:]+|` + // Duration: 5:30
-		`[\d:]+\s*duration` + // 5:30 duration
+		// ==================== DOSYA BOYUTU ====================
+		`[\d,\.]+\s*(?:bytes?|kb|mb|gb|tb|pb)[,\s]*|` +
+		`size[:\s]*[\d,\.]+\s*(?:bytes?|kb|mb|gb|tb)?[,\s]*|` +
+		`length[:\s]*[\d,\.]+[,\s]*|` +
+		`duration[:\s]*[\d:]+[,\s]*|` +
+		`[\d:]+\s*duration[,\s]*|` +
+
+		// ==================== DİĞER ====================
+		`visitors?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*visitors?[,\s]*|` +
+		`hits?[:\s]*[\d,\.]+[,\s]*|[\d,\.]+\s*hits?[,\s]*|` +
+		`[\d,\.]+\s*%[,\s]*|` +
+		`\b\d{4,}\b[,\s]*` +
 		`)`
+
 
 	return &ContentChecker{
 		lastHashes:   make(map[string]string),
+		lastSeen:     make(map[string]int64),
 		filePath:     filePath,
 		dynamicRegex: regexp.MustCompile(dynamicPattern),
+		maxEntries:   defaultMaxEntries,
+		ttlDays:      defaultTTLDays,
 	}
 }
 
@@ -221,81 +255,112 @@ func (cc *ContentChecker) computeHash(content string) string {
 	return hex.EncodeToString(hash[:])
 }
 
-// makeKey composite key oluşturur (source + link)
-func (cc *ContentChecker) makeKey(source, link string) string {
-	if link == "" {
-		return source
-	}
-	return source + "|" + link
+// makeKey source bazlı key oluşturur
+func (cc *ContentChecker) makeKey(source string) string {
+	return source
 }
 
 // IsDuplicate içeriğin değişip değişmediğini kontrol eder
-func (cc *ContentChecker) IsDuplicate(source, link, content string) bool {
+func (cc *ContentChecker) IsDuplicate(source, content string) bool {
 	cc.mu.RLock()
 	defer cc.mu.RUnlock()
 
 	newHash := cc.computeHash(content)
+	key := cc.makeKey(source)
 
-	// 1. Önce tam key ile kontrol et (source + link)
-	if link != "" {
-		key := cc.makeKey(source, link)
-		if lastHash, exists := cc.lastHashes[key]; exists {
-			if newHash == lastHash {
-				return true
-			}
-		}
-	}
-
-	// 2. Sadece source ile kontrol et (link boş olabilir)
-	if lastHash, exists := cc.lastHashes[source]; exists {
-		if newHash == lastHash {
-			return true
-		}
-	}
-
-	// 3. Content hash ile tüm değerleri tara (ekstra güvenlik)
-	for _, existingHash := range cc.lastHashes {
-		if existingHash == newHash {
-			return true
-		}
+	if lastHash, exists := cc.lastHashes[key]; exists {
+		return newHash == lastHash
 	}
 
 	return false
 }
 
 // Update içeriği günceller ve hash'i saklar
-func (cc *ContentChecker) Update(source, link, content string) string {
+func (cc *ContentChecker) Update(source, content string) string {
 	cc.mu.Lock()
 	defer cc.mu.Unlock()
 
 	hash := cc.computeHash(content)
+	key := cc.makeKey(source)
+	
+	cc.lastHashes[key] = hash
+	cc.lastSeen[key] = time.Now().Unix()
 
-	// Her iki key'e de kaydet (link varsa)
-	if link != "" {
-		key := cc.makeKey(source, link)
-		cc.lastHashes[key] = hash
+	// ✅ YENİ: Memory limit kontrolü
+	if len(cc.lastHashes) > cc.maxEntries {
+		cc.cleanupOldEntries()
 	}
-
-	// Source-only key'e de kaydet (fallback için)
-	cc.lastHashes[source] = hash
 
 	return hash
 }
 
-// Count kayıtlı URL+Link sayısını döner
+// cleanupOldEntries eski kayıtları temizler (TTL + memory limit)
+func (cc *ContentChecker) cleanupOldEntries() {
+	now := time.Now().Unix()
+	ttlSeconds := int64(cc.ttlDays * 24 * 60 * 60)
+	
+	var toDelete []string
+	
+	// TTL aşan kayıtları bul
+	for key, lastSeenTime := range cc.lastSeen {
+		if now-lastSeenTime > ttlSeconds {
+			toDelete = append(toDelete, key)
+		}
+	}
+	
+	// Sil
+	for _, key := range toDelete {
+		delete(cc.lastHashes, key)
+		delete(cc.lastSeen, key)
+	}
+	
+	// Hala limit aşıyorsa, en eskileri sil (LRU)
+	if len(cc.lastHashes) > cc.maxEntries {
+		// En eski kayıtları bul
+		type entry struct {
+			key       string
+			timestamp int64
+		}
+		
+		var entries []entry
+		for key, ts := range cc.lastSeen {
+			entries = append(entries, entry{key, ts})
+		}
+		
+		// Timestamp'e göre sırala (eski → yeni)
+		for i := 0; i < len(entries)-1; i++ {
+			for j := i + 1; j < len(entries); j++ {
+				if entries[i].timestamp > entries[j].timestamp {
+					entries[i], entries[j] = entries[j], entries[i]
+				}
+			}
+		}
+		
+		// En eski %10'u sil
+		deleteCount := cc.maxEntries / 10
+		for i := 0; i < deleteCount && i < len(entries); i++ {
+			key := entries[i].key
+			delete(cc.lastHashes, key)
+			delete(cc.lastSeen, key)
+		}
+	}
+}
+
+// Count kayıtlı URL sayısını döner
 func (cc *ContentChecker) Count() int {
 	cc.mu.RLock()
 	defer cc.mu.RUnlock()
 	return len(cc.lastHashes)
 }
 
-// SaveToFile son hash'leri dosyaya kaydeder
+// SaveToFile son hash'leri ve timestamp'leri dosyaya kaydeder
 func (cc *ContentChecker) SaveToFile() error {
 	cc.mu.RLock()
 	defer cc.mu.RUnlock()
 
 	store := LastContentStore{
-		Hashes: cc.lastHashes,
+		Hashes:     cc.lastHashes,
+		Timestamps: cc.lastSeen,
 	}
 
 	data, err := json.MarshalIndent(store, "", "  ")
@@ -314,7 +379,7 @@ func (cc *ContentChecker) SaveToFile() error {
 	return nil
 }
 
-// LoadFromFile son hash'leri dosyadan yükler
+// LoadFromFile son hash'leri ve timestamp'leri dosyadan yükler
 func (cc *ContentChecker) LoadFromFile() error {
 	data, err := os.ReadFile(cc.filePath)
 	if err != nil {
@@ -332,15 +397,19 @@ func (cc *ContentChecker) LoadFromFile() error {
 	cc.mu.Lock()
 	defer cc.mu.Unlock()
 
-	// Eski format kontrolü (backward compatibility)
+	// Backward compatibility - eski format
 	if store.Hashes == nil {
 		var oldStore struct {
 			Contents map[string]string `json:"contents"`
 		}
 		if err := json.Unmarshal(data, &oldStore); err == nil && oldStore.Contents != nil {
 			cc.lastHashes = make(map[string]string)
+			cc.lastSeen = make(map[string]int64)
+			now := time.Now().Unix()
+			
 			for key, content := range oldStore.Contents {
 				cc.lastHashes[key] = cc.computeHash(content)
+				cc.lastSeen[key] = now
 			}
 			return nil
 		}
@@ -351,5 +420,42 @@ func (cc *ContentChecker) LoadFromFile() error {
 		cc.lastHashes = make(map[string]string)
 	}
 
+	cc.lastSeen = store.Timestamps
+	if cc.lastSeen == nil {
+		cc.lastSeen = make(map[string]int64)
+		// Timestamp yoksa şimdiyi kullan
+		now := time.Now().Unix()
+		for key := range cc.lastHashes {
+			cc.lastSeen[key] = now
+		}
+	}
+
+	// Yükleme sonrası eski kayıtları temizle
+	cc.cleanupOldEntries()
+
 	return nil
+}
+
+// GetStats memory ve TTL istatistiklerini döner
+func (cc *ContentChecker) GetStats() map[string]interface{} {
+	cc.mu.RLock()
+	defer cc.mu.RUnlock()
+
+	now := time.Now().Unix()
+	ttlSeconds := int64(cc.ttlDays * 24 * 60 * 60)
+	
+	expiredCount := 0
+	for _, ts := range cc.lastSeen {
+		if now-ts > ttlSeconds {
+			expiredCount++
+		}
+	}
+
+	return map[string]interface{}{
+		"total_entries":   len(cc.lastHashes),
+		"max_entries":     cc.maxEntries,
+		"ttl_days":        cc.ttlDays,
+		"expired_count":   expiredCount,
+		"memory_usage_pct": float64(len(cc.lastHashes)) / float64(cc.maxEntries) * 100,
+	}
 }

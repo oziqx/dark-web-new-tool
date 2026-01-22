@@ -349,7 +349,7 @@ func scrapeBatch(ctx context.Context, s *scraper.Scraper, batch []models.ForumEn
 			}
 
 			// İçerik karşılaştırma (SHA-256 Hash)
-			if contentChecker.IsDuplicate(scraperData.Source, scraperData.Link, scraperData.Content) {
+			if contentChecker.IsDuplicate(scraperData.Source, scraperData.Content) {
 				log.Info().
 					Str("forum", e.Name).
 					Str("url", e.URL).
@@ -376,7 +376,7 @@ func scrapeBatch(ctx context.Context, s *scraper.Scraper, batch []models.ForumEn
 			)
 
 			// Content hash'i hesapla
-			contentHash := contentChecker.Update(data.Source, data.Link, data.Content)
+			contentHash := contentChecker.Update(data.Source, data.Content)
 			data.ContentHash = contentHash
 
 			// Elasticsearch'e ANINDA gönder

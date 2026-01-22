@@ -7,7 +7,9 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"runtime"
 	"strings"
+	"sync"
 	"time"
 
 	"dark-deep-new-tool/pkg/flaresolverr"
@@ -30,7 +32,7 @@ const (
 	maxElementWaitOnion = 60 * time.Second
 	logInterval         = 10 * time.Second
 
-	// Minimum içerik uzunluğu (geçersiz içerikleri filtrele)
+	// Minimum içerik uzunluğu
 	minContentLength = 50
 )
 
@@ -60,12 +62,16 @@ type Scraper struct {
 	onionCancel    context.CancelFunc
 	flareClient    *flaresolverr.Client
 	flareAvailable bool
+	
+	// ✅ YENİ: Browser auto-restart için
+	scrapeCount  int64
+	restartMutex sync.Mutex
+	restartLimit int
 }
 
-// NewScraperWithBrowsers tek chrome, çoklu sekme ile scraper oluşturur
-func NewScraperWithBrowsers(torClient *http.Client) *Scraper {
-	// STEALTH MODE: Normal siteler için browser
-	normalAllocOpts := []chromedp.ExecAllocatorOption{
+// ✅ YENİ: buildChromeOptions ortak Chrome ayarlarını döndürür (kod tekrarını önler)
+func buildChromeOptions() []chromedp.ExecAllocatorOption {
+	return []chromedp.ExecAllocatorOption{
 		chromedp.NoFirstRun,
 		chromedp.NoDefaultBrowserCheck,
 		chromedp.Flag("headless", true),
@@ -73,8 +79,6 @@ func NewScraperWithBrowsers(torClient *http.Client) *Scraper {
 		chromedp.Flag("no-sandbox", true),
 		chromedp.Flag("disable-dev-shm-usage", true),
 		chromedp.Flag("disable-setuid-sandbox", true),
-
-		// STEALTH FLAGS - Cloudflare bypass
 		chromedp.Flag("disable-blink-features", "AutomationControlled"),
 		chromedp.Flag("exclude-switches", "enable-automation"),
 		chromedp.Flag("disable-infobars", true),
@@ -96,26 +100,26 @@ func NewScraperWithBrowsers(torClient *http.Client) *Scraper {
 		chromedp.Flag("force-color-profile", "srgb"),
 		chromedp.Flag("metrics-recording-only", true),
 		chromedp.Flag("safebrowsing-disable-auto-update", true),
-
-		// Gerçek browser gibi görün
 		chromedp.Flag("disable-web-security", false),
 		chromedp.Flag("disable-webgl", false),
 		chromedp.Flag("disable-reading-from-canvas", false),
-
-		// Güncel User-Agent
 		chromedp.UserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"),
 		chromedp.WindowSize(1920, 1080),
 	}
+}
 
+// NewScraperWithBrowsers tek chrome, çoklu sekme ile scraper oluşturur
+func NewScraperWithBrowsers(torClient *http.Client) *Scraper {
+	// ✅ GÜNCELLENDİ: Helper fonksiyon kullanılıyor
+	normalAllocOpts := buildChromeOptions()
 	normalAllocCtx, _ := chromedp.NewExecAllocator(context.Background(), normalAllocOpts...)
 	normalBrowser, normalCancel := chromedp.NewContext(normalAllocCtx, chromedp.WithLogf(func(string, ...interface{}) {}))
 
-	// Onion siteler için browser (Tor proxy ile)
-	onionAllocOpts := append(normalAllocOpts, chromedp.ProxyServer("socks5://127.0.0.1:9150"))
+	// ✅ GÜNCELLENDİ: Helper fonksiyon kullanılıyor
+	onionAllocOpts := append(buildChromeOptions(), chromedp.ProxyServer("socks5://127.0.0.1:9150"))
 	onionAllocCtx, _ := chromedp.NewExecAllocator(context.Background(), onionAllocOpts...)
 	onionBrowser, onionCancel := chromedp.NewContext(onionAllocCtx, chromedp.WithLogf(func(string, ...interface{}) {}))
 
-	// FlareSolverr client
 	flareClient := flaresolverr.NewClient()
 	flareAvailable := flareClient.IsAvailable()
 
@@ -136,6 +140,8 @@ func NewScraperWithBrowsers(torClient *http.Client) *Scraper {
 		onionCancel:    onionCancel,
 		flareClient:    flareClient,
 		flareAvailable: flareAvailable,
+		scrapeCount:    0,   // ✅ YENİ
+		restartLimit:   100, // ✅ YENİ: Her 100 scrape'te restart
 	}
 }
 
@@ -156,6 +162,13 @@ func (s *Scraper) Close() {
 
 // Scrape forumdan veri çeker
 func (s *Scraper) Scrape(entry models.ForumEntry, cwd string) (models.Forum, error) {
+	// ✅ YENİ: Browser restart kontrolü
+	if s.incrementScrapeCount() {
+		if err := s.restartBrowsers(); err != nil {
+			zlog.Error().Err(err).Msg("❌ Browser restart başarısız")
+		}
+	}
+
 	forum := models.Forum{
 		Source: entry.URL,
 	}
@@ -175,12 +188,8 @@ func (s *Scraper) Scrape(entry models.ForumEntry, cwd string) (models.Forum, err
 			Int("deneme", attempt).
 			Msg("🔄 Tarama başlatılıyor")
 
-		// Yeni tab aç
 		tabCtx, tabCancel := s.createTab(entry.IsOnion, timeout)
-
 		content, author, link, err := s.performScrape(tabCtx, entry, cwd)
-
-		// Tab'ı kapat
 		tabCancel()
 
 		elapsed := time.Since(startTime)
@@ -266,16 +275,12 @@ func (s *Scraper) isCloudflareChallenge(html string) bool {
 	}
 	return false
 }
-
-// performScrape scraping işlemini yapar
+// ✅ ESKİ HALİNE GERİ DÖN (Fallback logic'siz)
 func (s *Scraper) performScrape(ctx context.Context, entry models.ForumEntry, cwd string) (string, string, string, error) {
-	// Stealth scripts inject et
 	s.injectStealthScripts(ctx)
 
-	// PARALEL: Sayfa yükle + Element ara (aynı anda)
 	found, html, err := s.loadPageAndWaitElement(ctx, entry)
 
-	// Cloudflare check
 	if err != nil || !found {
 		if html != "" && s.isCloudflareChallenge(html) {
 			zlog.Info().
@@ -289,10 +294,8 @@ func (s *Scraper) performScrape(ctx context.Context, entry models.ForumEntry, cw
 		return "", "", "", fmt.Errorf("element bulunamadı: %s - %v", entry.CSSSelector, err)
 	}
 
-	// İçerik çekme
 	content, err := s.extractContent(ctx, entry.CSSSelector)
 	if err != nil || content == "" {
-		// Cloudflare olabilir, tekrar kontrol et
 		var currentHTML string
 		chromedp.Run(ctx, chromedp.OuterHTML("html", &currentHTML))
 		if s.isCloudflareChallenge(currentHTML) {
@@ -307,23 +310,21 @@ func (s *Scraper) performScrape(ctx context.Context, entry models.ForumEntry, cw
 		return "", "", "", fmt.Errorf("içerik çekilemedi: %w", err)
 	}
 
-	// İçeriği temizle
 	content = cleanContent(content)
-
-	// Metadata çekme
 	author := s.extractMetadata(ctx, fmt.Sprintf("%s .username", entry.CSSSelector))
 	link := s.extractLink(ctx, entry.CSSSelector)
 
 	return content, author, link, nil
 }
 
-// scrapeWithFlareSolverr FlareSolverr kullanarak scrape yapar
+
+
+
 func (s *Scraper) scrapeWithFlareSolverr(ctx context.Context, entry models.ForumEntry, cwd string) (string, string, string, error) {
 	if !s.flareAvailable {
 		return "", "", "", fmt.Errorf("FlareSolverr kullanılamıyor, Cloudflare korumalı site atlanıyor")
 	}
 
-	// FlareSolverr ile sayfayı al
 	resp, err := s.flareClient.GetPage(ctx, entry.URL)
 	if err != nil {
 		return "", "", "", fmt.Errorf("FlareSolverr hatası: %w", err)
@@ -334,11 +335,9 @@ func (s *Scraper) scrapeWithFlareSolverr(ctx context.Context, entry models.Forum
 		return "", "", "", fmt.Errorf("FlareSolverr boş HTML döndü")
 	}
 
-	// HTML'den içerik çıkar
 	content, author, link := s.parseHTMLContent(html, entry.CSSSelector)
 
 	if content == "" {
-		// Debug için HTML kaydet
 		s.saveHTMLForDebug(html, entry.Name, cwd)
 		return "", "", "", fmt.Errorf("FlareSolverr HTML'inden içerik çıkarılamadı")
 	}
@@ -353,16 +352,10 @@ func (s *Scraper) scrapeWithFlareSolverr(ctx context.Context, entry models.Forum
 
 // cleanContent içerikteki gereksiz whitespace'leri temizler
 func cleanContent(content string) string {
-	// Tab ve çoklu boşlukları tek boşluğa çevir
 	content = multipleSpaceRegex.ReplaceAllString(content, " ")
-
-	// Çoklu newline'ları tek newline'a çevir
 	content = multipleNewlineRegex.ReplaceAllString(content, "\n")
-
-	// Başındaki ve sonundaki boşlukları temizle
 	content = strings.TrimSpace(content)
 
-	// Satır başı/sonu boşlukları temizle
 	lines := strings.Split(content, "\n")
 	var cleanedLines []string
 	for _, line := range lines {
@@ -377,18 +370,15 @@ func cleanContent(content string) string {
 
 // isValidContent içeriğin geçerli olup olmadığını kontrol eder
 func isValidContent(content string) bool {
-	// Çok kısa içerik
 	if len(content) < minContentLength {
 		return false
 	}
 
-	// Sadece sayı ve boşluk (pagination)
 	onlyNumbersSpaces := regexp.MustCompile(`^[\d\s\n]+$`)
 	if onlyNumbersSpaces.MatchString(content) {
 		return false
 	}
 
-	// Sadece navigation/menu öğeleri
 	navPatterns := []string{
 		"next", "previous", "page", "first", "last",
 		"ileri", "geri", "sayfa", "önceki", "sonraki",
@@ -403,7 +393,6 @@ func isValidContent(content string) bool {
 			}
 		}
 	}
-	// İçeriğin yarısından fazlası nav kelimeleriyse geçersiz
 	if len(words) > 0 && float64(navCount)/float64(len(words)) > 0.5 {
 		return false
 	}
@@ -413,37 +402,26 @@ func isValidContent(content string) bool {
 
 // parseHTMLContent HTML string'inden içerik çıkarır (goquery ile)
 func (s *Scraper) parseHTMLContent(html, selector string) (content, author, link string) {
-	// HTML'i parse et
 	doc, err := goquery.NewDocumentFromReader(strings.NewReader(html))
 	if err != nil {
 		zlog.Warn().Err(err).Msg("HTML parse hatası")
 		return "", "", ""
 	}
 
-	// Forum thread selector'ları (öncelik sırasına göre)
 	threadSelectors := []string{
-		// XenForo based (BlackHatWorld, etc.)
 		"div.structItem--thread",
 		"div.structItem-title",
 		"li.discussionListItem",
 		".discussionList .discussionListItem",
-
-		// MyBB based (Hydra, etc.)
 		"tr.inline_row",
 		"tr.forumdisplay_regular",
 		"div.thread_list_item",
 		".tborder tr",
-
-		// vBulletin based
 		"li.threadbit",
 		"div.threadbit",
 		".threads .thread",
-
-		// IPB/Invision
 		"li.ipsDataItem",
 		"div.cTopicList",
-
-		// Generic
 		"article.thread",
 		"div.thread-item",
 		"div.topic-item",
@@ -454,14 +432,12 @@ func (s *Scraper) parseHTMLContent(html, selector string) (content, author, link
 	var selection *goquery.Selection
 	var usedSelector string
 
-	// Önce verilen selector'ı dene
 	simpleSelector := simplifySelector(selector)
 	selection = doc.Find(simpleSelector).First()
 
 	if selection.Length() > 0 {
 		usedSelector = simpleSelector
 	} else {
-		// Alternatif selector'ları dene
 		for _, altSelector := range threadSelectors {
 			selection = doc.Find(altSelector).First()
 			if selection.Length() > 0 {
@@ -479,7 +455,6 @@ func (s *Scraper) parseHTMLContent(html, selector string) (content, author, link
 		return "", "", ""
 	}
 
-	// Thread title'ı çek (daha spesifik)
 	titleSelectors := []string{
 		".structItem-title a",
 		".subject_new a",
@@ -506,21 +481,17 @@ func (s *Scraper) parseHTMLContent(html, selector string) (content, author, link
 		}
 	}
 
-	// Eğer title bulunamadıysa, tüm text'i al
 	if title == "" {
 		title = selection.Text()
 	}
 
-	// İçeriği temizle
 	content = cleanContent(title)
 
-	// İçerik geçerli mi kontrol et
 	if !isValidContent(content) {
 		zlog.Warn().
 			Str("content_preview", truncateString(content, 50)).
 			Msg("İçerik geçersiz (pagination veya nav olabilir)")
 
-		// Bir sonraki elementi dene
 		selection = doc.Find(usedSelector).Eq(1)
 		if selection.Length() > 0 {
 			for _, titleSel := range titleSelectors {
@@ -539,7 +510,6 @@ func (s *Scraper) parseHTMLContent(html, selector string) (content, author, link
 		}
 	}
 
-	// Link çek
 	linkSelectors := []string{
 		"a[href*='thread']",
 		"a[href*='topic']",
@@ -560,7 +530,6 @@ func (s *Scraper) parseHTMLContent(html, selector string) (content, author, link
 		}
 	}
 
-	// Author çek
 	authorSelectors := []string{
 		".username",
 		".author",
@@ -596,7 +565,6 @@ func (s *Scraper) parseHTMLContent(html, selector string) (content, author, link
 func simplifySelector(selector string) string {
 	result := selector
 
-	// nth-child pattern'ini bul ve kaldır
 	for strings.Contains(result, ":nth-child") {
 		start := strings.Index(result, ":nth-child")
 		end := strings.Index(result[start:], ")")
@@ -607,11 +575,9 @@ func simplifySelector(selector string) string {
 		}
 	}
 
-	// > işaretlerini space'e çevir
 	result = strings.ReplaceAll(result, " > ", " ")
 	result = strings.ReplaceAll(result, ">", " ")
 
-	// Birden fazla space'i tek space'e çevir
 	for strings.Contains(result, "  ") {
 		result = strings.ReplaceAll(result, "  ", " ")
 	}
@@ -641,14 +607,12 @@ func (s *Scraper) loadPageAndWaitElement(ctx context.Context, entry models.Forum
 		Dur("max_süre", maxWait).
 		Msg("🚀 Paralel yükleme başlatıldı")
 
-	// Navigate başlat (blocking değil)
 	navigateDone := make(chan error, 1)
 	go func() {
 		err := chromedp.Run(ctx, chromedp.Navigate(entry.URL))
 		navigateDone <- err
 	}()
 
-	// Element polling başlat (navigate ile paralel)
 	deadline := time.Now().Add(maxWait)
 	query := fmt.Sprintf(`document.querySelectorAll('%s').length`, entry.CSSSelector)
 
@@ -657,10 +621,7 @@ func (s *Scraper) loadPageAndWaitElement(ctx context.Context, entry models.Forum
 	elementFound := false
 	var pageHTML string
 
-	// İlk 2 saniye navigate'in başlamasını bekle
 	time.Sleep(2 * time.Second)
-
-	// Stealth inject
 	s.injectStealthScripts(ctx)
 
 	for time.Now().Before(deadline) {
@@ -679,7 +640,6 @@ func (s *Scraper) loadPageAndWaitElement(ctx context.Context, entry models.Forum
 			break
 		}
 
-		// Cloudflare kontrolü için HTML al
 		if attemptCount%10 == 0 {
 			chromedp.Run(ctx, chromedp.OuterHTML("html", &pageHTML))
 			if s.isCloudflareChallenge(pageHTML) {
@@ -688,7 +648,6 @@ func (s *Scraper) loadPageAndWaitElement(ctx context.Context, entry models.Forum
 			}
 		}
 
-		// Smart logging: Her 10 saniyede bir log
 		if time.Since(lastLogTime) >= logInterval {
 			elapsed := time.Since(startTime)
 			remaining := maxWait - elapsed
@@ -703,20 +662,17 @@ func (s *Scraper) loadPageAndWaitElement(ctx context.Context, entry models.Forum
 		time.Sleep(elementPollInterval)
 	}
 
-	// Navigate sonucunu kontrol et
 	select {
 	case navErr := <-navigateDone:
 		if navErr != nil && !strings.Contains(navErr.Error(), "timeout") {
 			zlog.Debug().Err(navErr).Msg("Navigate tamamlandı")
 		}
 	default:
-		// Navigate hala devam ediyor
 	}
 
 	totalTime := time.Since(startTime)
 
 	if !elementFound {
-		// Son HTML'i al
 		chromedp.Run(ctx, chromedp.OuterHTML("html", &pageHTML))
 
 		zlog.Warn().
@@ -738,20 +694,17 @@ func (s *Scraper) loadPageAndWaitElement(ctx context.Context, entry models.Forum
 func (s *Scraper) extractContent(ctx context.Context, selector string) (string, error) {
 	var content string
 
-	// Yöntem 1: chromedp.Text
 	if err := chromedp.Run(ctx,
 		chromedp.Text(selector, &content, chromedp.ByQuery, chromedp.NodeVisible),
 	); err == nil && content != "" {
 		return strings.TrimSpace(content), nil
 	}
 
-	// Yöntem 2: innerText
 	query := fmt.Sprintf(`document.querySelector('%s')?.innerText || ''`, selector)
 	if err := chromedp.Run(ctx, chromedp.Evaluate(query, &content)); err == nil && content != "" {
 		return strings.TrimSpace(content), nil
 	}
 
-	// Yöntem 3: textContent
 	query = fmt.Sprintf(`document.querySelector('%s')?.textContent || ''`, selector)
 	if err := chromedp.Run(ctx, chromedp.Evaluate(query, &content)); err == nil && content != "" {
 		return strings.TrimSpace(content), nil
@@ -771,25 +724,21 @@ func (s *Scraper) extractMetadata(ctx context.Context, selector string) string {
 func (s *Scraper) extractLink(ctx context.Context, selector string) string {
 	var link string
 
-	// Yöntem 1: Selector içindeki ilk a tag'inin href'i
 	query := fmt.Sprintf(`document.querySelector('%s a')?.getAttribute('href') || ''`, selector)
 	if err := chromedp.Run(ctx, chromedp.Evaluate(query, &link)); err == nil && link != "" {
 		return link
 	}
 
-	// Yöntem 2: Selector'ın kendisi a tag'i olabilir
 	query = fmt.Sprintf(`document.querySelector('%s')?.getAttribute('href') || ''`, selector)
 	if err := chromedp.Run(ctx, chromedp.Evaluate(query, &link)); err == nil && link != "" {
 		return link
 	}
 
-	// Yöntem 3: data-href attribute
 	query = fmt.Sprintf(`document.querySelector('%s')?.getAttribute('data-href') || document.querySelector('%s a')?.getAttribute('data-href') || ''`, selector, selector)
 	if err := chromedp.Run(ctx, chromedp.Evaluate(query, &link)); err == nil && link != "" {
 		return link
 	}
 
-	// Yöntem 4: chromedp.AttributeValue (fallback)
 	chromedp.Run(ctx, chromedp.AttributeValue(fmt.Sprintf("%s a", selector), "href", &link, nil, chromedp.ByQuery))
 
 	return link
@@ -804,7 +753,6 @@ func (s *Scraper) saveFailure(ctx context.Context, forumName string, cwd string)
 		return
 	}
 
-	// Screenshot
 	var buf []byte
 	if err := chromedp.Run(ctx, chromedp.FullScreenshot(&buf, 90)); err == nil && len(buf) > 0 {
 		path := filepath.Join(failureDir, fmt.Sprintf("%s_%s.png", forumName, timestamp))
@@ -812,7 +760,6 @@ func (s *Scraper) saveFailure(ctx context.Context, forumName string, cwd string)
 		zlog.Debug().Str("dosya", filepath.Base(path)).Msg("🔧 Failure screenshot kaydedildi")
 	}
 
-	// HTML
 	var html string
 	if err := chromedp.Run(ctx, chromedp.OuterHTML("html", &html)); err == nil && html != "" {
 		path := filepath.Join(failureDir, fmt.Sprintf("%s_%s.html", forumName, timestamp))
@@ -833,4 +780,54 @@ func (s *Scraper) saveHTMLForDebug(html, forumName, cwd string) {
 	path := filepath.Join(debugDir, fmt.Sprintf("%s_flare_%s.html", forumName, timestamp))
 	os.WriteFile(path, []byte(html), 0644)
 	zlog.Debug().Str("dosya", filepath.Base(path)).Msg("🔧 FlareSolverr HTML kaydedildi")
+}
+
+// ✅ YENİ: incrementScrapeCount scrape sayısını artırır ve restart gerekip gerekmediğini döner
+func (s *Scraper) incrementScrapeCount() bool {
+	s.restartMutex.Lock()
+	defer s.restartMutex.Unlock()
+
+	s.scrapeCount++
+
+	if s.scrapeCount >= int64(s.restartLimit) {
+		s.scrapeCount = 0
+		return true
+	}
+
+	return false
+}
+
+// ✅ YENİ: restartBrowsers browser'ları kapat-aç (memory temizliği)
+func (s *Scraper) restartBrowsers() error {
+	zlog.Info().
+		Int("limit", s.restartLimit).
+		Msg("🔄 Browser restart başlatılıyor (memory cleanup)")
+
+	if s.normalCancel != nil {
+		s.normalCancel()
+	}
+	if s.onionCancel != nil {
+		s.onionCancel()
+	}
+
+	time.Sleep(2 * time.Second)
+
+	normalAllocOpts := buildChromeOptions()
+	normalAllocCtx, _ := chromedp.NewExecAllocator(context.Background(), normalAllocOpts...)
+	s.normalBrowser, s.normalCancel = chromedp.NewContext(normalAllocCtx, chromedp.WithLogf(func(string, ...interface{}) {}))
+
+	onionAllocOpts := append(buildChromeOptions(), chromedp.ProxyServer("socks5://127.0.0.1:9150"))
+	onionAllocCtx, _ := chromedp.NewExecAllocator(context.Background(), onionAllocOpts...)
+	s.onionBrowser, s.onionCancel = chromedp.NewContext(onionAllocCtx, chromedp.WithLogf(func(string, ...interface{}) {}))
+
+	zlog.Info().Msg("✅ Browser restart tamamlandı")
+
+	var m runtime.MemStats
+	runtime.ReadMemStats(&m)
+	zlog.Info().
+		Uint64("alloc_mb", m.Alloc/1024/1024).
+		Uint64("sys_mb", m.Sys/1024/1024).
+		Msg("📊 Restart sonrası memory")
+
+	return nil
 }
