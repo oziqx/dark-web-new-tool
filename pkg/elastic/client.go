@@ -73,21 +73,21 @@ func (ec *ElasticClient) TestConnection() error {
 }
 
 // BuildDocumentID deterministik document ID oluşturur
-// Format: contentHash + "-" + shortHash(source)
-// Content-only hash: Link extraction sorunlarını önler
-func BuildDocumentID(contentHash, source string) string {
+// Format: linkHash + "-" + shortHash(source)
+// Link-based hash: Aynı post'un tekrar eklenmesini önler
+func BuildDocumentID(linkHash, source string) string {
 	// Source'un hash'ini al (ilk 12 karakter)
 	hash := sha256.Sum256([]byte(source))
 	shortHash := hex.EncodeToString(hash[:])[:12]
 
-	// Final ID: contentHash-shortHash
-	return contentHash + "-" + shortHash
+	// Final ID: linkHash-shortHash
+	return linkHash + "-" + shortHash
 }
 
 // IndexDocument tek bir dökümanı Elasticsearch'e gönderir
 func (ec *ElasticClient) IndexDocument(ctx context.Context, doc models.Forum) error {
-	// Document ID oluştur (deterministik)
-	docID := BuildDocumentID(doc.ContentHash, doc.Source)
+	// Document ID oluştur (deterministik - link hash bazlı)
+	docID := BuildDocumentID(doc.LinkHash, doc.Source)
 
 	// Document'i JSON'a çevir
 	data, err := json.Marshal(doc)
@@ -113,11 +113,10 @@ func (ec *ElasticClient) IndexDocument(ctx context.Context, doc models.Forum) er
 		return fmt.Errorf("elasticsearch index error: %s", res.String())
 	}
 
-	log.Info().
+log.Info().
 		Str("index", ec.index).
 		Str("doc_id", docID[:24]+"...").
-		Str("source", doc.Source).
-		Str("type", doc.Type).
+		Str("name", doc.Name).
 		Msg("✅ Döküman Elasticsearch'e kaydedildi")
 
 	return nil

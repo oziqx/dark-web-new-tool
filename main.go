@@ -28,21 +28,21 @@ const (
 	cleanupInterval    = 15 * time.Minute
 	maxConcurrent      = 3
 	batchSize          = 10
-	batchWaitTime      = 80 * time.Second   // ← Batch arası bekleme yok
-	scrapeInterval     = 60 * time.Second  // ← Döngü bitince 10 sn sonra tekrar
+	batchWaitTime      = 80 * time.Second
+	scrapeInterval     = 60 * time.Second
 	shutdownTimeout    = 30 * time.Second
 )
 
 var (
-	forumData       []models.Forum
-	forumCounter    int64
-	contentChecker  *models.ContentChecker
-	elasticClient   *elastic.ElasticClient
-	dataFile        = "output/data.json"
-	lastContentFile = "output/last_contents.json"
-	failureDir      = "output/failure"
-	dataMutex       sync.RWMutex
-	isShuttingDown  int32
+	forumData      []models.Forum
+	forumCounter   int64
+	linkChecker    *models.LinkChecker
+	elasticClient  *elastic.ElasticClient
+	dataFile       = "output/data.json"
+	lastLinksFile  = "output/last_links.json"
+	failureDir     = "output/failure"
+	dataMutex      sync.RWMutex
+	isShuttingDown int32
 )
 
 func main() {
@@ -77,17 +77,17 @@ func main() {
 
 	log.Info().Msg("🚀 Program başlatıldı")
 
-	// Content checker başlat
-	contentChecker = models.NewContentChecker(filepath.Join(cwd, lastContentFile))
-	log.Info().Msg("📋 İçerik karşılaştırma sistemi başlatıldı (SHA-256 Hash)")
+	// Link checker başlat
+	linkChecker = models.NewLinkChecker(filepath.Join(cwd, lastLinksFile))
+	log.Info().Msg("📋 Link bazlı duplicate kontrol sistemi başlatıldı")
 
-	// Son içerikleri yükle
-	if err := contentChecker.LoadFromFile(); err != nil {
-		log.Warn().Err(err).Msg("Son içerikler yüklenemedi, sıfırdan başlanıyor")
+	// Son linkleri yükle
+	if err := linkChecker.LoadFromFile(); err != nil {
+		log.Warn().Err(err).Msg("Son linkler yüklenemedi, sıfırdan başlanıyor")
 	} else {
 		log.Info().
-			Int("yüklenen_url", contentChecker.Count()).
-			Msg("📚 Son içerikler yüklendi")
+			Int("yüklenen_link", linkChecker.Count()).
+			Msg("📚 Son linkler yüklendi")
 	}
 
 	// Konfigürasyon yükle
@@ -171,7 +171,7 @@ func main() {
 		}
 	}
 	saveToJSON(cwd)
-	saveContentChecker()
+	saveLinkChecker()
 	performCleanup()
 	log.Info().Msg("✅ İlk tarama döngüsü tamamlandı")
 
@@ -199,7 +199,7 @@ func main() {
 				go func() {
 					log.Info().Msg("💾 Veriler kaydediliyor...")
 					saveToJSON(cwd)
-					saveContentChecker()
+					saveLinkChecker()
 					performCleanup()
 
 					log.Info().Msg("🧹 Browser'lar kapatılıyor...")
@@ -225,7 +225,7 @@ func main() {
 				}
 				log.Info().Msg("🧹 Periyodik cleanup başlatılıyor...")
 				performCleanup()
-				saveContentChecker()
+				saveLinkChecker()
 				logMemoryStats("Cleanup Sonrası")
 
 			case <-scrapeTicker.C:
@@ -239,7 +239,7 @@ func main() {
 					}
 				}
 				saveToJSON(cwd)
-				saveContentChecker()
+				saveLinkChecker()
 				log.Info().Msg("✅ Tarama döngüsü tamamlandı")
 			}
 		}
@@ -342,42 +342,42 @@ func scrapeBatch(ctx context.Context, s *scraper.Scraper, batch []models.ForumEn
 				return
 			}
 
-			// Boş content kontrolü
-			if scraperData.Content == "" {
-				log.Info().Str("forum", e.Name).Msg("⚠️ İçerik boş, atlanıyor")
+			// Boş link kontrolü (link zorunlu)
+			if scraperData.Link == "" {
+				log.Info().Str("forum", e.Name).Msg("⚠️ Link boş, atlanıyor")
 				return
 			}
 
-			// İçerik karşılaştırma (SHA-256 Hash)
-			if contentChecker.IsDuplicate(scraperData.Source, scraperData.Content) {
+			// Link bazlı duplicate kontrolü
+			if linkChecker.IsDuplicate(scraperData.Link) {
 				log.Info().
 					Str("forum", e.Name).
-					Str("url", e.URL).
 					Str("link", scraperData.Link).
-					Str("önizleme", truncateString(scraperData.Content, 40)).
-					Msg("🔄 İçerik değişmemiş, atlanıyor")
+					Str("title", truncateString(scraperData.Title, 40)).
+					Msg("🔄 Link zaten mevcut, atlanıyor")
 				return
 			}
 
 			// YENİ İÇERİK TESPİT EDİLDİ
 			log.Info().
 				Str("forum", e.Name).
-				Str("url", e.URL).
 				Str("link", scraperData.Link).
-				Msg("🆕 YENİ içerik tespit edildi")
+				Str("title", truncateString(scraperData.Title, 50)).
+				Msg("🆕 YENİ post tespit edildi")
 
-			// Elasticsearch uyumlu Forum struct'ı oluştur
+			// Link'i kaydet ve hash al
+			linkHash := linkChecker.Update(scraperData.Link, scraperData.Source)
+
+			// Forum struct'ı oluştur
 			data := models.NewForum(
-				scraperData.Source,
-				scraperData.Content,
+				entry.Name,
+				entry.URL,
+				scraperData.ThreadID,
+				scraperData.Title,
 				scraperData.Author,
 				scraperData.Link,
-				e.Type,
 			)
-
-			// Content hash'i hesapla
-			contentHash := contentChecker.Update(data.Source, data.Content)
-			data.ContentHash = contentHash
+			data.LinkHash = linkHash
 
 			// Elasticsearch'e ANINDA gönder
 			if err := saveToElastic(ctx, data); err != nil {
@@ -402,9 +402,10 @@ func scrapeBatch(ctx context.Context, s *scraper.Scraper, batch []models.ForumEn
 
 			log.Info().
 				Str("forum", e.Name).
+				Str("title", truncateString(data.Title, 40)).
 				Str("link", data.Link).
-				Str("hash", contentHash[:16]+"...").
-				Str("type", data.Type).
+				Str("author", data.Author).
+				Str("hash", linkHash[:16]+"...").
 				Int("kayıt_no", data.ID).
 				Int("bellekteki_kayıt", len(forumData)).
 				Msg("✅ YENİ VERİ kaydedildi")
@@ -458,7 +459,7 @@ func loadExistingData(cwd string) {
 	atomic.StoreInt64(&forumCounter, int64(len(forumData)))
 	log.Info().
 		Int("yüklenen_kayıt", len(forumData)).
-		Int("url_count", contentChecker.Count()).
+		Int("link_count", linkChecker.Count()).
 		Msg("📚 Eski veriler başarıyla yüklendi")
 }
 
@@ -495,12 +496,12 @@ func saveToJSON(cwd string) {
 	}
 }
 
-// saveContentChecker son içerikleri kaydeder
-func saveContentChecker() {
-	if err := contentChecker.SaveToFile(); err != nil {
-		log.Error().Err(err).Msg("Son içerikler kaydedilemedi")
+// saveLinkChecker son linkleri kaydeder
+func saveLinkChecker() {
+	if err := linkChecker.SaveToFile(); err != nil {
+		log.Error().Err(err).Msg("Son linkler kaydedilemedi")
 	} else {
-		log.Info().Int("url_count", contentChecker.Count()).Msg("💾 Son içerikler kaydedildi")
+		log.Info().Int("link_count", linkChecker.Count()).Msg("💾 Son linkler kaydedildi")
 	}
 }
 
@@ -522,9 +523,9 @@ func saveToElastic(ctx context.Context, data models.Forum) error {
 	}
 
 	log.Info().
-		Str("source", data.Source).
-		Str("type", data.Type).
-		Str("hash", data.ContentHash[:16]+"...").
+		Str("name", data.Name).
+		Str("title", truncateString(data.Title, 30)).
+		Str("hash", data.LinkHash[:16]+"...").
 		Msg("📊 Elasticsearch'e başarıyla gönderildi")
 
 	return nil
@@ -572,7 +573,7 @@ func logMemoryStats(phase string) {
 		Uint64("sys_mb", m.Sys/1024/1024).
 		Uint32("num_gc", m.NumGC).
 		Int("forum_data_count", len(forumData)).
-		Int("url_count", contentChecker.Count()).
+		Int("link_count", linkChecker.Count()).
 		Msg("📊 Memory Stats")
 }
 

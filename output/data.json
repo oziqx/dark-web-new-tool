@@ -1,866 +1,1102 @@
 [
   {
-    "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "FRESH HOTMAIL • UHQ • 1604x by Zyad2drkwb, 4 hours ago 0 19 4 hours ago Last Post: Zyad2drkwb",
-    "content-hash": "abaceb39bc9f77b47f7c29010e01ec7ba39f800a83ef4951c58a5e0e158d4002",
-    "detection-date": "2026-01-14T20:46:43.037Z",
-    "timestamp": "2026-01-14T20:46:43.037Z",
-    "type": "forum-post"
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-21T11:36:28.007Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "Forum-Cracked-Accounts\u0026datecut=9999\u0026prefix=0\u0026sortby=subject\u0026order=asc",
+    "detection-date": "",
+    "timestamp": "2026-01-21T11:36:36.026Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
     "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Email:Pass | 189K INSTAGRAM ACCOUNT by Braxo, 6 hours ago 0 27 6 hours ago Last Post: Braxo",
-    "content-hash": "9f51de75a1d3af373de5e5c69a283a7f5a00a802963eee85d36f74713e016e62",
-    "detection-date": "2026-01-14T20:46:50.771Z",
-    "timestamp": "2026-01-14T20:46:50.771Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "Forum-Stealer-Logs\u0026datecut=9999\u0026prefix=0\u0026sortby=subject\u0026order=asc",
+    "detection-date": "",
+    "timestamp": "2026-01-21T11:36:41.403Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://xforums.st/forums/database-log-pass-number-pass.34/",
-    "content": "Log:Pass [24] tickets.cafonline.com-- By X FORUMS X Forum Bot Yesterday at 5:51 AM Replies 1 Views 106 Yesterday at 10:16 AM danielstanislav42 D",
-    "content-hash": "e1be566beb41efc855571a6cab7b94fd8ed922a9452cf95a532edead0d6918ab",
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-21T11:52:34.573Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-21T11:52:34.576Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-21T11:52:34.573Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-21T11:52:44.857Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-22T10:03:47.923Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-22T10:03:47.923Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-22T10:03:47.934Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-22T10:05:54.793Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-22T13:33:19.205Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://xforums.st/forums/database-log-pass-number-pass.34/?order=post_date\u0026direction=desc",
+    "title": "",
     "author": "X Forum Bot",
     "link": "/members/x-forum-bot.4252/",
-    "detection-date": "2026-01-14T20:46:52.969Z",
-    "timestamp": "2026-01-14T20:46:52.969Z",
-    "type": "forum-post"
+    "detection-date": "",
+    "timestamp": "2026-01-22T13:33:28.759Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://niflheim.world/forums/combolist.2/",
-    "content": "WITH VALID ♋ 25k HOTMAIL Base With Valid [FORUMS] ♋ (53) ValidMail Today at 7:40 PM Replies 0 Views 22 Today at 7:40 PM ValidMail",
-    "content-hash": "4bda4e56785736b3ee1642497b746ae52ffe618436cf6659ccd8a65618531d9a",
-    "author": "ValidMail",
-    "link": "/members/validmail.26764/",
-    "detection-date": "2026-01-14T20:46:53.850Z",
-    "timestamp": "2026-01-14T20:46:53.850Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "1x EXPRESS VPN by Workspace2024, 3 hours ago 0 21 3 hours ago Last Post: Workspace2024",
-    "content-hash": "edad65305dfee7f148f659a922e927d64d9fd8eccb84fc72ee97c7443128c3f2",
-    "detection-date": "2026-01-14T20:47:15.302Z",
-    "timestamp": "2026-01-14T20:47:15.302Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://xreactor.org/",
-    "content": "BTC/ SOL / ETH Flasher! (cracked) pushinarpll 47 minutes ago Softwares 1 replies",
-    "content-hash": "1ff1803215107376114ef5852e8baa3f9067cfdeb6e85c6b6875f32c30a349c7",
-    "author": "pushinarpll",
-    "link": "/threads/btc-sol-eth-flasher-cracked.32866/",
-    "detection-date": "2026-01-15T00:33:19.620Z",
-    "timestamp": "2026-01-15T00:33:19.620Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Amazon Prime Video Full Account (Don't abuse) by StealthHUB-IO, 39 minutes ago 0 10 39 minutes ago Last Post: StealthHUB-IO",
-    "content-hash": "48872ef0c292011531a7d93c226056dc557ef576d77407833f843b445040dfbf",
-    "detection-date": "2026-01-15T00:34:15.747Z",
-    "timestamp": "2026-01-15T00:34:15.747Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "URL:LOGIN:PASS 8GB URL:LOGIN:PASS lines | From Logs by WhiteMelly, 2 minutes ago 0 0 2 minutes ago Last Post: WhiteMelly",
-    "content-hash": "dd285ae063d2363b4a0313a8dcca5ad0ef9280d188b1063ecc66cdea8128060d",
-    "detection-date": "2026-01-15T00:34:15.755Z",
-    "timestamp": "2026-01-15T00:34:15.755Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "COLLECTION [2026] BADVIBES (15gb across 100+ Sites) by p0ppin, 2 hours ago 2 75 1 hour ago Last Post: Addka72424",
-    "content-hash": "c5195b9503e4fb4be66e161bab2bd0bef4c445d8551b625ad775585e87f102c0",
-    "detection-date": "2026-01-15T00:34:20.056Z",
-    "timestamp": "2026-01-15T00:34:20.056Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "3k HOTMAIL lines | Mail Access by WhiteMelly, 4 minutes ago 0 3 4 minutes ago Last Post: WhiteMelly",
-    "content-hash": "0049972d43656dd9a53bf75144da2eeb162b6c7795d4749b8dc407c80fb655ab",
-    "detection-date": "2026-01-15T00:35:16.159Z",
-    "timestamp": "2026-01-15T00:35:16.159Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://hydraforums.io/Forums-vip-database?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "1 2 3 4 5 92",
-    "content-hash": "376758ae566a9d3fe218421b884d2cfe783040da973dcb744193063f13087b9f",
-    "link": "Forums-vip-database?page=2?sortby=started",
-    "detection-date": "2026-01-18T14:07:50.693Z",
-    "timestamp": "2026-01-18T14:07:50.693Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://hydraforums.io/Forums-vip-database?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Login",
-    "content-hash": "9d6322c1f4d9d3f38aed8bfbe0b2bcadf66ad82c008476fa62541fa069138e94",
-    "detection-date": "2026-01-18T14:12:57.329Z",
-    "timestamp": "2026-01-18T14:12:57.329Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://hydraforums.io/Forums-database-logs-combolist?sortby=started\u0026order=desc\u0026datecut=9999",
-    "content": "1 2 3 4 5 120",
-    "content-hash": "7e593808ce9e40e8d83e4cb10da9b5ea14e8b1bee889bddf127db3f7bf7b9fe4",
-    "link": "Forums-database-logs-combolist?page=2?sortby=started",
-    "detection-date": "2026-01-18T14:15:48.879Z",
-    "timestamp": "2026-01-18T14:15:48.879Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://hydraforums.io/Forums-database-logs-combolist?sortby=started\u0026order=desc\u0026datecut=9999",
-    "content": "Italy Casino Leads Database (2023 Leak)",
-    "content-hash": "2eb4f25c3b237f6fd093fea4d985fbdcde2f536bd12f2f841b5da12353e45c6f",
-    "detection-date": "2026-01-18T14:18:59.293Z",
-    "timestamp": "2026-01-18T14:18:59.293Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://hydraforums.io/Forums-database-logs-combolist?sortby=started\u0026order=desc\u0026datecut=9999",
-    "content": "Italy Casino Leads Database (2023 Leak)",
-    "content-hash": "2eb4f25c3b237f6fd093fea4d985fbdcde2f536bd12f2f841b5da12353e45c6f",
-    "detection-date": "2026-01-18T14:25:48.305Z",
-    "timestamp": "2026-01-18T14:25:48.305Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://hydraforums.io/Forums-database-logs-combolist?sortby=started\u0026order=desc\u0026datecut=9999",
-    "content": "Italy Casino Leads Database (2023 Leak)",
-    "content-hash": "2eb4f25c3b237f6fd093fea4d985fbdcde2f536bd12f2f841b5da12353e45c6f",
-    "detection-date": "2026-01-18T14:28:58.257Z",
-    "timestamp": "2026-01-18T14:28:58.257Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://hydraforums.io/Forums-vip-database?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "⭐️ Our New Telegram Channel! ⭐️",
-    "content-hash": "75b614970916ff26975f293df56cb2a255825f78340dd41654f038dc2b5a41cd",
-    "detection-date": "2026-01-18T14:32:59.169Z",
-    "timestamp": "2026-01-18T14:32:59.169Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://hydraforums.io/Forums-vip-database?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "⭐️ Our New Telegram Channel! ⭐️",
-    "content-hash": "75b614970916ff26975f293df56cb2a255825f78340dd41654f038dc2b5a41cd",
-    "detection-date": "2026-01-19T09:21:32.351Z",
-    "timestamp": "2026-01-19T09:21:32.351Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://hydraforums.io/Forums-vip-database?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Login",
-    "content-hash": "9d6322c1f4d9d3f38aed8bfbe0b2bcadf66ad82c008476fa62541fa069138e94",
-    "detection-date": "2026-01-19T09:29:40.209Z",
-    "timestamp": "2026-01-19T09:29:40.209Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://hydraforums.io/Forums-vip-database?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "⭐️ Our New Telegram Channel! ⭐️",
-    "content-hash": "75b614970916ff26975f293df56cb2a255825f78340dd41654f038dc2b5a41cd",
-    "detection-date": "2026-01-19T09:36:38.837Z",
-    "timestamp": "2026-01-19T09:36:38.837Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://hydraforums.io/Forums-vip-database?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "1 2 3 4 5 92",
-    "content-hash": "376758ae566a9d3fe218421b884d2cfe783040da973dcb744193063f13087b9f",
-    "link": "Forums-vip-database?page=2?sortby=started",
-    "detection-date": "2026-01-19T09:37:46.175Z",
-    "timestamp": "2026-01-19T09:37:46.175Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "1k Twitter Faggots by clayfuk, 5 hours ago 0 25 5 hours ago Last Post: clayfuk",
-    "content-hash": "3d7d096ac048597346614065bc23f563d495e6d755e9ffe38f452e1825d9a5a0",
-    "detection-date": "2026-01-19T09:43:26.006Z",
-    "timestamp": "2026-01-19T09:43:26.006Z",
-    "type": "forum-post"
-  },
-  {
+    "name": "",
     "source": "https://crackingx.com/forums/5/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "D Email:Pass 5190 EDUCATION D4RKNETHUB CLOUD D4rkNetHub 2 minutes ago Replies 0 Views 1 2 minutes ago D4rkNetHub D",
-    "content-hash": "7a173665b0c3a9b5ce5d846910eab11ef2f8a216a075105f804444de90ee4090",
-    "author": "D4rkNetHub",
-    "link": "/members/56529/",
-    "detection-date": "2026-01-19T09:55:20.392Z",
-    "timestamp": "2026-01-19T09:55:20.392Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-22T13:33:29.481Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://crackingx.com/forums/17/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "37X Warp+ VPN Keys shelin Today at 6:20 AM",
-    "content-hash": "e657405fd873121ec1ad0c4ca98cce64d5ea22778974dc0cd66788f693e343db",
-    "author": "shelin",
-    "link": "/threads/62816/",
-    "detection-date": "2026-01-19T09:59:38.777Z",
-    "timestamp": "2026-01-19T09:59:38.777Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://crackingx.com/forums/5/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Email:Pass 5190 EDUCATION D4RKNETHUB CLOUD D4rkNetHub 6 minutes ago",
-    "content-hash": "62bff1fe09007c4d8c0e4892acc6c19f0b3dc6aebd6dc10ace9fef2f0105d964",
-    "author": "D4rkNetHub",
-    "link": "/forums/5/?prefix_id=1",
-    "detection-date": "2026-01-19T09:59:40.399Z",
-    "timestamp": "2026-01-19T09:59:40.399Z",
-    "type": "forum-post"
-  },
-  {
+    "name": "",
     "source": "https://niflheim.world/forums/accounts.8/",
-    "content": "STREAMING ✅⭐️WORDPRESS✅⭐️URL'S⭐️LOGIN:PASS MonkeyBase Today at 6:19 AM Replies 0 Views 53 Today at 6:19 AM MonkeyBase",
-    "content-hash": "b3e9ed0f68d14f2cc4427e90d6812c71ae05e35ad41ee71d728b15cb28845872",
+    "title": "",
     "author": "MonkeyBase",
     "link": "/members/monkeybase.47713/",
-    "detection-date": "2026-01-19T10:02:29.400Z",
-    "timestamp": "2026-01-19T10:02:29.400Z",
-    "type": "forum-post"
+    "detection-date": "",
+    "timestamp": "2026-01-22T13:33:32.664Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
+    "name": "",
     "source": "https://niflheim.world/forums/combolist.2/",
-    "content": "[8.512 lines] interia.pl domain target",
-    "content-hash": "ba5722b466a4054d36271fc485f0f945eeb8c3cd9135bb347318d50d29b58b23",
-    "author": "BestCombo",
-    "link": "/threads/8-512-lines-interia-pl-domain-target.155600/",
-    "detection-date": "2026-01-19T10:04:08.283Z",
-    "timestamp": "2026-01-19T10:04:08.283Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://patched.to/Forum-accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "2 years of microsoft 365   Started by Pokka 5 hours ago 29 1 0 wipe44 58 minutes ago",
-    "content-hash": "cece393e1c7e037156eb0fee804545c24520bba51c01c9237d4a907ba29270ea",
-    "detection-date": "2026-01-19T10:06:11.715Z",
-    "timestamp": "2026-01-19T10:06:11.715Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://patched.to/Forum-combolist?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "FILE-UPLOAD   ⭐️6.6k azad cloud private mails⭐️   Started by azadkucher 7 minutes ago 0 2 0 yousefexk12 2 minutes ago",
-    "content-hash": "b978faf5305c82c2395ccf8ca1d90c636ac3090935cbd2df0a86884fa66c69a8",
-    "detection-date": "2026-01-19T10:08:59.113Z",
-    "timestamp": "2026-01-19T10:08:59.113Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://patched.to/Forum-combolist?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "FILE-UPLOAD   2.5K UHQ+ PRIVATE HOTMAILS LINES FROM VIP FRESH   Started by ananassim 8 minutes ago 4 0 0 ananassim 8 minutes ago",
-    "content-hash": "af0bb885510b4f3c55021ca3d5bcd4c5135c43a8cc2ba1ce2f9805130fbbfb0b",
-    "detection-date": "2026-01-19T12:12:20.387Z",
-    "timestamp": "2026-01-19T12:12:20.387Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://xreactor.org/#tab-2",
-    "content": "COMBOLISTS 1MX_combo_Porn_Chaturbate_Hosting_Minecraft_Steam_Origin_Uplay---\u003ctoroseduto milonit3030 29 minutes ago Combolists 11 replies",
-    "content-hash": "69ec32f87a2479ac629255d9cc29cefc8c5cb774bf78a98f8251d5771cf07151",
-    "author": "milonit3030",
-    "link": "/threads/1mx_combo_porn_chaturbate_hosting_minecraft_steam_origin_uplay-toroseduto.482/post-242879",
-    "detection-date": "2026-01-19T12:23:09.155Z",
-    "timestamp": "2026-01-19T12:23:09.155Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://xreactor.org/#tab-1",
-    "content": "19.01.26 Hotmail Unique Combo_1_20000 UniqueCombo 56 minutes ago Combolists 0 replies",
-    "content-hash": "3d68b0a81f5317e6a155a18dd6c9eefb2aa5d0ebf01ea31aa22d2eaf080e6711",
-    "author": "UniqueCombo",
-    "link": "/threads/19-01-26-hotmail-unique-combo_1_20000.33063/",
-    "detection-date": "2026-01-19T12:25:24.282Z",
-    "timestamp": "2026-01-19T12:25:24.282Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://darkforums.io/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Thread / Author Replies Views Last Post",
-    "content-hash": "b6de0b9fa5aee96f85103ee4c0dba449853464eed767b47ebf6ea58b3359582d",
-    "detection-date": "2026-01-19T12:31:42.106Z",
-    "timestamp": "2026-01-19T12:31:42.106Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://darkforums.io/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "FCBB.COM — USA BROKERAGE DATABASE + NDA + LOI + LISTING DOCS (FULL) @Solonik_BF",
-    "content-hash": "221c5e73520392a374b8fb47118d29bbb12d806fdd94e1e90c60d159dd8296be",
-    "detection-date": "2026-01-19T12:37:26.438Z",
-    "timestamp": "2026-01-19T12:37:26.438Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://darkforums.io/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Indonesia Polri.go.id",
-    "content-hash": "170f4235b848dcbb775a6fe5cddafd6590dc4bd2507a86e7e47fcaae1e266976",
-    "detection-date": "2026-01-19T12:55:32.047Z",
-    "timestamp": "2026-01-19T12:55:32.047Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://darkforums.io/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "JAPAN/CHINA WEB CORE — FLIPPA.JP / GUITARME.CN / KSOURCE / MHR / PREPASS @Solonik_BF",
-    "content-hash": "5e85ebd00fe4685844cb83c95cb2f7a29a86862316561c1f1f3693f2f683cad9",
-    "detection-date": "2026-01-19T12:59:42.977Z",
-    "timestamp": "2026-01-19T12:59:42.977Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://darkforums.io/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "NPWP INDONESIA",
-    "content-hash": "0d8ba2872cea5f9026585752e87ed046a5394d6ed1a960b53ebdbbc392c3cb10",
-    "detection-date": "2026-01-19T13:14:53.327Z",
-    "timestamp": "2026-01-19T13:14:53.327Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://darkforums.io/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "✦✦ LOG'S ✦✦ { Maxi_Leaks } ✦✦ FRESH ✦✦ [ 1,73 GB ]✦✦",
-    "content-hash": "d7827b89e55e5749cc9ba45ff6fa55e9ee36b1eae9ef5a3b930cd171767fe028",
-    "author": "Max_Leaks",
-    "link": "Thread-Document-%E2%9C%A6%E2%9C%A6-LOG-S-%E2%9C%A6%E2%9C%A6-Maxi-Leaks-%E2%9C%A6%E2%9C%A6-FRESH-%E2%9C%A6%E2%9C%A6-1-73-GB-%E2%9C%A6%E2%9C%A6--65011?action=newpost",
-    "detection-date": "2026-01-19T13:19:51.843Z",
-    "timestamp": "2026-01-19T13:19:51.843Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://darkforums.io/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "✦✦ [ 12 K++ ] Combo✦{ Croatia }✦ Email:Pass ✦FRESH✦ [ 19-1-2026 ] ✦✦",
-    "content-hash": "4631dbe15d0d3b7b015350670708afd83f066f78a32ea8a551b0789cca2349b6",
-    "author": "Max_Leaks",
-    "link": "Thread-Document-%E2%9C%A6%E2%9C%A6-12-K-Combo%E2%9C%A6-Croatia-%E2%9C%A6-Email-Pass-%E2%9C%A6FRESH%E2%9C%A6-19-1-2026-%E2%9C%A6%E2%9C%A6?action=newpost",
-    "detection-date": "2026-01-19T13:22:11.607Z",
-    "timestamp": "2026-01-19T13:22:11.607Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://darkforums.io/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "800 X HQ HOTMAIL Access VALID/HIT (Fresh)",
-    "content-hash": "ffe338cb835a297a975132a03ac6844be5ca65947628796f12bbc6d1fdfd9fb4",
-    "detection-date": "2026-01-19T13:22:59.173Z",
-    "timestamp": "2026-01-19T13:22:59.173Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://darkforums.io/Forum-Other-Leaks?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "[LEAK] FREE TEST LOGS 1000 logs Jan. samples]",
-    "content-hash": "edc6cfa8566aaa2bd3e629168d7f74933b2c8c0672bfa9fb72d5a6f8c0309d01",
-    "detection-date": "2026-01-19T13:42:19.650Z",
-    "timestamp": "2026-01-19T13:42:19.650Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://leakzone.net/forumdisplay.php?fid=20\u0026sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "321K SEEDS PHRASE ETHERNUM 2026",
-    "content-hash": "68af98e89ee3b7af305a148810be027020210cadf9d95c76d3a011d5a8360dab",
-    "detection-date": "2026-01-19T13:47:00.037Z",
-    "timestamp": "2026-01-19T13:47:00.037Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://xforums.st/forums/database-log-pass-number-pass.34/",
-    "content": "Log:Pass [9] otrujjah.com wp-login.php-- By X FORUMS X Forum Bot Tuesday at 6:51 AM Replies 1 Views 512 Yesterday at 9:44 PM dferzuniga2 D",
-    "content-hash": "49c07b8ef1fb5d7dc7246580622c60c476be8e5632a638b65ca6425eec81ba14",
-    "author": "X Forum Bot",
-    "link": "/members/x-forum-bot.4252/",
-    "detection-date": "2026-01-19T14:50:26.899Z",
-    "timestamp": "2026-01-19T14:50:26.899Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "helpful by Unstoppable1, 7 hours ago 0 18 7 hours ago Last Post: Unstoppable1",
-    "content-hash": "57a2f5a1b7673c6945fe3b8c4301b8099fec388a62dcbcef3ba97b566ba3ef98",
-    "detection-date": "2026-01-19T15:20:44.080Z",
-    "timestamp": "2026-01-19T15:20:44.080Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "New 1k Twitter Faggots by clayfuk, 10 hours ago 0 33 10 hours ago Last Post: clayfuk",
-    "content-hash": "126b5058e4a5286d90d157238be7ba23f5b631c83374689968eab2bf2e658227",
-    "detection-date": "2026-01-19T15:20:44.104Z",
-    "timestamp": "2026-01-19T15:20:44.104Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Gaming 102K by mr_kant, 42 minutes ago 0 7 42 minutes ago Last Post: mr_kant",
-    "content-hash": "7d8b593900e1a500d6451c6a03c8a7539923c7da6d831642b904be8d122b1204",
-    "detection-date": "2026-01-19T15:20:44.075Z",
-    "timestamp": "2026-01-19T15:20:44.075Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://crackingx.com/forums/5/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Email:Pass [ ⚡⚡ 710x SAMPLE HOTMAIL ⚡⚡ ] HollowKnight07 3 minutes ago",
-    "content-hash": "6e929b257d586f87c5a15548ee0955d90adb457078a244538af547480cef97da",
-    "author": "HollowKnight07",
-    "link": "/forums/5/?prefix_id=1",
-    "detection-date": "2026-01-19T15:20:58.690Z",
-    "timestamp": "2026-01-19T15:20:58.690Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://crackingx.com/forums/17/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "HMA VPN PREMIUM CODES foxsunday Today at 1:56 PM",
-    "content-hash": "351e1180be065ae9a22b280a160b113d1fd74e18fb727f707ea541c14546e7b3",
-    "author": "foxsunday",
-    "link": "/threads/62846/",
-    "detection-date": "2026-01-19T15:21:02.343Z",
-    "timestamp": "2026-01-19T15:21:02.343Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://niflheim.world/forums/accounts.8/",
-    "content": "X8 PURE VPN foxsunday Today at 1:53 PM Replies 0 Views 18 Today at 1:53 PM foxsunday",
-    "content-hash": "53097d006cfe710a4301630b28cb0f14de6553f21ea96a0832140c9eb484bbfb",
-    "author": "foxsunday",
-    "link": "/members/foxsunday.25747/",
-    "detection-date": "2026-01-19T15:21:06.225Z",
-    "timestamp": "2026-01-19T15:21:06.225Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "DATABASE crashgambler.io (2025) by amelgarg, 1 hour ago 1 26 40 minutes ago Last Post: Wadjet",
-    "content-hash": "cb14812c39b9f20e705865daa5a68619143ea6a8da8df8b779075b3808c6e0c7",
-    "detection-date": "2026-01-19T15:21:52.117Z",
-    "timestamp": "2026-01-19T15:21:52.117Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://niflheim.world/forums/combolist.2/",
-    "content": "MAIL;PASS 145.827 Lines ✅ Combolist Fresh Leaks 2025 HqComboSpace 57 minutes ago Replies 0 Views 3 57 minutes ago HqComboSpace",
-    "content-hash": "52d13a578b0090773ddc4e6c82c08c6aef17ca0332d34bf8e494dc0e96f31c8d",
+    "title": "",
     "author": "HqComboSpace",
     "link": "/members/hqcombospace.24782/",
-    "detection-date": "2026-01-19T15:23:33.101Z",
-    "timestamp": "2026-01-19T15:23:33.101Z",
-    "type": "forum-post"
+    "detection-date": "",
+    "timestamp": "2026-01-22T13:33:35.971Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
+    "name": "",
+    "source": "https://crackingx.com/forums/17/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-22T13:33:39.058Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
     "source": "https://xreactor.org/#tab-1",
-    "content": "[ 710x SAMPLE HOTMAIL ] HollowKnight 7 minutes ago Combo, proxy and password list 0 replies",
-    "content-hash": "fbe3402305a7e63753e63c1aa203c52f8415e8809d65501abf426bd1452f6c5d",
-    "author": "HollowKnight",
-    "link": "/threads/710x-sample-hotmail.33072/",
-    "detection-date": "2026-01-19T15:23:41.844Z",
-    "timestamp": "2026-01-19T15:23:41.844Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-22T13:36:12.395Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
+    "name": "",
+    "source": "https://patched.to/Forum-combolist?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-22T13:36:12.397Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://darkforums.io/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-22T13:36:12.406Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://darkforums.io/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-22T13:36:22.789Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
     "source": "https://patched.to/Forum-accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "2x HMA Key   Started by Pokka 1 hour ago 19 3 0 Mohamedhadad00 1 hour ago",
-    "content-hash": "152b802079eaa29a69992623fa343b9dc0f97445ac1085359e8302c0a6e90902",
-    "detection-date": "2026-01-19T15:23:43.440Z",
-    "timestamp": "2026-01-19T15:23:43.440Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-22T13:36:33.072Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
+    "name": "",
+    "source": "https://darkforums.io/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "fatetraffic",
+    "link": "Thread-%F0%9F%93%97-FATETRAFFIC-2000-MIX-22-01-2025-STEALER-LOGS?action=newpost",
+    "detection-date": "",
+    "timestamp": "2026-01-22T13:36:56.377Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://leakzone.net/forumdisplay.php?fid=20\u0026sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-22T13:36:56.626Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
     "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "1k Twitter Faggots by clayfuk, 10 hours ago 0 33 10 hours ago Last Post: clayfuk",
-    "content-hash": "da068ab3be4aba7e4ed9100f1a53cd2dc829e79d7c71302a75bfc65774ea37dc",
-    "detection-date": "2026-01-19T15:24:02.307Z",
-    "timestamp": "2026-01-19T15:24:02.307Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:26:52.614Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://xreactor.org/#tab-1",
-    "content": "559x HQ FRESH HOTMAIL Spirall01 1 minute ago Combolists 0 replies",
-    "content-hash": "0c9c3e117498ce9740838ca19875703a0b25448e2514943df158c7d127299977",
-    "author": "Spirall01",
-    "link": "/threads/559x-hq-fresh-hotmail.33073/",
-    "detection-date": "2026-01-19T15:26:19.939Z",
-    "timestamp": "2026-01-19T15:26:19.939Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://patched.to/Forum-accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "2x HMA Key   Started by Pokka 1 hour ago 20 3 0 Mohamedhadad00 1 hour ago",
-    "content-hash": "03503c743bd004253cf8f8f8e5c61ec7fcdec6b1b40a5f2289ca16f90645be19",
-    "detection-date": "2026-01-19T15:26:21.699Z",
-    "timestamp": "2026-01-19T15:26:21.699Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "New DATABASE crashgambler.io (2025) by amelgarg, 1 hour ago 1 27 46 minutes ago Last Post: Wadjet",
-    "content-hash": "ea99b772e52060b0b069fc98766b313b1b5f5403bd2956dcd255e58e4ff708d1",
-    "detection-date": "2026-01-19T15:27:25.701Z",
-    "timestamp": "2026-01-19T15:27:25.701Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://niflheim.world/forums/combolist.2/",
-    "content": "MAIL;PASS WITH VALID ⚡⚡ X1300 Valid UHQ Hotmail ⚡⚡ roronoa044 2 minutes ago Replies 0 Views 1 2 minutes ago roronoa044",
-    "content-hash": "8af097b656c66af47ebdd446e94300ace5bb1fd83c88e6e9e9adedb1c00200f2",
-    "author": "roronoa044",
-    "link": "/members/roronoa044.50574/",
-    "detection-date": "2026-01-19T15:29:34.993Z",
-    "timestamp": "2026-01-19T15:29:34.993Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://xreactor.org/#tab-1",
-    "content": "X1300 Valid UHQ Hotmail roronoa044 1 minute ago Combo, proxy and password list 0 replies",
-    "content-hash": "bf480d1ace5cbc6f5651f88af2721206a2a26accfcf5a1855c0fe26491193ee6",
-    "author": "roronoa044",
-    "link": "/threads/x1300-valid-uhq-hotmail.33074/",
-    "detection-date": "2026-01-19T15:29:39.389Z",
-    "timestamp": "2026-01-19T15:29:39.389Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "helpful by Unstoppable1, 7 hours ago 0 19 7 hours ago Last Post: Unstoppable1",
-    "content-hash": "db70718f80bf8a4bd4e2400baf62531459e1fc3fea905492f8701c38d485bad3",
-    "detection-date": "2026-01-19T15:30:32.605Z",
-    "timestamp": "2026-01-19T15:30:32.605Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "DATABASE crashgambler.io (2025) by amelgarg, 1 hour ago 1 29 49 minutes ago Last Post: Wadjet",
-    "content-hash": "1262b47aef49be9ee05ace4150f537df268cbd0ac24c227210a04c31d90630dd",
-    "detection-date": "2026-01-19T15:30:32.617Z",
-    "timestamp": "2026-01-19T15:30:32.617Z",
-    "type": "forum-post"
-  },
-  {
+    "name": "",
     "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Gaming 102K by mr_kant, 52 minutes ago 0 8 52 minutes ago Last Post: mr_kant",
-    "content-hash": "3b0fc550c68b7e71776cd440617a61dabd8c57b44b3f0cb34d0a84bf19f3ba7c",
-    "detection-date": "2026-01-19T15:30:42.906Z",
-    "timestamp": "2026-01-19T15:30:42.906Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:26:52.619Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "1k Twitter Faggots by clayfuk, 10 hours ago 0 34 10 hours ago Last Post: clayfuk",
-    "content-hash": "730b6b54b0e81d0ccc02b24fa642ef067b726680b614ab5b32e00f96f0365b74",
-    "detection-date": "2026-01-19T15:30:56.921Z",
-    "timestamp": "2026-01-19T15:30:56.921Z",
-    "type": "forum-post"
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:26:52.660Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Mark this forum read Stealer Logs",
-    "content-hash": "85b218b9f4448206cbb1ba07e0514dd75c77b2e1d5e653d4d8eb2cc86b45c3c5",
-    "link": "Forum-Stealer-Logs\u0026datecut=9999\u0026prefix=0\u0026sortby=subject\u0026order=asc",
-    "detection-date": "2026-01-19T15:34:53.869Z",
-    "timestamp": "2026-01-19T15:34:53.869Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://crackingx.com/forums/5/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Email:Pass 19.01.26 Hotmail Unique Combo_3_20000 UniqueCombo 1 minute ago",
-    "content-hash": "c87556dd5c536a48eb105dcc3abf1f7624b1657ffd35565cb68641b8085ba1da",
-    "author": "UniqueCombo",
-    "link": "/forums/5/?prefix_id=1",
-    "detection-date": "2026-01-19T15:38:43.173Z",
-    "timestamp": "2026-01-19T15:38:43.173Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://xreactor.org/#tab-1",
-    "content": "19.01.26 Hotmail Unique Combo_3_20000 UniqueCombo 2 minutes ago Combolists 0 replies",
-    "content-hash": "30e1c4c24b6d92a9aaf41c22b2c77d0adf2a618f964b71f8f6a2a15c3f6fc544",
-    "author": "UniqueCombo",
-    "link": "/threads/19-01-26-hotmail-unique-combo_3_20000.33075/",
-    "detection-date": "2026-01-19T15:41:23.296Z",
-    "timestamp": "2026-01-19T15:41:23.296Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://patched.to/Forum-accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "2x HMA Key   Started by Pokka 1 hour ago 22 3 0 Mohamedhadad00 1 hour ago",
-    "content-hash": "e1ca8218b9877a90b6232219454c426cfd970ceafa2bcc3291753087bd97d038",
-    "detection-date": "2026-01-19T15:41:25.933Z",
-    "timestamp": "2026-01-19T15:41:25.933Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://patched.to/Forum-accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "FILE-UPLOAD   1k Valid Hotmail Hits",
-    "content-hash": "1bbf44eae8847d73d785466ab899490ec6d03cd490e8ab20e830c8e17a2766fe",
-    "detection-date": "2026-01-20T12:19:24.942Z",
-    "timestamp": "2026-01-20T12:19:24.942Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Seedbox.io Mini Slot Account by OpenBullet, Yesterday, 11:29 AM 0 51 Yesterday, 11:29 AM Last Post: OpenBullet",
-    "content-hash": "4a8f788bb4e5e7635b23f4599ad849624be9294e63d62ea369523f5443b69a8f",
-    "detection-date": "2026-01-21T10:28:19.347Z",
-    "timestamp": "2026-01-21T10:28:19.347Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "740GB ULP \u0026 Logs by cry0x, 2 hours ago 3 41 1 hour ago Last Post: xxbreachitxx",
-    "content-hash": "86fd0c4b7be8e7dcb5e647b35b418dfb631ab96466bf25f86bc9fa69688b91d8",
-    "detection-date": "2026-01-21T10:28:19.367Z",
-    "timestamp": "2026-01-21T10:28:19.367Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://xforums.st/forums/database-log-pass-number-pass.34/",
-    "content": "Log:Pass [ bezvbv.net-17-272 ] By XForums X Forum Bot Nov 15, 2025 Replies 2 Views 3K Yesterday at 3:14 PM kiklotuiewp K",
-    "content-hash": "247d3df59562463e2b5175e91b60e672b4ea23f57247cbd369f7e8eeccc616ab",
+    "name": "",
+    "source": "https://xforums.st/forums/database-log-pass-number-pass.34/?order=post_date\u0026direction=desc",
+    "title": "",
     "author": "X Forum Bot",
     "link": "/members/x-forum-bot.4252/",
-    "detection-date": "2026-01-21T10:28:29.220Z",
-    "timestamp": "2026-01-21T10:28:29.220Z",
-    "type": "forum-post"
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:27:01.802Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:27:03.018Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
     "source": "https://crackingx.com/forums/5/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Email:Pass 439.507 Lines ✅ Combolist Fresh Leaks 2025 HQcomboSpace 6 minutes ago",
-    "content-hash": "90ea3465ff95d2f0682fbce236a62ea045dc8da38fe9c3a634fa550d2eee242c",
-    "author": "HQcomboSpace",
-    "link": "/forums/5/?prefix_id=1",
-    "detection-date": "2026-01-21T10:28:34.564Z",
-    "timestamp": "2026-01-21T10:28:34.564Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:27:12.197Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
+    "name": "",
     "source": "https://crackingx.com/forums/17/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "MALWAREBYTES PREMİUM foxsunday Today at 5:30 AM",
-    "content-hash": "d988c418a5237a102eb534f18d65d47b6a8c4e6bfddac19e5e82e2e7ab197107",
-    "author": "foxsunday",
-    "link": "/threads/63031/",
-    "detection-date": "2026-01-21T10:28:38.752Z",
-    "timestamp": "2026-01-21T10:28:38.752Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:27:13.413Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
+    "name": "",
     "source": "https://niflheim.world/forums/accounts.8/",
-    "content": "STREAMING ✅⭐️WORDPRESS✅⭐️URL'S⭐️LOGIN:PASS MonkeyBase 20 minutes ago Replies 0 Views 1 20 minutes ago MonkeyBase",
-    "content-hash": "a1a107bf3b8d8e13b2f5e6c2a50d655b234ac0a85665f84f9bd10ea5e173a450",
+    "title": "",
     "author": "MonkeyBase",
     "link": "/members/monkeybase.47713/",
-    "detection-date": "2026-01-21T10:28:42.705Z",
-    "timestamp": "2026-01-21T10:28:42.705Z",
-    "type": "forum-post"
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:27:15.074Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "DATABASE fitnesspark.fr france data by Jacksparrow1, 34 minutes ago 2 28 14 minutes ago Last Post: Whisix",
-    "content-hash": "1669481fb8316868938e297bbebce508dd6d5effb86271a28631707c4dab69b5",
-    "detection-date": "2026-01-21T10:28:53.027Z",
-    "timestamp": "2026-01-21T10:28:53.027Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "H@TM21L BY @N_WTN by PISTOOL, Yesterday, 07:30 PM 0 45 Yesterday, 07:30 PM Last Post: PISTOOL",
-    "content-hash": "d039e777d1bfad4038c784da3bf41bbd2673d1ed7a1c3ecb297b97005644e2d5",
-    "detection-date": "2026-01-21T10:29:03.377Z",
-    "timestamp": "2026-01-21T10:29:03.377Z",
-    "type": "forum-post"
-  },
-  {
+    "name": "",
     "source": "https://niflheim.world/forums/combolist.2/",
-    "content": "MAIL;PASS USER;PASS DUMP Buying PayPal NFA Data/Combos at highest prices! robimayne50 Today at 8:46 AM Replies 0 Views 23 6 minutes ago robimayne50",
-    "content-hash": "2a6a461ff75d9ad7124e2222aac2fb8447d8c13229f75a6c98438757377c20ca",
-    "author": "robimayne50",
-    "link": "/members/robimayne50.51786/",
-    "detection-date": "2026-01-21T10:30:37.372Z",
-    "timestamp": "2026-01-21T10:30:37.372Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "HqComboSpace",
+    "link": "/members/hqcombospace.24782/",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:27:16.805Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://darkforums.io/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "kemahasiswaan_mitra",
-    "content-hash": "9361b0024f9e7104f7e5ae920b02b5466d9581a227c956d975ef7339dd05b77a",
-    "detection-date": "2026-01-21T10:30:43.472Z",
-    "timestamp": "2026-01-21T10:30:43.472Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://patched.to/Forum-combolist?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "3310 Fresh And Private Hotmail Hits ( Checked Now )",
-    "content-hash": "981d2625a606fc4412f22039028692b3d70980e26c64e3cfeb430ddb5ee723d2",
-    "detection-date": "2026-01-21T10:30:47.674Z",
-    "timestamp": "2026-01-21T10:30:47.674Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://darkforums.io/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "19.01.26 Hotmail Unique Combo_13_20000",
-    "content-hash": "0c25fac7bbaea7cc18aceec618e3084fe496b307a88186df4cb5db49bc41bfc4",
-    "detection-date": "2026-01-21T10:30:51.397Z",
-    "timestamp": "2026-01-21T10:30:51.397Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://darkforums.io/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "📗 FATETRAFFIC 1885 MIX 21-01-2025 | STEALER LOGS",
-    "content-hash": "cdb13daf08690177e782c27c0f564569c75b7817113532e8cb70e15eb7d9e8cd",
-    "author": "fatetraffic",
-    "link": "Thread-%F0%9F%93%97-FATETRAFFIC-1885-MIX-21-01-2025-STEALER-LOGS?action=newpost",
-    "detection-date": "2026-01-21T10:30:55.363Z",
-    "timestamp": "2026-01-21T10:30:55.363Z",
-    "type": "forum-post"
-  },
-  {
+    "name": "",
     "source": "https://patched.to/Forum-accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "FILE-UPLOAD   3310 Fresh And Private Hotmail Hits ( Checked Now )",
-    "content-hash": "65203a2981f67c704dc1ca9ef3fc4fc48099b44cb52ceec034195695a344df6a",
-    "detection-date": "2026-01-21T10:31:05.650Z",
-    "timestamp": "2026-01-21T10:31:05.650Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:29:08.589Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
+    "name": "",
+    "source": "https://patched.to/Forum-combolist?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:29:08.600Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://xreactor.org/#tab-1",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:29:18.998Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
     "source": "https://leakzone.net/forumdisplay.php?fid=20\u0026sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "AlienTXT Base 562GB Download Torrent",
-    "content-hash": "2ee07f8febc5f207a09ea0f7c393717f71d9bb3c27649179b430a5e346e6efaa",
-    "detection-date": "2026-01-21T10:31:16.823Z",
-    "timestamp": "2026-01-21T10:31:16.823Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:29:29.389Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "[FR] Employee information from 17 companies by HexDex2, 40 minutes ago 0 27 40 minutes ago Last Post: HexDex2",
-    "content-hash": "57f4ca97c93300a8e59d591fe0802ccc2813f5c09381a3187af10e1e0aa0a903",
-    "detection-date": "2026-01-21T11:27:26.187Z",
-    "timestamp": "2026-01-21T11:27:26.187Z",
-    "type": "forum-post"
+    "name": "",
+    "source": "https://niflheim.world/forums/combolist.2/",
+    "title": "",
+    "author": "BestCombo",
+    "link": "/members/bestcombo.23906/",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:31:53.100Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "740GB ULP \u0026 Logs by cry0x, 3 hours ago 4 54 8 minutes ago Last Post: pedro1122",
-    "content-hash": "cbe39739333a8b1d9433ce3962b61e068ed8ab36b007583e180c95353f3ceb46",
-    "detection-date": "2026-01-21T11:27:26.193Z",
-    "timestamp": "2026-01-21T11:27:26.193Z",
-    "type": "forum-post"
+    "name": "",
+    "source": "https://crackingx.com/forums/5/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:36:34.206Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
+    "name": "",
+    "source": "https://xreactor.org/#tab-1",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:44:10.137Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://crackingx.com/forums/5/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:52:53.075Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://niflheim.world/forums/combolist.2/",
+    "title": "",
+    "author": "BestCombo",
+    "link": "/threads/1-705-177-%E2%AD%90%EF%B8%8Fgood-crypto-banking-%E2%9C%94%EF%B8%8F-target-combolist%E2%AD%90%EF%B8%8F.156097/",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:53:12.707Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://patched.to/Forum-combolist?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T10:54:58.711Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://crackingx.com/forums/5/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T11:02:03.557Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://patched.to/Forum-combolist?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T11:03:34.905Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://xreactor.org/#tab-1",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T11:03:34.920Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://niflheim.world/forums/combolist.2/",
+    "title": "",
+    "author": "Kingdom",
+    "link": "/members/kingdom.25024/",
+    "detection-date": "",
+    "timestamp": "2026-01-26T11:10:37.453Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://patched.to/Forum-accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T11:12:16.441Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
     "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "H@TM21L BY @N_WTN by PISTOOL, Yesterday, 07:30 PM 0 48 Yesterday, 07:30 PM Last Post: PISTOOL",
-    "content-hash": "7ac77b7342b1661040983809673e665619851d4e31d3d5bb16b0bcd816673496",
-    "detection-date": "2026-01-21T11:27:26.200Z",
-    "timestamp": "2026-01-21T11:27:26.200Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T14:55:24.698Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Seedbox.io Mini Slot Account by OpenBullet, Yesterday, 11:29 AM 0 54 Yesterday, 11:29 AM Last Post: OpenBullet",
-    "content-hash": "dcc5e159616d187edce82317208c37223389ab3fd2ac6451a9635093c31acba8",
-    "detection-date": "2026-01-21T11:27:37.700Z",
-    "timestamp": "2026-01-21T11:27:37.700Z",
-    "type": "forum-post"
+    "name": "",
+    "source": "https://niflheim.world/forums/accounts.8/",
+    "title": "",
+    "author": "Internet Pwn3d Database",
+    "link": "/members/internet-pwn3d-database.51815/",
+    "detection-date": "",
+    "timestamp": "2026-01-26T14:55:27.391Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "[FR] Employee information from 17 companies by HexDex2, 41 minutes ago 0 28 41 minutes ago Last Post: HexDex2",
-    "content-hash": "b72421abf34a46a8c6735ca1f9e815faedc6efd11be31acb0644495d0698addf",
-    "detection-date": "2026-01-21T11:28:00.780Z",
-    "timestamp": "2026-01-21T11:28:00.780Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "New H@TM21L BY @N_WTN by PISTOOL, Yesterday, 07:30 PM 0 50 Yesterday, 07:30 PM Last Post: PISTOOL",
-    "content-hash": "43c922c7367d77e9dcaf12f9193da69656c69973c57524852ec6d35d2170571c",
-    "detection-date": "2026-01-21T11:36:27.990Z",
-    "timestamp": "2026-01-21T11:36:27.990Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "New [FR] Employee information from 17 companies by HexDex2, 49 minutes ago 0 31 49 minutes ago Last Post: HexDex2",
-    "content-hash": "d561cf47643bd6a646b39099885b54f7015dc1e0727a9ab522c29d9d36c9ea4c",
-    "detection-date": "2026-01-21T11:36:28.007Z",
-    "timestamp": "2026-01-21T11:36:28.007Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Mark this forum read Cracked Accounts",
-    "content-hash": "d8fac4b9f89ab1a13067789a622bae5f8c10812a7162c966cb1e4755299e58ff",
-    "link": "Forum-Cracked-Accounts\u0026datecut=9999\u0026prefix=0\u0026sortby=subject\u0026order=asc",
-    "detection-date": "2026-01-21T11:36:36.026Z",
-    "timestamp": "2026-01-21T11:36:36.026Z",
-    "type": "forum-post"
-  },
-  {
+    "name": "",
     "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Mark this forum read Stealer Logs",
-    "content-hash": "85b218b9f4448206cbb1ba07e0514dd75c77b2e1d5e653d4d8eb2cc86b45c3c5",
-    "link": "Forum-Stealer-Logs\u0026datecut=9999\u0026prefix=0\u0026sortby=subject\u0026order=asc",
-    "detection-date": "2026-01-21T11:36:41.403Z",
-    "timestamp": "2026-01-21T11:36:41.403Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T14:55:34.397Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "H@TM21L BY @N_WTN by PISTOOL, Yesterday, 07:30 PM 0 50 Yesterday, 07:30 PM Last Post: PISTOOL",
-    "content-hash": "7ac77b7342b1661040983809673e665619851d4e31d3d5bb16b0bcd816673496",
-    "detection-date": "2026-01-21T11:52:34.573Z",
-    "timestamp": "2026-01-21T11:52:34.573Z",
-    "type": "forum-post"
+    "name": "",
+    "source": "https://crackingx.com/forums/17/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T14:55:35.065Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
+    "name": "",
+    "source": "https://niflheim.world/forums/combolist.2/",
+    "title": "",
+    "author": "Kingdom",
+    "link": "/members/kingdom.25024/",
+    "detection-date": "",
+    "timestamp": "2026-01-26T14:55:37.428Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://crackingx.com/forums/5/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T14:55:45.504Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://xreactor.org/#tab-1",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T14:57:43.335Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://patched.to/Forum-combolist?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T14:57:53.548Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://niflheim.world/forums/combolist.2/",
+    "title": "",
+    "author": "ComboPoster",
+    "link": "/members/comboposter.27229/",
+    "detection-date": "",
+    "timestamp": "2026-01-26T15:00:11.218Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://patched.to/Forum-combolist?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-26T15:01:50.979Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://niflheim.world/forums/combolist.2/",
+    "title": "",
+    "author": "BestCombo",
+    "link": "/members/bestcombo.23906/",
+    "detection-date": "",
+    "timestamp": "2026-01-26T15:07:33.751Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
     "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "740GB ULP \u0026 Logs by cry0x, 3 hours ago 5 59 4 minutes ago Last Post: Ruddy124",
-    "content-hash": "3f42c00223915246eb584033651e8b57bd43c5d30383e32581641074504f8382",
-    "detection-date": "2026-01-21T11:52:34.576Z",
-    "timestamp": "2026-01-21T11:52:34.576Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:09:08.505Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "[FR] Employee information from 17 companies by HexDex2, 1 hour ago 0 36 1 hour ago Last Post: HexDex2",
-    "content-hash": "1a81a819b4030b694c317bfaad71ce20fbbb68796d3b5fe166c29e31f566d692",
-    "detection-date": "2026-01-21T11:52:34.573Z",
-    "timestamp": "2026-01-21T11:52:34.573Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Seedbox.io Mini Slot Account by OpenBullet, Yesterday, 11:29 AM 0 56 Yesterday, 11:29 AM Last Post: OpenBullet",
-    "content-hash": "dcc5e159616d187edce82317208c37223389ab3fd2ac6451a9635093c31acba8",
-    "detection-date": "2026-01-21T11:52:44.857Z",
-    "timestamp": "2026-01-21T11:52:44.857Z",
-    "type": "forum-post"
-  },
-  {
+    "name": "",
     "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "1.6K USA-FR-PL-BE-DE MAIL ACCESS MIX",
-    "content-hash": "d4b2840821563bc0b416a5c0feb4fc1f0282f892b8da8b31cfcda3fc778a2070",
-    "detection-date": "2026-01-22T10:03:47.923Z",
-    "timestamp": "2026-01-22T10:03:47.923Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:09:19.017Z",
+    "thread-id": "",
+    "link-hash": ""
   },
   {
-    "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "URL:LOGIN:PASS AlienTXT Base 562GB Download Torrent",
-    "content-hash": "95bf6d9a3701dd85f7085d9b8cc630f18dea463c6083aebceb091200d87926d8",
-    "detection-date": "2026-01-22T10:03:47.923Z",
-    "timestamp": "2026-01-22T10:03:47.923Z",
-    "type": "forum-post"
-  },
-  {
-    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "DATABASE Couple leaks from 24-25 yy [part 2]",
-    "content-hash": "800fae66c6dd89275feee45dff3db2034675d668445561a5b3af997b37f0647f",
-    "detection-date": "2026-01-22T10:03:47.934Z",
-    "timestamp": "2026-01-22T10:03:47.934Z",
-    "type": "forum-post"
-  },
-  {
+    "name": "",
     "source": "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
-    "content": "Seedbox.io Mini Slot Account",
-    "content-hash": "56cf76e0cc0da2f2dbf294a940e917f0ac1a77140edaa310cde38f2296446187",
-    "detection-date": "2026-01-22T10:05:54.793Z",
-    "timestamp": "2026-01-22T10:05:54.793Z",
-    "type": "forum-post"
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:09:29.367Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "Thread-IMPORTANT-READ-Reliable-File-Hosts-and-Tips-for-Uploads-to-Last-Longer?action=newpost",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:09:43.347Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://crackingx.com/forums/17/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:09:53.707Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://crackingx.com/forums/5/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:09:54.432Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://niflheim.world/forums/accounts.8/",
+    "title": "",
+    "author": "renard45",
+    "link": "/members/renard45.51897/",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:09:57.805Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://niflheim.world/forums/combolist.2/",
+    "title": "",
+    "author": "ComboPoster",
+    "link": "/members/comboposter.27229/",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:09:58.078Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://patched.to/Forum-accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:12:25.282Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://darkforums.io/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:12:25.291Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://xreactor.org/#tab-1",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:12:25.283Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://patched.to/Forum-combolist?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:12:35.589Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://darkforums.io/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:12:35.629Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://leakzone.net/forumdisplay.php?fid=20\u0026sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:12:45.944Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:14:22.331Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:18:14.985Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://patched.to/Forum-combolist?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:20:52.043Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "",
+    "source": "https://xreactor.org/#tab-1",
+    "title": "",
+    "author": "",
+    "link": "",
+    "detection-date": "",
+    "timestamp": "2026-01-28T14:21:02.370Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "breachforums-Stealer-Logs",
+    "source": "https://breachforums.bf/Forum-Stealer-Logs?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "4GB URL:LOGIN:PASS lines | From Logs",
+    "author": "by WhiteMelly,",
+    "link": "https://breachforums.bf/Thread-URL-LOGIN-PASS-4GB-URL-LOGIN-PASS-lines-From-Logs--186007",
+    "detection-date": "",
+    "timestamp": "2026-01-29T15:00:15.608Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "breachforums-database",
+    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "New",
+    "author": "",
+    "link": "https://breachforums.bf/Thread-IMPORTANT-READ-Reliable-File-Hosts-and-Tips-for-Uploads-to-Last-Longer?action=newpost",
+    "detection-date": "",
+    "timestamp": "2026-01-29T15:06:50.910Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "breachforums-database",
+    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "Mark this forum read",
+    "author": "",
+    "link": "https://breachforums.bf/misc.php?action=markread\u0026fid=18",
+    "detection-date": "",
+    "timestamp": "2026-01-29T15:09:56.727Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "breachforums-database",
+    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "provider of Ukraine tobi.net",
+    "author": "by GoogleAdmin,",
+    "link": "https://breachforums.bf/Thread-provider-of-Ukraine-tobi-net",
+    "detection-date": "",
+    "timestamp": "2026-01-29T15:16:00.320Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "breachforums-combolist",
+    "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "[ ⚡⚡ 4517x Fresh Hotmail Hits ⚡⚡ ]",
+    "author": "by Lowza9,",
+    "link": "https://breachforums.bf/Thread-%E2%9A%A1%E2%9A%A1-4517x-Fresh-Hotmail-Hits-%E2%9A%A1%E2%9A%A1",
+    "detection-date": "",
+    "timestamp": "2026-01-29T15:21:04.498Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "breachforums-database",
+    "source": "https://breachforums.bf/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "[BE] Orange Belgium +300K",
+    "author": "by Jaded,",
+    "link": "https://breachforums.bf/Thread-DATABASE-BE-Orange-Belgium-300K",
+    "detection-date": "",
+    "timestamp": "2026-01-29T15:51:52.215Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "breachforums-combolist",
+    "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "❄️❄️ 3690x PREMIUM HOTMAIL HITS ❄️❄️",
+    "author": "by xdalpha,",
+    "link": "https://breachforums.bf/Thread-%E2%9D%84%EF%B8%8F%E2%9D%84%EF%B8%8F-3690x-PREMIUM-HOTMAIL-HITS-%E2%9D%84%EF%B8%8F%E2%9D%84%EF%B8%8F",
+    "detection-date": "",
+    "timestamp": "2026-01-29T15:51:52.336Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "breachforums-accounts",
+    "source": "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "First Advantage Accounts X15 Full Logs",
+    "author": "by OpenBullet,",
+    "link": "https://breachforums.bf/Thread-First-Advantage-Accounts-X15-Full-Logs",
+    "detection-date": "",
+    "timestamp": "2026-01-29T15:51:55.632Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "crackingx-database",
+    "source": "https://crackingx.com/forums/5/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "C Email:Pass 20ML FACEBOOK TWITTER LINKEDIN AMAZON PAYPAL SMTP COMBO MIX COMBO CODER 8 minutes ago Replies 0 Views 1 8 minutes ago CODER C",
+    "author": "CODER",
+    "link": "https://crackingx.com/forums/5/?prefix_id=1",
+    "detection-date": "",
+    "timestamp": "2026-01-29T16:03:04.832Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "crackingx-database",
+    "source": "https://crackingx.com/forums/5/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "W Login:Pass 640GB URL-LOG-PASS PRIVATE DATABASE WITH ONLINE ROBOT FOR SEARCH YOUR TARGET Wise 4 minutes ago Replies 0 Views 1 4 minutes ago Wise W",
+    "author": "Wise",
+    "link": "https://crackingx.com/forums/5/?prefix_id=2",
+    "detection-date": "",
+    "timestamp": "2026-01-29T16:22:07.865Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "niflhemim-account",
+    "source": "https://niflheim.world/forums/accounts.8/",
+    "title": "ORIGIN ⛔️ We can pull the DB of any website you want. Send the site and we will pull it.. ⛔️ thanhtu Today at 12:08 AM Replies 0 Views 174 Today at 12:08 AM thanhtu",
+    "author": "thanhtu",
+    "link": "https://niflheim.world/forums/accounts.8/?prefix_id[0]=7",
+    "detection-date": "",
+    "timestamp": "2026-01-29T16:27:56.013Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "niflhemim-account",
+    "source": "https://niflheim.world/forums/accounts.8/",
+    "title": "ORIGIN ⛔️ We can pull the DB of any website you want. Send the site and we will pull it.. ⛔️ thanhtu Today at 12:08 AM",
+    "author": "thanhtu",
+    "link": "https://niflheim.world/forums/accounts.8/?prefix_id[0]=7",
+    "detection-date": "",
+    "timestamp": "2026-01-29T16:31:00.502Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "breachforums-combolist",
+    "source": "https://breachforums.bf/Forum-Combolists?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "⚡⚡ 2075x PREMIUM MIX MAIL HITS⚡⚡",
+    "author": "by xdalpha,",
+    "link": "https://breachforums.bf/Thread-%E2%9A%A1%E2%9A%A1-2075x-PREMIUM-MIX-MAIL-HITS%E2%9A%A1%E2%9A%A1",
+    "detection-date": "",
+    "timestamp": "2026-01-29T17:43:35.533Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "crackingx-database",
+    "source": "https://crackingx.com/forums/5/?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "Section Rules",
+    "author": "Spaghetti",
+    "link": "https://crackingx.com/threads/35270/",
+    "detection-date": "",
+    "timestamp": "2026-01-29T17:44:47.920Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "niflheim-account",
+    "source": "https://niflheim.world/forums/accounts.8/",
+    "title": "💥 Premium Quality Combos for Sale – Guaranteed! 💥",
+    "author": "renard45",
+    "link": "https://niflheim.world/threads/%F0%9F%92%A5-premium-quality-combos-for-sale-%E2%80%93-guaranteed-%F0%9F%92%A5.156712/",
+    "detection-date": "",
+    "timestamp": "2026-01-29T17:47:54.060Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "patched-accounts",
+    "source": "https://patched.to/Forum-accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "⚡️🔒1717 HOTMAIL VALID ACCESS |29.01.2026|",
+    "author": "Started by SupportHotmail",
+    "link": "https://patched.to/Thread-file-upload-%E2%9A%A1%EF%B8%8F%F0%9F%94%921717-hotmail-valid-access-29-01-2026",
+    "detection-date": "",
+    "timestamp": "2026-01-29T22:50:01.916Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "patched-accounts",
+    "source": "https://patched.to/Forum-accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "⚡️🔒1717 HOTMAIL VALID ACCESS |29.01.2026|",
+    "author": "Started by SupportHotmail",
+    "link": "https://patched.to/Thread-file-upload-%E2%9A%A1%EF%B8%8F%F0%9F%94%921717-hotmail-valid-access-29-01-2026",
+    "detection-date": "",
+    "timestamp": "2026-01-29T22:51:29.334Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "patched-accounts",
+    "source": "https://patched.to/Forum-accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "⚡️🔒1717 HOTMAIL VALID ACCESS |29.01.2026|",
+    "author": "Started by SupportHotmail",
+    "link": "https://patched.to/Thread-file-upload-%E2%9A%A1%EF%B8%8F%F0%9F%94%921717-hotmail-valid-access-29-01-2026",
+    "detection-date": "",
+    "timestamp": "2026-01-29T22:53:22.742Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "patched-accounts",
+    "source": "https://patched.to/Forum-accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "✨PRIVATE ✨HOTMAIL ✨VALIDS BY✨ TELUS✨",
+    "author": "Started by telus",
+    "link": "https://patched.to/Thread-file-upload-%E2%9C%A8private-%E2%9C%A8hotmail-%E2%9C%A8valids-by%E2%9C%A8-telus%E2%9C%A8-268033",
+    "detection-date": "",
+    "timestamp": "2026-01-29T23:05:31.168Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "patched-accounts",
+    "source": "https://patched.to/Forum-accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "✨PRIVATE ✨HOTMAIL ✨VALIDS BY✨ TELUS✨",
+    "author": "Started by telus",
+    "link": "https://patched.to/Thread-file-upload-%E2%9C%A8private-%E2%9C%A8hotmail-%E2%9C%A8valids-by%E2%9C%A8-telus%E2%9C%A8-268033",
+    "detection-date": "",
+    "timestamp": "2026-01-29T23:07:41.519Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "patched-accounts",
+    "source": "https://patched.to/Forum-accounts?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "✨PRIVATE ✨HOTMAIL ✨VALIDS BY✨ TELUS✨",
+    "author": "Started by telus",
+    "link": "https://patched.to/Thread-file-upload-%E2%9C%A8private-%E2%9C%A8hotmail-%E2%9C%A8valids-by%E2%9C%A8-telus%E2%9C%A8-268033",
+    "detection-date": "",
+    "timestamp": "2026-01-29T23:08:40.130Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "darkforums-database",
+    "source": "https://darkforums.io/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "Thread",
+    "author": "",
+    "link": "https://darkforums.io/Forum-Databases?datecut=9999\u0026prefix=0\u0026sortby=subject\u0026order=asc",
+    "detection-date": "",
+    "timestamp": "2026-02-03T10:21:15.016Z",
+    "thread-id": "",
+    "link-hash": ""
+  },
+  {
+    "name": "darkforums-database",
+    "source": "https://darkforums.io/Forum-Databases?sortby=started\u0026order=desc\u0026datecut=9999\u0026prefix=0",
+    "title": "Municipalmoney.gov.za - SQL",
+    "author": "Tanaka",
+    "link": "https://darkforums.io/Thread-Municipalmoney-gov-za-SQL",
+    "detection-date": "2026-02-03T11:34:33.497Z",
+    "timestamp": "2026-02-03T11:34:33.497Z",
+    "thread-id": "Thread-Municipalmoney-gov-za-SQL",
+    "link-hash": "f84efac8450cc26e51af0e766f5e7fc86af0f8de4395248be943ad7a12e26e5a"
   }
 ]

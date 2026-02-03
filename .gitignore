@@ -4,6 +4,7 @@
 .env.*.local
 
 # Logs
-
-
-# Output
+logs/app.log
+failure
+debug
+çalışan.txt
