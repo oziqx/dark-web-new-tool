@@ -1,9 +1,135 @@
 forums:
+  - name: "breachforums-stealer-logs"
+    url: "https://breachforums.jp/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > table.tborder.clear > tbody > tr:nth-child(7)"
+    is_onion: false
+    selectors:
+      link: "span.subject_new a"
+      title: "span.subject_new a"
+      author: ".author a"
+
+  - name: "breachforums-database"
+    url: "https://breachforums.jp/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > table.tborder.clear > tbody > tr:nth-child(15)"
+    is_onion: false
+    selectors:
+      link: "span.subject_new a"
+      title: "span.subject_new a"
+      author: ".author a"
+
+  - name: "breachforums-combolists"
+    url: "https://breachforums.jp/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > table.tborder.clear > tbody > tr:nth-child(7)"
+    is_onion: false
+    selectors:
+      link: "span.subject_new a"
+      title: "span.subject_new a"
+      author: ".author a"
+
+  - name: "breachforums-cracked-accounts"
+    url: "https://breachforums.jp/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > table > tbody > tr:nth-child(7)"
+    is_onion: false
+    selectors:
+      link: "span.subject_new a"
+      title: "span.subject_new a"
+      author: ".author a"
+
+  - name: "htdark-combolist"
+    url: "https://htdark.com/forums/proxy-lists-combolists.189/"
+    css_selector: "div.structItemContainer-group.js-threadList > div.structItem--thread:first-child"
+    is_onion: false
+    selectors:
+      link: "div.structItem-title a[data-tp-primary='on']"
+      title: "div.structItem-title a[data-tp-primary='on']"
+      author: "ul.structItem-parts li a.username"
+
+  - name: "crackingx-latest"
+    url: "https://crackingx.com/whats-new/posts/2205517/"
+    css_selector: "div.block-container > div > div.structItem--thread:first-child"
+    is_onion: false
+    selectors:
+      link: "div.structItem-title a[data-tp-primary]"
+      title: "div.structItem-title a[data-tp-primary]"
+      author: "a.username"
+
   - name: "darkforums-database"
-    url: "https://darkforums.io/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0"
+    url: "https://darkforums.me/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0"
     css_selector: "#forum-display > table > tbody > tr:nth-child(6)"
     is_onion: false
     selectors:
       link: "span.subject_new a"
       title: "span.subject_new a"
       author: ".author a"
+
+  - name: "darkforums-stealer-logs"
+    url: "https://darkforums.me/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#forum-display > table > tbody > tr:nth-child(6)"
+    is_onion: false
+    selectors:
+      link: "span.subject_new a"
+      title: "span.subject_new a"
+      author: ".author a"
+
+  - name: "darkforums-combolists"
+    url: "https://darkforums.me/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#forum-display > table > tbody > tr:nth-child(6)"
+    is_onion: false
+    selectors:
+      link: "span.subject_new a"
+      title: "span.subject_new a"
+      author: ".author a"
+
+  - name: "darkforums-other-leaks"
+    url: "https://darkforums.me/Forum-Other-Leaks?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#forum-display > table > tbody > tr:nth-child(6)"
+    is_onion: false
+    selectors:
+      link: "span.subject_new a"
+      title: "span.subject_new a"
+      author: ".author a"
+
+  - name: "patched-combolist"
+    url: "https://patched.to/Forum-combolist?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > div > table > tbody > tr:nth-child(3)"
+    is_onion: false
+    selectors:
+      link: "span.subject_new a"
+      title: "span.subject_new a"
+      author: "span.author a"
+
+  - name: "patched-accounts"
+    url: "https://patched.to/Forum-accounts?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#content > div > table.tborder.clear.patched > tbody > tr:nth-child(4)"
+    is_onion: false
+    selectors:
+      link: "span.subject_new a"
+      title: "span.subject_new a"
+      author: "span.author a"
+
+  - name: "nulledbb-cracking"
+    url: "https://nulledbb.com/forum-Cracking-Proxies-and-Wordlists?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "section.threads article:nth-child(2)"
+    is_onion: false
+    selectors:
+      link: "div.thread-title span.subject_new a"
+      title: "div.thread-title span.subject_new a"
+      author: "div.thread-info a"
+
+  - name: "nulledbb-configs"
+    url: "https://nulledbb.com/forum-Cracking-Configs?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "section.threads article:nth-child(1)"
+    is_onion: false
+    selectors:
+      link: "div.thread-title span.subject_new a"
+      title: "div.thread-title span.subject_new a"
+      author: "div.thread-info a"
+
+  - name: "leakforum-other-leaks"
+    url: "https://leakforum.io/Forum-Other-Leaks?sortby=started&order=desc&datecut=9999&prefix=0"
+    css_selector: "#inner-container > div.fd-inner > table > tbody > tr:nth-child(5)"
+    is_onion: false
+    selectors:
+      link: "span.subject_new a"
+      title: "span.subject_new a"
+      author: "div.author a"

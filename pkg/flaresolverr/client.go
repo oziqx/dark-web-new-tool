@@ -60,7 +60,7 @@ func NewClient() *Client {
 		url = "http://localhost:8191"
 	}
 
-	timeout := 120000 // ms = 120 saniye (cloudflare challenge için yeterli)
+	timeout := 180000 // ms = 180 saniye (cloudflare challenge için yeterli)
 	if timeoutStr := os.Getenv("FLARESOLVERR_TIMEOUT"); timeoutStr != "" {
 		if val, err := strconv.Atoi(timeoutStr); err == nil {
 			timeout = val

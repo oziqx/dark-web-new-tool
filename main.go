@@ -27,8 +27,8 @@ const (
 	maxInMemoryRecords = 100
 	cleanupInterval    = 15 * time.Minute
 	maxConcurrent      = 3
-	batchSize          = 10
-	batchWaitTime      = 80 * time.Second
+	batchSize          = 50
+	batchWaitTime      = 5 * time.Second
 	scrapeInterval     = 60 * time.Second
 	shutdownTimeout    = 30 * time.Second
 )

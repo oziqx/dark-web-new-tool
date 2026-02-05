@@ -24,7 +24,7 @@ import (
 
 const (
 	// Timeout ayarları
-	normalTimeout = 10 * time.Second
+	normalTimeout = 30 * time.Second
 	onionTimeout  = 180 * time.Second
 	maxRetries    = 3
 
