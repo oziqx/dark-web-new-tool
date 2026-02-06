@@ -133,3 +133,23 @@ forums:
       link: "span.subject_new a"
       title: "span.subject_new a"
       author: "div.author a"
+
+  - name: "ransomhouse"
+    url: "http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/"
+    css_selector: ".container > maincontent > ol > li:first-child"
+    is_onion: true
+    author: "RansomHouse"
+    selectors:
+      link: "h4 a"
+      title: "h4 a"
+      description: "i p"
+
+  - name: "darkweb-vc"
+    url: "https://darkweb.vc/darkweb"
+    css_selector: "div.mx-auto.w-full.min-w-0 > div:nth-child(2) > a"
+    is_onion: false
+    selectors:
+      link: ""
+      title: "h3.rounded-lg"
+      author: "div.flex.mr-4"
+      description: "div.whitespace-pre-wrap.text-container"

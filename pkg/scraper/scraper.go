@@ -63,6 +63,7 @@ type ScrapedData struct {
 	Title    string
 	Author   string
 	Link     string
+	Description string
 }
 
 // Scraper web scraping işlemlerini yönetir
@@ -388,10 +389,13 @@ func (s *Scraper) extractWithExplicitSelectors(ctx context.Context, entry models
 	sel := entry.Selectors
 	baseSelector := entry.CSSSelector
 
-	// Link (zorunlu)
+// Link (zorunlu)
 	if sel.Link != "" {
 		fullSelector := fmt.Sprintf("%s %s", baseSelector, sel.Link)
 		data.Link = s.extractAttribute(ctx, fullSelector, "href")
+	} else {
+		// FALLBACK: Base selector'ın kendisinden href çek
+		data.Link = s.extractAttribute(ctx, baseSelector, "href")
 	}
 
 	// Title
@@ -404,8 +408,16 @@ func (s *Scraper) extractWithExplicitSelectors(ctx context.Context, entry models
 	if sel.Author != "" {
 		fullSelector := fmt.Sprintf("%s %s", baseSelector, sel.Author)
 		data.Author = s.extractText(ctx, fullSelector)
+	} else if entry.Author != "" {
+		// YAML'de sabit author varsa kullan
+		data.Author = entry.Author
 	}
 
+	// Description (optional)
+	if sel.Description != "" {
+		fullSelector := fmt.Sprintf("%s %s", baseSelector, sel.Description)
+		data.Description = s.extractText(ctx, fullSelector)
+	}
 
 	// ThreadID (link'ten çıkar)
 	data.ThreadID = extractThreadIDFromLink(data.Link)

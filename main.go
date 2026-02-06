@@ -368,7 +368,7 @@ func scrapeBatch(ctx context.Context, s *scraper.Scraper, batch []models.ForumEn
 			// Link'i kaydet ve hash al
 			linkHash := linkChecker.Update(scraperData.Link, scraperData.Source)
 
-			// Forum struct'ı oluştur
+		// Forum struct'ı oluştur
 			data := models.NewForum(
 				entry.Name,
 				entry.URL,
@@ -378,6 +378,7 @@ func scrapeBatch(ctx context.Context, s *scraper.Scraper, batch []models.ForumEn
 				scraperData.Link,
 			)
 			data.LinkHash = linkHash
+			data.Description = scraperData.Description
 
 			// Elasticsearch'e ANINDA gönder
 			if err := saveToElastic(ctx, data); err != nil {

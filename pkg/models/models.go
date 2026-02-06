@@ -11,14 +11,14 @@ import (
 	"time"
 )
 
-// ForumSelectors opsiyonel explicit CSS selector'lar (hibrit sistem)
 type ForumSelectors struct {
-	Link     string `json:"link" mapstructure:"link"`
-	Title    string `json:"title" mapstructure:"title"`
-	Author   string `json:"author" mapstructure:"author"`
-	PostedAt string `json:"posted_at" mapstructure:"posted_at"`
-	Views    string `json:"views" mapstructure:"views"`
-	Replies  string `json:"replies" mapstructure:"replies"`
+    Link        string `json:"link" mapstructure:"link"`
+    Title       string `json:"title" mapstructure:"title"`
+    Author      string `json:"author" mapstructure:"author"`
+    Description string `json:"description" mapstructure:"description"`
+    PostedAt    string `json:"posted_at" mapstructure:"posted_at"`
+    Views       string `json:"views" mapstructure:"views"`
+    Replies     string `json:"replies" mapstructure:"replies"`
 }
 
 // ForumEntry config.yaml'dan okunan forum bilgisi
@@ -29,21 +29,21 @@ type ForumEntry struct {
 	IsOnion     bool            `json:"is_onion" mapstructure:"is_onion"`
 	Type        string          `json:"type" mapstructure:"type"`
 	Selectors   *ForumSelectors `json:"selectors,omitempty" mapstructure:"selectors"`
+	Author      string          `json:"author,omitempty" mapstructure:"author"`
 }
 
-// Forum scrape edilen veri (Elasticsearch uyumlu)
-// Forum scrape edilen veri (Elasticsearch uyumlu)
 type Forum struct {
-	ID            int    `json:"-"`
-	Name          string `json:"name"`
-	Source        string `json:"source"`
-	Title         string `json:"title"`
-	Author        string `json:"author"`
-	Link          string `json:"link"`
-	DetectionDate string `json:"detection-date"`
-	Timestamp     string `json:"timestamp"`
-	ThreadID      string `json:"thread-id"`
-	LinkHash      string `json:"link-hash"`
+    ID            int    `json:"-"`
+    Name          string `json:"name"`
+    Source        string `json:"source"`
+    Title         string `json:"title"`
+    Author        string `json:"author"`
+    Link          string `json:"link"`
+    Description   string `json:"description,omitempty"` 
+    DetectionDate string `json:"detection-date"`
+    Timestamp     string `json:"timestamp"`
+    ThreadID      string `json:"thread-id"`
+    LinkHash      string `json:"link-hash"`
 }
 
 // formatTimestampWithMs timestamp'i milisaniye ile formatlar
