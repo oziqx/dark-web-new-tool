@@ -1,6 +1,6 @@
 forums:
   - name: "breachforums-stealer-logs"
-    url: "https://breachforums.jp/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0"
+    url: "https://breachforums.bf/Forum-Stealer-Logs?sortby=started&order=desc&datecut=9999&prefix=0"
     css_selector: "#content > table.tborder.clear > tbody > tr:nth-child(7)"
     is_onion: false
     selectors:
@@ -9,7 +9,7 @@ forums:
       author: ".author a"
 
   - name: "breachforums-database"
-    url: "https://breachforums.jp/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0"
+    url: "https://breachforums.bf/Forum-Databases?sortby=started&order=desc&datecut=9999&prefix=0"
     css_selector: "#content > table.tborder.clear > tbody > tr:nth-child(15)"
     is_onion: false
     selectors:
@@ -18,7 +18,7 @@ forums:
       author: ".author a"
 
   - name: "breachforums-combolists"
-    url: "https://breachforums.jp/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0"
+    url: "https://breachforums.bf/Forum-Combolists?sortby=started&order=desc&datecut=9999&prefix=0"
     css_selector: "#content > table.tborder.clear > tbody > tr:nth-child(7)"
     is_onion: false
     selectors:
@@ -27,7 +27,7 @@ forums:
       author: ".author a"
 
   - name: "breachforums-cracked-accounts"
-    url: "https://breachforums.jp/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0"
+    url: "https://breachforums.bf/Forum-Cracked-Accounts?sortby=started&order=desc&datecut=9999&prefix=0"
     css_selector: "#content > table > tbody > tr:nth-child(7)"
     is_onion: false
     selectors:
@@ -153,3 +153,40 @@ forums:
       title: "h3.rounded-lg"
       author: "div.flex.mr-4"
       description: "div.whitespace-pre-wrap.text-container"
+
+  - name: "darknet-army-database"
+    url: "http://dna777fdlbcv24cx5ctdvydvfa277vgb6wd6w4ztem6cho3kqogi7bqd.onion/forums/%E2%AD%90-hacked-database-leaks-%E2%AD%90.27/"
+    css_selector: "div.structItem:nth-child(1)"
+    is_onion: true
+    selectors:
+      link: "div.structItem-title a[data-tp-primary]"
+      title: "div.structItem-title a[data-tp-primary]"
+      author: "span.username"
+
+  - name: "darknet-army-combolists"
+    url: "http://dna777fdlbcv24cx5ctdvydvfa277vgb6wd6w4ztem6cho3kqogi7bqd.onion/forums/%E2%AD%90-combolists-%E2%AD%90.25/"
+    css_selector: "div.structItem:nth-child(1)"
+    is_onion: true
+    selectors:
+      link: "div.structItem-title a[data-tp-primary]"
+      title: "div.structItem-title a[data-tp-primary]"
+      author: "span.username"
+
+  - name: "leakbase-big"
+    url: "https://leakbase.la/forums/big/"
+    css_selector: "div.block-container.block-container--nodes > div.block-body > div > div > div.structItem--thread:first-child"
+    is_onion: false
+    selectors:
+      link: "div.structItem-title a[data-tp-primary]"
+      title: "div.structItem-title a[data-tp-primary]"
+      author: "a.username"
+
+  - name: "leakbase-inf"
+    url: "https://leakbase.la/forums/inf/"
+    css_selector: "div.block-container.block-container--nodes > div:nth-child(5) > article.message--articlePreview:first-child"
+    is_onion: false
+    selectors:
+      link: "h2.articlePreview-title a:not(.labelLink)"
+      title: "h2.articlePreview-title a:not(.labelLink)"
+      author: "footer a.username"
+      description: "div.message-userContent .bbWrapper"
