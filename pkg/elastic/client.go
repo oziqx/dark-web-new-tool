@@ -84,8 +84,13 @@ func BuildDocumentID(linkHash, source string) string {
 	return linkHash + "-" + shortHash
 }
 
-// IndexDocument tek bir dökümanı Elasticsearch'e gönderir
+// IndexDocument tek bir dökümanı varsayılan index'e gönderir
 func (ec *ElasticClient) IndexDocument(ctx context.Context, doc models.Forum) error {
+	return ec.IndexDocumentToIndex(ctx, ec.index, doc)
+}
+
+// IndexDocumentToIndex belirtilen index'e döküman yazar
+func (ec *ElasticClient) IndexDocumentToIndex(ctx context.Context, index string, doc models.Forum) error {
 	// Document ID oluştur (deterministik - link hash bazlı)
 	docID := BuildDocumentID(doc.LinkHash, doc.Source)
 
@@ -95,9 +100,9 @@ func (ec *ElasticClient) IndexDocument(ctx context.Context, doc models.Forum) er
 		return fmt.Errorf("failed to marshal document: %w", err)
 	}
 
-	// Elasticsearch'e gönder (Document ID ile)
+	// Belirtilen index'e gönder
 	res, err := ec.client.Index(
-		ec.index,
+		index,
 		bytes.NewReader(data),
 		ec.client.Index.WithContext(ctx),
 		ec.client.Index.WithDocumentID(docID),
@@ -113,13 +118,47 @@ func (ec *ElasticClient) IndexDocument(ctx context.Context, doc models.Forum) er
 		return fmt.Errorf("elasticsearch index error: %s", res.String())
 	}
 
-log.Info().
-		Str("index", ec.index).
+	log.Info().
+		Str("index", index).
 		Str("doc_id", docID[:24]+"...").
 		Str("name", doc.Name).
-		Msg("✅ Döküman Elasticsearch'e kaydedildi")
+		Msg("✅ Döküman index'e kaydedildi")
 
 	return nil
+}
+
+// Search belirtilen index'te arama yapar
+func (ec *ElasticClient) Search(ctx context.Context, index string, query map[string]interface{}) (map[string]interface{}, error) {
+	var buf bytes.Buffer
+	if err := json.NewEncoder(&buf).Encode(query); err != nil {
+		return nil, fmt.Errorf("query encode hatası: %w", err)
+	}
+
+	res, err := ec.client.Search(
+		ec.client.Search.WithContext(ctx),
+		ec.client.Search.WithIndex(index),
+		ec.client.Search.WithBody(&buf),
+	)
+	if err != nil {
+		return nil, fmt.Errorf("search hatası: %w", err)
+	}
+	defer res.Body.Close()
+
+	if res.IsError() {
+		return nil, fmt.Errorf("elasticsearch search error: %s", res.String())
+	}
+
+	var result map[string]interface{}
+	if err := json.NewDecoder(res.Body).Decode(&result); err != nil {
+		return nil, fmt.Errorf("response decode hatası: %w", err)
+	}
+
+	return result, nil
+}
+
+// GetDefaultIndex varsayılan index adını döndürür
+func (ec *ElasticClient) GetDefaultIndex() string {
+	return ec.index
 }
 
 // Close Elasticsearch client'ı kapatır

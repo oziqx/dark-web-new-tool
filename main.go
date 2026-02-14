@@ -17,6 +17,7 @@ import (
 	"github.com/rs/zerolog/log"
 
 	"dark-deep-new-tool/pkg/config"
+	"dark-deep-new-tool/pkg/customer"
 	"dark-deep-new-tool/pkg/elastic"
 	"dark-deep-new-tool/pkg/models"
 	"dark-deep-new-tool/pkg/scraper"
@@ -43,6 +44,7 @@ var (
 	failureDir     = "output/failure"
 	dataMutex      sync.RWMutex
 	isShuttingDown int32
+	customerMgr    *customer.CustomerManager
 )
 
 func main() {
@@ -122,6 +124,16 @@ func main() {
 	)
 	if err != nil {
 		log.Fatal().Err(err).Msg("Elasticsearch client başlatılamadı")
+	}
+
+	customerMgr = customer.NewCustomerManager(elasticClient)
+	if err := customerMgr.LoadAll(context.Background()); err != nil {
+		log.Warn().Err(err).Msg("⚠️ Müşteri verileri yüklenemedi, sadece ana index kullanılacak")
+	} else {
+		log.Info().
+			Int("müşteri", customerMgr.GetCustomerCount()).
+			Int("keyword", customerMgr.GetKeywordCount()).
+			Msg("👥 Müşteri keyword sistemi hazır")
 	}
 
 	// Elasticsearch bağlantısını test et
@@ -506,28 +518,65 @@ func saveLinkChecker() {
 	}
 }
 
-// saveToElastic Elasticsearch'e tek kayıt gönderir
+// saveToElastic müşteri bazlı routing ile Elasticsearch'e kayıt gönderir
 func saveToElastic(ctx context.Context, data models.Forum) error {
 	if elasticClient == nil {
 		log.Warn().Msg("⚠️ Elasticsearch client yok, atlıyor")
 		return nil
 	}
 
-	// Elasticsearch'e ANINDA gönder
-	if err := elasticClient.IndexDocument(ctx, data); err != nil {
-		log.Error().
-			Err(err).
-			Str("source", data.Source).
-			Str("link", data.Link).
-			Msg("❌ Elasticsearch'e gönderilemedi")
-		return err
+	// Müşteri eşleştirmesi yap
+	var targetIndexes []string
+
+if customerMgr != nil {
+    matchResult := customerMgr.Match(data.Title)
+
+    if matchResult.Matched {
+        // Müşteri bulundu - sadece müşteri index'lerine yaz
+        targetIndexes = matchResult.IndexTargets
+
+        // Eşleşen keyword'leri bul
+        _, matchedKeywords := customerMgr.MatchWithDetails(data.Title)
+
+        log.Warn().
+            Str("title", truncateString(data.Title, 60)).
+            Strs("keywords", matchedKeywords).
+            Strs("index_targets", targetIndexes).
+            Int("müşteri_sayısı", len(matchResult.Customers)).
+            Msg("🚨 MÜŞTERİ KEYWORD TESPİT EDİLDİ")
+    } else {
+        // Eşleşme yok - ana index'e yaz
+        targetIndexes = []string{elasticClient.GetDefaultIndex()}
+    }
+} else {
+    // CustomerManager yok - ana index'e yaz
+    targetIndexes = []string{elasticClient.GetDefaultIndex()}
+}
+	// Tüm hedef index'lere yaz
+	var lastErr error
+	successCount := 0
+
+	for _, index := range targetIndexes {
+		if err := elasticClient.IndexDocumentToIndex(ctx, index, data); err != nil {
+			log.Error().
+				Err(err).
+				Str("index", index).
+				Str("link", data.Link).
+				Msg("❌ Index'e yazılamadı")
+			lastErr = err
+		} else {
+			successCount++
+			log.Info().
+				Str("index", index).
+				Str("title", truncateString(data.Title, 30)).
+				Str("hash", data.LinkHash[:16]+"...").
+				Msg("📊 Elasticsearch'e kaydedildi")
+		}
 	}
 
-	log.Info().
-		Str("name", data.Name).
-		Str("title", truncateString(data.Title, 30)).
-		Str("hash", data.LinkHash[:16]+"...").
-		Msg("📊 Elasticsearch'e başarıyla gönderildi")
+	if successCount == 0 && lastErr != nil {
+		return lastErr
+	}
 
 	return nil
 }
